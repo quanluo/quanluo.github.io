@@ -298,27 +298,35 @@
   
   
   
-
-  
-
-  
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
+  <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 <script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/2020/05/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/",
-  owner: 'quanluo',
-  repo: 'quanluo.github.io',
-  oauth: {
-    client_id: 'bacaa6047d79d70469bc',
-    client_secret: '4e25205ec9118cdd4d78b250cbec1ac8bd577bc4',
-  },
-})
-gitment.render('gitment-ctn')
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'qVOFRs7k88jJICcsBe0Cdabr-gzGzoHsz',
+      app_key: 'GyrSWO53F9s3q95vzNutRcNp',
+      placeholder: '有话要说？'
+    });
 </script>
+
+  
+
+  
+
+  
+
+  
+
   
 
 
