@@ -169,20 +169,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-yilia-基本使用总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-初学python网络编程socket，并实现文件传输【含源代码】" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/23/yilia-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">yilia 基本使用总结</a>
+      <a class="article-title" href="/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/">初学python网络编程socket，并实现文件传输【含源代码】</a>
     </h1>
   
 
         
-        <a href="/2020/05/23/yilia-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-05-23T11:37:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
+        <a href="/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:15:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
 </a>
 
         
@@ -190,89 +190,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本片文章记录一些 yilia 初学使用的一些基本用方法和技巧，我会持续更新，学到啥写啥，慢慢来吧。</p>
+        <p>@<a href="Socket">TOC</a></p>
+<h3 id="什么是Socket"><a href="#什么是Socket" class="headerlink" title="什么是Socket"></a>什么是Socket</h3><p>socket又称“套接字”， 应用程序通常通过“套接字”向网络发出请求或者应答网络请求，使主机间或者一台计算机上的进程间可以通讯。</p>
+<h3 id="socket-函数"><a href="#socket-函数" class="headerlink" title="socket()函数"></a>socket()函数</h3><p>Python 中，我们用 socket（）函数来创建套接字，语法格式如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socket.socket(family, type, protocol)</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2020/05/23/yilia-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/23/yilia-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python之format用法详解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/23/Python%E4%B9%8Bformat%E7%94%A8%E6%B3%95%E8%AF%A6%E8%A7%A3/">Python之format用法详解</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/23/Python%E4%B9%8Bformat%E7%94%A8%E6%B3%95%E8%AF%A6%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2020-05-23T10:45:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Python2.6 开始，新增了一种格式化字符串的函数 str.format()，它增强了字符串格式化的功能。<br>基本语法是通过 {} 和 : 来代替以前的 % 。<br>format 函数可以接受不限个参数，位置可以不按顺序。</p>
-        
-          <a class="article-more-a" href="/2020/05/23/Python%E4%B9%8Bformat%E7%94%A8%E6%B3%95%E8%AF%A6%E8%A7%A3/#more">more >></a>
+          <a class="article-more-a" href="/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/#more">more >></a>
         
       
 
@@ -293,7 +216,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">format</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">socket</a>
         		</li>
       		
 		</ul>
@@ -303,7 +226,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/23/Python%E4%B9%8Bformat%E7%94%A8%E6%B3%95%E8%AF%A6%E8%A7%A3/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/">展开全文 >></a>
         </p>
       
 
@@ -333,20 +256,20 @@
 
 
   
-    <article id="post-随笔一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-python可视化入门-plotly-，小白请进" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/23/%E9%9A%8F%E7%AC%94%E4%B8%80/">随笔一</a>
+      <a class="article-title" href="/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/">python可视化入门 plotly ，小白请进</a>
     </h1>
   
 
         
-        <a href="/2020/05/23/%E9%9A%8F%E7%AC%94%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2020-05-22T16:12:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
+        <a href="/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:13:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
 </a>
 
         
@@ -354,9 +277,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一个实验！<br>分享一下我头像后面的背景，薇尔莉特<del>~</del></p>
-<p><img src="https://i.loli.net/2020/05/23/L8h75gJnaxliXHe.jpg" alt=""></p>
-
+        <p><code>大佬看到这里就可以走了， 小白可以继续看了，本篇文章只是【plotly】入门级</code></p>
+<blockquote>
+<p>注意：本篇文章使用的是离线版本的plotly，没有用线上版的，直接在pycharm上运行的。</p>
+</blockquote>
+<p>@[TOC](入门篇 plotly)</p>
+<h3 id="安装-plotly"><a href="#安装-plotly" class="headerlink" title="安装 plotly"></a>安装 <code>plotly</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install plotly</span><br></pre></td></tr></table></figure>
+<h3 id="导入plotly模块"><a href="#导入plotly模块" class="headerlink" title="导入plotly模块"></a>导入<code>plotly</code>模块</h3>
+        
+          <a class="article-more-a" href="/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/#more">more >></a>
+        
       
 
       
@@ -372,7 +302,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">plotly</a>
         		</li>
       		
 		</ul>
@@ -382,7 +316,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/23/%E9%9A%8F%E7%AC%94%E4%B8%80/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/">展开全文 >></a>
         </p>
       
 
@@ -412,20 +346,20 @@
 
 
   
-    <article id="post-我的第一篇blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-对一个DataFrame的一个列进行映射，得出一个新列。学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/">我的第一篇blog HelloWorld</a>
+      <a class="article-title" href="/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">对一个DataFrame的一个列进行映射，得出一个新列。学习笔记</a>
     </h1>
   
 
         
-        <a href="/2020/05/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/" class="archive-article-date">
-  	<time datetime="2020-05-21T11:47:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+        <a href="/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:12:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
 </a>
 
         
@@ -433,10 +367,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>HelloWorld！</p>
-<p>今天是我开通个人博客的第一天，很是高兴。我其实已经写博客好长时间了，不过都是在CSDN上写的，最近看一些大佬写的博客都是在自己的个人博客上，突发奇想地我也想自己建一个个人博客出来，由此，我的个人博客诞生了！</p>
-<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9QbjRTbTBSc0F1ZzJDZG45YUxYcDdRU2lidmJySWNBMzRDZllKaWFqT3hNTnNGRWd5WGgwellMM0pGRllSVU1BcFdVNDZ2akdzMWRlaGljWHRvdlluaWFlU3cvNjQwP3d4X2ZtdD1wbmc?x-oss-process=image/format,png" alt=""></p>
-
+        <p>通过字典映射，将<code>DataFrame</code>某个文字列映射出一个数字列，使得在程序里使用更加方便。</p>
+        
+          <a class="article-more-a" href="/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more">more >></a>
+        
       
 
       
@@ -452,7 +386,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">helloworld</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">DaraFrame</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">映射</a>
         		</li>
       		
 		</ul>
@@ -462,7 +404,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
         </p>
       
 
@@ -492,6 +434,602 @@
 
 
   
+    <article id="post-论Python导入模块的三种修养【干货】" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/">论Python导入模块的三种修养【干货】</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:11:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最进有些萌新老是混洗python导入模块的三种方法，甚至不知道各个都有什么作用，这回我来彻底讲解下，让你们不再迷茫。<br>@<a href="`Python导入模块有三种方法`">TOC</a></p>
+<h4 id="修养一：-import-模块名"><a href="#修养一：-import-模块名" class="headerlink" title="修养一： import 模块名"></a><code>修养一： import 模块名</code></h4><p>直接使用 import ，但是再调用模块中的函数的时候，需要加上模块的命名空间。写个例子看看：</p>
+        
+          <a class="article-more-a" href="/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">python导入模块</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-scrapy实战-将数据存储到csv文件和MySQL数据库中" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/">scrapy实战----将数据存储到csv文件和MySQL数据库中</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:10:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="本章将通过爬取51jobs求职网站中的python职位信息来实现不同方式的数据存储的需求。"><a href="#本章将通过爬取51jobs求职网站中的python职位信息来实现不同方式的数据存储的需求。" class="headerlink" title="本章将通过爬取51jobs求职网站中的python职位信息来实现不同方式的数据存储的需求。"></a>本章将通过爬取51jobs求职网站中的python职位信息来实现不同方式的数据存储的需求。</h3><blockquote>
+<p> github地址———&gt;<a href="https://github.com/JosenTong/51jobsinfo-spider" target="_blank" rel="noopener">源代码</a></p>
+</blockquote>
+<p>我们先来看一下：51jobs网站<br><img src="https://img-blog.csdnimg.cn/20200509230416564.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>我们需要的数据有，职位名 公司名 工作地点 薪资，这四个数据。<br>然后我们看一下他们都在哪<br>发现他们都在<br><img src="https://img-blog.csdnimg.cn/20200509230657826.png" alt="在这里插入图片描述"><br>这里面</p>
+        
+          <a class="article-more-a" href="/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">scrapy</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-with语句还能这么用，你会吗-with语句和上下文管理器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/">with语句还能这么用，你会吗?--with语句和上下文管理器</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:07:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>@<a href="with语句和上下文管理器">TOC</a></p>
+<h4 id="启程"><a href="#启程" class="headerlink" title="启程"></a><code>启程</code></h4><p>&emsp;&emsp; <code>with 语句</code>究竟有哪些好处？它有助于简化一些通用资源管理模式，抽象出其中的功能，将其分解并重用。</p>
+<p>&emsp;&emsp;若想充分的使用这个特性，比较好的办法是查看Python标准库的示例。内置的 <code>open()</code>函数就是一个很好的例子：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'hello.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	f.write(<span class="string">'hello, world!'</span>)</span><br></pre></td></tr></table></figure>
+<p>我们应该都知道打开文件的时候一般建议使用 <code>with 语句</code>，因为这样能确保打开的文件描述符在程序执行离开 <code>with语句</code> 的上下文后自动关闭。本质上来说，上面的代码示例可转换成下面这样：</p>
+        
+          <a class="article-more-a" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">with</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">上下文管理器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-python，通过一行代码输出python和库的版本信息" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/">python，通过一行代码输出python和库的版本信息</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:06:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>话不多说先上效果图：</strong><br><img src="https://img-blog.csdnimg.cn/20200505185619150.png" alt="在这里插入图片描述"><br><strong>原理：通过自带的 ==__version__== 功能实现</strong><br>代码模板：</p>
+        
+          <a class="article-more-a" href="/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-一行代码让python的运行速度提高100倍" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/">一行代码让python的运行速度提高100倍</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:05:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们先看一个原始代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    tt = time.time()</span><br><span class="line">    s = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(x, y):</span><br><span class="line">        s *= i</span><br><span class="line">    print(<span class="string">'time:&#123;&#125;'</span>.format(time.time() - tt))</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line">print(foo(<span class="number">1</span>,<span class="number">100000000</span>))</span><br></pre></td></tr></table></figure>
+<p>看一下运算时间结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time:<span class="number">8.983859300613403</span></span><br></pre></td></tr></table></figure>
+<p>然后我们加一行代码，再看看结果：</p>
+        
+          <a class="article-more-a" href="/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-用python爬取qq好友的头像并都下载到本地" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/">用python爬取qq好友的头像并都下载到本地</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:04:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>正常步骤先上爬取效果图：<br><img src="https://img-blog.csdnimg.cn/20200423121926130.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>原理：从邮箱开始半自动爬取qq好友头像。<br>首先我们先打开网页版qq邮箱，并登陆上你的qq账户，通过qq邮箱来获取所有人的qq号。<br>接下来我用Google Chrome 浏览器来演示：</p>
+        
+          <a class="article-more-a" href="/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">spider</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-学Python这么久了还不知道-init-new-del-吗？这回彻底掌握它！" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/">学Python这么久了还不知道__init__(),__new__(),__del__()吗？这回彻底掌握它！</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:03:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>学python的，学过类与对象的，都会经常看到和用到<font color=red>__init__(self, )，__new__(cls, )，__del__(self)。</font><br>但是很多可能见过的，却不知道怎么用，或者为什么用。没有真正的了解它们。<br>然而其实这些就是我们学习面向对象编程语言中的<strong>构造方法和析构方法</strong>。<br>这三个其实还有另一种称呼叫做<font color=red><strong>魔法方法</strong></font>.<br><strong>魔法方法顾名思义，就是总是被左右各两个下划线包围的方法称为魔法方法，如<strong>init</strong>().</strong>(注：这里我不会细说魔法方法，只会针对这三个方法进行讲解。)</p>
+        
+          <a class="article-more-a" href="/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+    </nav>
   
 
 
@@ -592,15 +1130,39 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">helloworld</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">list</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">wordcloud</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">进度条</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">file方法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Requests_html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yield</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">生成器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">pyinstaller</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -608,7 +1170,75 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">dict</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">pip</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">plotly</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">scrapy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">with</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">上下文管理器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">异常处理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">DaraFrame</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">映射</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">helloworld</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">spider</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">python导入模块</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Huffman code</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">ip代理池</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
