@@ -206,22 +206,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近自己在往自己的个人博客添加RSS订阅功能，走了些坑，所以在这里想将这些记录下，也好让其他同学们想添加RSS的不用踩坑了。<br>本文添加RSS订阅功能共需要四步。</p>
-<h3 id="第一步安装插件"><a href="#第一步安装插件" class="headerlink" title="第一步安装插件"></a>第一步安装插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br></pre></td></tr></table></figure>
-<p>安装插件的时候记住是在自己博客的根目录上安装，<br>如果npm安装失败，我建议使用 <code>cnpm</code> 安装<br>首先我们先安装 <code>cnpm</code>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>然后使用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-feed</span><br></pre></td></tr></table></figure>
-<p>进行安装（推荐）</p>
-<h3 id="第一部成功后，进行第二步在hexo根目录配置文件-config-yml中配置插件"><a href="#第一部成功后，进行第二步在hexo根目录配置文件-config-yml中配置插件" class="headerlink" title="第一部成功后，进行第二步在hexo根目录配置文件_config.yml中配置插件:"></a>第一部成功后，进行第二步在hexo根目录配置文件_config.yml中配置插件:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">plugins:</span><br><span class="line">  hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20 # 最新的20篇文章</span><br></pre></td></tr></table></figure>
-<h3 id="第三步开启主题的左侧边栏的RSS功能"><a href="#第三步开启主题的左侧边栏的RSS功能" class="headerlink" title="第三步开启主题的左侧边栏的RSS功能"></a>第三步开启主题的左侧边栏的RSS功能</h3><p>在主题的配置文件theme/yilia/_config.yml中进行设置:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># SubNav</span><br><span class="line">subnav:</span><br><span class="line">  rss: &quot;atom.xml&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="第四步重新生成文件并加载到远端"><a href="#第四步重新生成文件并加载到远端" class="headerlink" title="第四步重新生成文件并加载到远端"></a>第四步重新生成文件并加载到远端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>插件官方github网址：<a href="https://github.com/hexojs/hexo-generator-feed。" target="_blank" rel="noopener">https://github.com/hexojs/hexo-generator-feed。</a></p>
-<hr>
-<p><img src="https://images4.alphacoders.com/975/97548.jpg" alt=""></p>
-
+        
+          <a class="article-more-a" href="/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/#more">more >></a>
+        
       
 
       
