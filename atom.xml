@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-26T11:48:05.109Z</updated>
+  <updated>2020-05-26T12:07:34.704Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mailto links 在chrome不工作问题解决</title>
+    <link href="http://yoursite.com/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <id>http://yoursite.com/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</id>
+    <published>2020-05-26T11:54:44.000Z</published>
+    <updated>2020-05-26T12:07:34.704Z</updated>
+    
+    <content type="html"><![CDATA[<p>Mailto links 在chrome不工作问题，是因为在chrome设置中没有设置的原因。<br>我们需要更改相应的设置。<br>我们通访问 <a href="chrome://settings/handlers">chrome://settings/handlers</a> 链接，修改以下内容：</p><a id="more"></a><p><strong>允许网站要求成为协议的默认处理程序（推荐）</strong>—–允许<br>并将下方电子邮件 选中设置为<strong>默认</strong>即可</p><p><img src="https://img-blog.csdnimg.cn/20200526200208367.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><hr><p>这些弄完后我们就可以使用 mailto links了：</p><p><img src="https://img-blog.csdnimg.cn/20200526200341167.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200526200420269.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mailto links 在chrome不工作问题，是因为在chrome设置中没有设置的原因。&lt;br&gt;我们需要更改相应的设置。&lt;br&gt;我们通访问 &lt;a href=&quot;chrome://settings/handlers&quot;&gt;chrome://settings/handlers&lt;/a&gt; 链接，修改以下内容：&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Mailto" scheme="http://yoursite.com/tags/Mailto/"/>
+    
+      <category term="chrome" scheme="http://yoursite.com/tags/chrome/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo+yilia添加RSS订阅功能</title>
@@ -484,29 +507,6 @@
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
       <category term="Requests_html" scheme="http://yoursite.com/tags/Requests-html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 数据可视化生成词云 WordCloud</title>
-    <link href="http://yoursite.com/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/"/>
-    <id>http://yoursite.com/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/</id>
-    <published>2020-05-23T15:57:32.000Z</published>
-    <updated>2020-05-23T15:58:23.784Z</updated>
-    
-    <content type="html"><![CDATA[<p>演示：<br><img src="https://img-blog.csdnimg.cn/20200414104754800.gif#pic_center" alt="在这里插入图片描述"><br>不罗嗦，直接先上代码。</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> wordcloud <span class="keyword">import</span> WordCloud</span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">path = <span class="string">r'E:\123\教程'</span>  <span class="comment">#文本路径</span></span><br><span class="line">path_ph = <span class="string">r'E:\123\教程'</span>   <span class="comment">#词云背景模板路径</span></span><br><span class="line">font = <span class="string">r'C:\Windows\Fonts\FZSTK.TTF'</span>  <span class="comment">#设置字体，可以显示中文。</span></span><br><span class="line"></span><br><span class="line">text = (open(path + <span class="string">r'\job.txt'</span>, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>)).read()   <span class="comment"># gbk &lt;--&gt; utf-8</span></span><br><span class="line">cut = jieba.cut(text)  <span class="comment"># 使用 jieba库 分词</span></span><br><span class="line">string = <span class="string">' '</span>.join(cut)</span><br><span class="line">print(len(string))  <span class="comment"># 输出词量</span></span><br><span class="line">img = Image.open(path_ph + <span class="string">r'\2.jpg'</span>)  <span class="comment"># 打开图片</span></span><br><span class="line">img_array = np.array(img)  <span class="comment"># 将图片装换为数组</span></span><br><span class="line">stopword = [<span class="string">'Unword'</span>]  <span class="comment"># 设置停止词，也就是你不想显示的词，可有可无，看情况处理</span></span><br><span class="line">wc = WordCloud(</span><br><span class="line">    background_color=<span class="string">'white'</span>,  <span class="comment">#设置显示内容在什么颜色内</span></span><br><span class="line">    width=<span class="number">1000</span>,    <span class="comment">#设置图片宽</span></span><br><span class="line">    height=<span class="number">800</span>,     <span class="comment">#设置图片高</span></span><br><span class="line">    mask=img_array,  <span class="comment">#设置词云背景模板</span></span><br><span class="line">    font_path=font,  <span class="comment">#设置字体路径</span></span><br><span class="line">    stopwords=stopword,</span><br><span class="line">    scale=<span class="number">10</span>  <span class="comment">#图像清晰度，数值越大越清晰，最好在10-30之间。</span></span><br><span class="line">)</span><br><span class="line">wc.generate_from_text(string)  <span class="comment"># 绘制图片</span></span><br><span class="line">plt.imshow(wc)</span><br><span class="line">plt.axis(<span class="string">'off'</span>) <span class="comment">#关闭坐标轴</span></span><br><span class="line">plt.show()  <span class="comment"># 显示图片</span></span><br><span class="line">wc.to_file(path + <span class="string">r'\wordcloud1.png'</span>)  <span class="comment"># 保存图片</span></span><br></pre></td></tr></table></figure><p>使用之前需要将需要的第三方库先下载安装完。（wordcloud、jieba、matplotlib、PIL、numpy）<br>可以通过pip安装。<br>如果还不会的可以看我的另一个文章———&gt;<a href="https://blog.csdn.net/weixin_43347550/article/details/105185238" target="_blank" rel="noopener">pip 安装，更新，卸载，查看模块方法</a></p><p><font color=red>Note：有时候你们生成的词云可能不清晰，是因为没有设置 scale 值 ，设置完后会让生成的词云图像变得清晰。</font></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;演示：&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20200414104754800.gif#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;br&gt;不罗嗦，直接先上代码。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-      <category term="wordcloud" scheme="http://yoursite.com/tags/wordcloud/"/>
     
   </entry>
   

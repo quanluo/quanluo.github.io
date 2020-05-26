@@ -184,6 +184,93 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python中的-r-和-s-的字符串格式区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/">Python中的!r和!s的字符串格式区别</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:09:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>!s（apply str()）和!r（apply repr()）可用于在格式化之前转换值。</code></p>
+<p>字符串之间的区别很容易看出来（因为repr字符串将包含外部引号）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'foo &#123;!s&#125;'</span>.format(<span class="string">'bar'</span>)</span><br><span class="line"><span class="string">'foo bar'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'foo &#123;!r&#125;'</span>.format(<span class="string">'bar'</span>)</span><br><span class="line"><span class="string">"foo 'bar'"</span></span><br></pre></td></tr></table></figure>
+<p>这两种方法之间的区别实际上主要取决于要格式化的对象。对于许多对象（例如那些不覆盖该<code>__str__</code>方法的对象），格式化输出将没有差异。</p>
+        
+          <a class="article-more-a" href="/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">!s!r</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-with语句还能这么用，你会吗-with语句和上下文管理器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -942,90 +1029,6 @@
 
 
   
-    <article id="post-Python-数据可视化生成词云-WordCloud" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/">Python 数据可视化生成词云 WordCloud</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/" class="archive-article-date">
-  	<time datetime="2020-05-23T15:57:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>演示：<br><img src="https://img-blog.csdnimg.cn/20200414104754800.gif#pic_center" alt="在这里插入图片描述"><br>不罗嗦，直接先上代码。</p>
-        
-          <a class="article-more-a" href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/#more">more >></a>
-        
-      
-
-      
-    </div>
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">wordcloud</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
@@ -1263,6 +1266,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">RSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Mailto</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">chrome</a>
               </li>
             
             <div class="clearfix"></div>
