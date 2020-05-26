@@ -184,6 +184,103 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo-yilia添加RSS订阅功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/">hexo+yilia添加RSS订阅功能</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/" class="archive-article-date">
+  	<time datetime="2020-05-26T11:28:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近自己在往自己的个人博客添加RSS订阅功能，走了些坑，所以在这里想将这些记录下，也好让其他同学们想添加RSS的不用踩坑了。<br>本文添加RSS订阅功能共需要四步。</p>
+<h3 id="第一步安装插件"><a href="#第一步安装插件" class="headerlink" title="第一步安装插件"></a>第一步安装插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br></pre></td></tr></table></figure>
+<p>安装插件的时候记住是在自己博客的根目录上安装，<br>如果npm安装失败，我建议使用 <code>cnpm</code> 安装<br>首先我们先安装 <code>cnpm</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>然后使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-feed</span><br></pre></td></tr></table></figure>
+<p>进行安装（推荐）</p>
+<h3 id="第一部成功后，进行第二步在hexo根目录配置文件-config-yml中配置插件"><a href="#第一部成功后，进行第二步在hexo根目录配置文件-config-yml中配置插件" class="headerlink" title="第一部成功后，进行第二步在hexo根目录配置文件_config.yml中配置插件:"></a>第一部成功后，进行第二步在hexo根目录配置文件_config.yml中配置插件:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">plugins:</span><br><span class="line">  hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20 # 最新的20篇文章</span><br></pre></td></tr></table></figure>
+<h3 id="第三步开启主题的左侧边栏的RSS功能"><a href="#第三步开启主题的左侧边栏的RSS功能" class="headerlink" title="第三步开启主题的左侧边栏的RSS功能"></a>第三步开启主题的左侧边栏的RSS功能</h3><p>在主题的配置文件theme/yilia/_config.yml中进行设置:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># SubNav</span><br><span class="line">subnav:</span><br><span class="line">  rss: &quot;atom.xml&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="第四步重新生成文件并加载到远端"><a href="#第四步重新生成文件并加载到远端" class="headerlink" title="第四步重新生成文件并加载到远端"></a>第四步重新生成文件并加载到远端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>插件官方github网址：<a href="https://github.com/hexojs/hexo-generator-feed。" target="_blank" rel="noopener">https://github.com/hexojs/hexo-generator-feed。</a></p>
+<hr>
+<p><img src="https://images4.alphacoders.com/975/97548.jpg" alt=""></p>
+
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">RSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-我通过Python对自己的微信朋友圈进行了可视化分析得到了意想不到的答案" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -964,98 +1061,6 @@
 
 
   
-    <article id="post-with语句还能这么用，你会吗-with语句和上下文管理器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/">with语句还能这么用，你会吗?--with语句和上下文管理器</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/" class="archive-article-date">
-  	<time datetime="2020-05-23T16:07:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>@<a href="with语句和上下文管理器">TOC</a></p>
-<h4 id="启程"><a href="#启程" class="headerlink" title="启程"></a><code>启程</code></h4><p>&emsp;&emsp; <code>with 语句</code>究竟有哪些好处？它有助于简化一些通用资源管理模式，抽象出其中的功能，将其分解并重用。</p>
-<p>&emsp;&emsp;若想充分的使用这个特性，比较好的办法是查看Python标准库的示例。内置的 <code>open()</code>函数就是一个很好的例子：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'hello.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	f.write(<span class="string">'hello, world!'</span>)</span><br></pre></td></tr></table></figure>
-<p>我们应该都知道打开文件的时候一般建议使用 <code>with 语句</code>，因为这样能确保打开的文件描述符在程序执行离开 <code>with语句</code> 的上下文后自动关闭。本质上来说，上面的代码示例可转换成下面这样：</p>
-        
-          <a class="article-more-a" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/#more">more >></a>
-        
-      
-
-      
-    </div>
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">with</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">上下文管理器</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1289,6 +1294,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RSS</a>
               </li>
             
             <div class="clearfix"></div>
