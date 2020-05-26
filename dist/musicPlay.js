@@ -11,7 +11,7 @@ const ap = new APlayer({
     mutex: true,//是否不允许多个播放器同时播放
     listFolded: true,//是否默认收起播放列表
     listMaxHeight: 90,//播放列表的高度
-    //lrcType: 3, //使用lrc文件提供歌词
+    lrcType: 3, //使用lrc文件提供歌词
 	//网易云默认外链链接：http://music.163.com/song/media/outer/url?id=ID数字.mp3
     audio: [
         {
