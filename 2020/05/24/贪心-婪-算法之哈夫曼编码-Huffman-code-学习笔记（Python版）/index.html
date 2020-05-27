@@ -5,13 +5,13 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://quanluo.github.io">
   <title>贪心(婪)算法之哈夫曼编码(Huffman code)学习笔记（Python版） | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="前言（可省略。）：哈夫曼编码可以很有效的压缩数据：通常可以节省 20%~90%的空间，具体压缩率依赖于数据的特性。我们将待压缩数据看做字符序列。根据每个字符的出现频率，哈夫曼贪心算法构造出字符的最优二进制表示。 假定我们希望压缩一个10个字符的数据文件。下表给出了文件中所出现的字符和它们的出现频率。也就是说，文件中只出现了6个不同字符，其中字符a出现了45 000次。|  | a |b |c |d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="贪心(婪)算法之哈夫曼编码(Huffman code)学习笔记（Python版）">
-<meta property="og:url" content="http://yoursite.com/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/index.html">
+<meta property="og:url" content="http://quanluo.github.io/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
 <meta property="og:description" content="前言（可省略。）：哈夫曼编码可以很有效的压缩数据：通常可以节省 20%~90%的空间，具体压缩率依赖于数据的特性。我们将待压缩数据看做字符序列。根据每个字符的出现频率，哈夫曼贪心算法构造出字符的最优二进制表示。 假定我们希望压缩一个10个字符的数据文件。下表给出了文件中所出现的字符和它们的出现频率。也就是说，文件中只出现了6个不同字符，其中字符a出现了45 000次。|  | a |b |c |d">
 <meta property="og:locale" content="en_US">
@@ -356,7 +356,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 

@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2020-05-26T12:07:34.704Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://quanluo.github.io/"/>
+  <updated>2020-05-27T05:05:47.222Z</updated>
+  <id>http://quanluo.github.io/</id>
   
   <author>
     <name>Quanluo</name>
@@ -17,9 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>test1</title>
+    <link href="http://quanluo.github.io/2020/05/27/test1/"/>
+    <id>http://quanluo.github.io/2020/05/27/test1/</id>
+    <published>2020-05-27T05:05:47.000Z</published>
+    <updated>2020-05-27T05:05:47.222Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Mailto links 在chrome不工作问题解决</title>
-    <link href="http://yoursite.com/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-    <id>http://yoursite.com/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</id>
+    <link href="http://quanluo.github.io/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <id>http://quanluo.github.io/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</id>
     <published>2020-05-26T11:54:44.000Z</published>
     <updated>2020-05-26T12:07:34.704Z</updated>
     
@@ -33,16 +48,16 @@
     
     
     
-      <category term="Mailto" scheme="http://yoursite.com/tags/Mailto/"/>
+      <category term="Mailto" scheme="http://quanluo.github.io/tags/Mailto/"/>
     
-      <category term="chrome" scheme="http://yoursite.com/tags/chrome/"/>
+      <category term="chrome" scheme="http://quanluo.github.io/tags/chrome/"/>
     
   </entry>
   
   <entry>
     <title>hexo+yilia添加RSS订阅功能</title>
-    <link href="http://yoursite.com/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/"/>
-    <id>http://yoursite.com/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/</id>
+    <link href="http://quanluo.github.io/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/"/>
+    <id>http://quanluo.github.io/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/</id>
     <published>2020-05-26T11:28:22.000Z</published>
     <updated>2020-05-26T11:48:05.109Z</updated>
     
@@ -56,16 +71,16 @@
     
     
     
-      <category term="yilia" scheme="http://yoursite.com/tags/yilia/"/>
+      <category term="yilia" scheme="http://quanluo.github.io/tags/yilia/"/>
     
-      <category term="RSS" scheme="http://yoursite.com/tags/RSS/"/>
+      <category term="RSS" scheme="http://quanluo.github.io/tags/RSS/"/>
     
   </entry>
   
   <entry>
     <title>我通过Python对自己的微信朋友圈进行了可视化分析得到了意想不到的答案</title>
-    <link href="http://yoursite.com/2020/05/25/%E6%88%91%E9%80%9A%E8%BF%87Python%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%BE%97%E5%88%B0%E4%BA%86%E6%84%8F%E6%83%B3%E4%B8%8D%E5%88%B0%E7%9A%84%E7%AD%94%E6%A1%88/"/>
-    <id>http://yoursite.com/2020/05/25/%E6%88%91%E9%80%9A%E8%BF%87Python%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%BE%97%E5%88%B0%E4%BA%86%E6%84%8F%E6%83%B3%E4%B8%8D%E5%88%B0%E7%9A%84%E7%AD%94%E6%A1%88/</id>
+    <link href="http://quanluo.github.io/2020/05/25/%E6%88%91%E9%80%9A%E8%BF%87Python%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%BE%97%E5%88%B0%E4%BA%86%E6%84%8F%E6%83%B3%E4%B8%8D%E5%88%B0%E7%9A%84%E7%AD%94%E6%A1%88/"/>
+    <id>http://quanluo.github.io/2020/05/25/%E6%88%91%E9%80%9A%E8%BF%87Python%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%BE%97%E5%88%B0%E4%BA%86%E6%84%8F%E6%83%B3%E4%B8%8D%E5%88%B0%E7%9A%84%E7%AD%94%E6%A1%88/</id>
     <published>2020-05-25T14:55:42.000Z</published>
     <updated>2020-05-25T15:14:45.873Z</updated>
     
@@ -82,16 +97,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="数据可视化" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+      <category term="数据可视化" scheme="http://quanluo.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>IndexError: list index out of range的错误分析</title>
-    <link href="http://yoursite.com/2020/05/25/IndexError-list-index-out-of-range%E7%9A%84%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/"/>
-    <id>http://yoursite.com/2020/05/25/IndexError-list-index-out-of-range%E7%9A%84%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/</id>
+    <link href="http://quanluo.github.io/2020/05/25/IndexError-list-index-out-of-range%E7%9A%84%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/"/>
+    <id>http://quanluo.github.io/2020/05/25/IndexError-list-index-out-of-range%E7%9A%84%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/</id>
     <published>2020-05-25T12:56:46.000Z</published>
     <updated>2020-05-25T12:57:31.574Z</updated>
     
@@ -109,16 +124,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
+      <category term="error" scheme="http://quanluo.github.io/tags/error/"/>
     
   </entry>
   
   <entry>
     <title>Java File学习笔记，文件批量更名</title>
-    <link href="http://yoursite.com/2020/05/25/Java-File%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%9B%B4%E5%90%8D/"/>
-    <id>http://yoursite.com/2020/05/25/Java-File%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%9B%B4%E5%90%8D/</id>
+    <link href="http://quanluo.github.io/2020/05/25/Java-File%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%9B%B4%E5%90%8D/"/>
+    <id>http://quanluo.github.io/2020/05/25/Java-File%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%9B%B4%E5%90%8D/</id>
     <published>2020-05-25T09:28:23.000Z</published>
     <updated>2020-05-25T09:31:38.536Z</updated>
     
@@ -133,16 +148,16 @@
     
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+      <category term="Java" scheme="http://quanluo.github.io/tags/Java/"/>
     
-      <category term="File操作" scheme="http://yoursite.com/tags/File%E6%93%8D%E4%BD%9C/"/>
+      <category term="File操作" scheme="http://quanluo.github.io/tags/File%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>初学python网络编程socket，并实现文件传输【含源代码】</title>
-    <link href="http://yoursite.com/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/"/>
-    <id>http://yoursite.com/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/</id>
+    <link href="http://quanluo.github.io/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/"/>
+    <id>http://quanluo.github.io/2020/05/24/%E5%88%9D%E5%AD%A6python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8Bsocket%EF%BC%8C%E5%B9%B6%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E3%80%90%E5%90%AB%E6%BA%90%E4%BB%A3%E7%A0%81%E3%80%91/</id>
     <published>2020-05-23T16:15:09.000Z</published>
     <updated>2020-05-23T16:16:04.924Z</updated>
     
@@ -159,16 +174,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="socket" scheme="http://yoursite.com/tags/socket/"/>
+      <category term="socket" scheme="http://quanluo.github.io/tags/socket/"/>
     
   </entry>
   
   <entry>
     <title>python可视化入门 plotly ，小白请进</title>
-    <link href="http://yoursite.com/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/"/>
-    <id>http://yoursite.com/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/</id>
+    <link href="http://quanluo.github.io/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/"/>
+    <id>http://quanluo.github.io/2020/05/24/python%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A5%E9%97%A8-plotly-%EF%BC%8C%E5%B0%8F%E7%99%BD%E8%AF%B7%E8%BF%9B/</id>
     <published>2020-05-23T16:13:54.000Z</published>
     <updated>2020-05-23T16:14:52.255Z</updated>
     
@@ -188,16 +203,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="plotly" scheme="http://yoursite.com/tags/plotly/"/>
+      <category term="plotly" scheme="http://quanluo.github.io/tags/plotly/"/>
     
   </entry>
   
   <entry>
     <title>对一个DataFrame的一个列进行映射，得出一个新列。学习笔记</title>
-    <link href="http://yoursite.com/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <link href="http://quanluo.github.io/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://quanluo.github.io/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2020-05-23T16:12:43.000Z</published>
     <updated>2020-05-23T16:13:32.495Z</updated>
     
@@ -211,18 +226,18 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="DaraFrame" scheme="http://yoursite.com/tags/DaraFrame/"/>
+      <category term="DaraFrame" scheme="http://quanluo.github.io/tags/DaraFrame/"/>
     
-      <category term="映射" scheme="http://yoursite.com/tags/%E6%98%A0%E5%B0%84/"/>
+      <category term="映射" scheme="http://quanluo.github.io/tags/%E6%98%A0%E5%B0%84/"/>
     
   </entry>
   
   <entry>
     <title>论Python导入模块的三种修养【干货】</title>
-    <link href="http://yoursite.com/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/"/>
-    <id>http://yoursite.com/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/</id>
+    <link href="http://quanluo.github.io/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/"/>
+    <id>http://quanluo.github.io/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/</id>
     <published>2020-05-23T16:11:32.000Z</published>
     <updated>2020-05-23T16:12:16.641Z</updated>
     
@@ -237,16 +252,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="python导入模块" scheme="http://yoursite.com/tags/python%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97/"/>
+      <category term="python导入模块" scheme="http://quanluo.github.io/tags/python%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97/"/>
     
   </entry>
   
   <entry>
     <title>scrapy实战----将数据存储到csv文件和MySQL数据库中</title>
-    <link href="http://yoursite.com/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/"/>
-    <id>http://yoursite.com/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/</id>
+    <link href="http://quanluo.github.io/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/"/>
+    <id>http://quanluo.github.io/2020/05/24/scrapy%E5%AE%9E%E6%88%98-%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%88%B0csv%E6%96%87%E4%BB%B6%E5%92%8CMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD/</id>
     <published>2020-05-23T16:10:24.000Z</published>
     <updated>2020-05-23T16:11:13.359Z</updated>
     
@@ -263,16 +278,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+      <category term="scrapy" scheme="http://quanluo.github.io/tags/scrapy/"/>
     
   </entry>
   
   <entry>
     <title>Python中的!r和!s的字符串格式区别</title>
-    <link href="http://yoursite.com/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/"/>
-    <id>http://yoursite.com/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/</id>
+    <link href="http://quanluo.github.io/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/"/>
+    <id>http://quanluo.github.io/2020/05/24/Python%E4%B8%AD%E7%9A%84-r-%E5%92%8C-s-%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%BA%E5%88%AB/</id>
     <published>2020-05-23T16:09:18.000Z</published>
     <updated>2020-05-23T17:02:34.663Z</updated>
     
@@ -289,16 +304,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="!s!r" scheme="http://yoursite.com/tags/s-r/"/>
+      <category term="!s!r" scheme="http://quanluo.github.io/tags/s-r/"/>
     
   </entry>
   
   <entry>
     <title>with语句还能这么用，你会吗?--with语句和上下文管理器</title>
-    <link href="http://yoursite.com/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/"/>
-    <id>http://yoursite.com/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/</id>
+    <link href="http://quanluo.github.io/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/"/>
+    <id>http://quanluo.github.io/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/</id>
     <published>2020-05-23T16:07:54.000Z</published>
     <updated>2020-05-23T16:08:58.970Z</updated>
     
@@ -316,18 +331,18 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="with" scheme="http://yoursite.com/tags/with/"/>
+      <category term="with" scheme="http://quanluo.github.io/tags/with/"/>
     
-      <category term="上下文管理器" scheme="http://yoursite.com/tags/%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/"/>
+      <category term="上下文管理器" scheme="http://quanluo.github.io/tags/%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>python，通过一行代码输出python和库的版本信息</title>
-    <link href="http://yoursite.com/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/"/>
-    <id>http://yoursite.com/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</id>
+    <link href="http://quanluo.github.io/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/"/>
+    <id>http://quanluo.github.io/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</id>
     <published>2020-05-23T16:06:49.000Z</published>
     <updated>2020-05-23T16:07:34.623Z</updated>
     
@@ -341,14 +356,14 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>一行代码让python的运行速度提高100倍</title>
-    <link href="http://yoursite.com/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/"/>
-    <id>http://yoursite.com/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/</id>
+    <link href="http://quanluo.github.io/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/"/>
+    <id>http://quanluo.github.io/2020/05/24/%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AE%A9python%E7%9A%84%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6%E6%8F%90%E9%AB%98100%E5%80%8D/</id>
     <published>2020-05-23T16:05:44.000Z</published>
     <updated>2020-05-23T16:06:19.090Z</updated>
     
@@ -366,14 +381,14 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>用python爬取qq好友的头像并都下载到本地</title>
-    <link href="http://yoursite.com/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/"/>
-    <id>http://yoursite.com/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/</id>
+    <link href="http://quanluo.github.io/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/"/>
+    <id>http://quanluo.github.io/2020/05/24/%E7%94%A8python%E7%88%AC%E5%8F%96qq%E5%A5%BD%E5%8F%8B%E7%9A%84%E5%A4%B4%E5%83%8F%E5%B9%B6%E9%83%BD%E4%B8%8B%E8%BD%BD%E5%88%B0%E6%9C%AC%E5%9C%B0/</id>
     <published>2020-05-23T16:04:50.000Z</published>
     <updated>2020-05-23T16:05:23.125Z</updated>
     
@@ -387,16 +402,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="spider" scheme="http://yoursite.com/tags/spider/"/>
+      <category term="spider" scheme="http://quanluo.github.io/tags/spider/"/>
     
   </entry>
   
   <entry>
     <title>学Python这么久了还不知道__init__(),__new__(),__del__()吗？这回彻底掌握它！</title>
-    <link href="http://yoursite.com/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/"/>
-    <id>http://yoursite.com/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/</id>
+    <link href="http://quanluo.github.io/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/"/>
+    <id>http://quanluo.github.io/2020/05/24/%E5%AD%A6Python%E8%BF%99%E4%B9%88%E4%B9%85%E4%BA%86%E8%BF%98%E4%B8%8D%E7%9F%A5%E9%81%93-init-new-del-%E5%90%97%EF%BC%9F%E8%BF%99%E5%9B%9E%E5%BD%BB%E5%BA%95%E6%8E%8C%E6%8F%A1%E5%AE%83%EF%BC%81/</id>
     <published>2020-05-23T16:03:53.000Z</published>
     <updated>2020-05-23T16:04:28.247Z</updated>
     
@@ -410,14 +425,14 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>贪心(婪)算法之哈夫曼编码(Huffman code)学习笔记（Python版）</title>
-    <link href="http://yoursite.com/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/"/>
-    <id>http://yoursite.com/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/</id>
+    <link href="http://quanluo.github.io/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/"/>
+    <id>http://quanluo.github.io/2020/05/24/%E8%B4%AA%E5%BF%83-%E5%A9%AA-%E7%AE%97%E6%B3%95%E4%B9%8B%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81-Huffman-code-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Python%E7%89%88%EF%BC%89/</id>
     <published>2020-05-23T16:02:35.000Z</published>
     <updated>2020-05-23T16:03:28.977Z</updated>
     
@@ -432,16 +447,16 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="Huffman code" scheme="http://yoursite.com/tags/Huffman-code/"/>
+      <category term="Huffman code" scheme="http://quanluo.github.io/tags/Huffman-code/"/>
     
   </entry>
   
   <entry>
     <title>Python之一行代码的终极姿势（干货！）</title>
-    <link href="http://yoursite.com/2020/05/24/Python%E4%B9%8B%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E7%9A%84%E7%BB%88%E6%9E%81%E5%A7%BF%E5%8A%BF%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/"/>
-    <id>http://yoursite.com/2020/05/24/Python%E4%B9%8B%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E7%9A%84%E7%BB%88%E6%9E%81%E5%A7%BF%E5%8A%BF%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/</id>
+    <link href="http://quanluo.github.io/2020/05/24/Python%E4%B9%8B%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E7%9A%84%E7%BB%88%E6%9E%81%E5%A7%BF%E5%8A%BF%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/"/>
+    <id>http://quanluo.github.io/2020/05/24/Python%E4%B9%8B%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E7%9A%84%E7%BB%88%E6%9E%81%E5%A7%BF%E5%8A%BF%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/</id>
     <published>2020-05-23T16:01:50.000Z</published>
     <updated>2020-05-23T16:02:15.987Z</updated>
     
@@ -457,14 +472,14 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python list 常用操作汇总（干货！）</title>
-    <link href="http://yoursite.com/2020/05/24/Python-list-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%B1%87%E6%80%BB%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/"/>
-    <id>http://yoursite.com/2020/05/24/Python-list-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%B1%87%E6%80%BB%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/</id>
+    <link href="http://quanluo.github.io/2020/05/24/Python-list-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%B1%87%E6%80%BB%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/"/>
+    <id>http://quanluo.github.io/2020/05/24/Python-list-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%B1%87%E6%80%BB%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/</id>
     <published>2020-05-23T16:00:36.000Z</published>
     <updated>2020-05-23T16:01:15.559Z</updated>
     
@@ -481,32 +496,9 @@
     
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
-      <category term="list" scheme="http://yoursite.com/tags/list/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python之Requests_html库入门篇（含实例：爬取51jobs网站python岗位信息 ）</title>
-    <link href="http://yoursite.com/2020/05/23/Python%E4%B9%8BRequests-html%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%88%E5%90%AB%E5%AE%9E%E4%BE%8B%EF%BC%9A%E7%88%AC%E5%8F%9651jobs%E7%BD%91%E7%AB%99python%E5%B2%97%E4%BD%8D%E4%BF%A1%E6%81%AF-%EF%BC%89/"/>
-    <id>http://yoursite.com/2020/05/23/Python%E4%B9%8BRequests-html%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%88%E5%90%AB%E5%AE%9E%E4%BE%8B%EF%BC%9A%E7%88%AC%E5%8F%9651jobs%E7%BD%91%E7%AB%99python%E5%B2%97%E4%BD%8D%E4%BF%A1%E6%81%AF-%EF%BC%89/</id>
-    <published>2020-05-23T15:58:45.000Z</published>
-    <updated>2020-05-23T16:00:03.791Z</updated>
-    
-    <content type="html"><![CDATA[<p>Python上有一个非常著名的HTTP库——requests，相比大家都听说过，用过的人都说好！现在requests库的作者又发布了一个新库，叫做requests-html，看名字也能猜出来，这是一个解析HTML的库，而且用起来和requests一样爽，下面就来介绍一下它。</p><a id="more"></a><p>@<a href="Requests_html库入门学习">TOC</a></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install requests_html</span><br></pre></td></tr></table></figure><p>如果还不会pip安装的请看我的这篇文章——&gt;<a href="https://blog.csdn.net/weixin_43347550/article/details/105185238" target="_blank" rel="noopener">pip 安装，更新，卸载，查看模块方法</a></p><p><font color=red>Note: requests-html只支持Python 3.6及更新的版本，所以使用老版本的Python的同学需要更新一下Python版本了。</font></p><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><h5 id="获取网页"><a href="#获取网页" class="headerlink" title="获取网页"></a>获取网页</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> requests_html <span class="keyword">import</span> HTMLSession</span><br><span class="line"></span><br><span class="line">session = HTMLSession()</span><br><span class="line">url = <span class="string">"https://search.51job.com/list/010000,000000,0000,00,9,99,python,2,1.html"</span></span><br><span class="line">h = session.get(url=url)</span><br><span class="line"><span class="comment">#查看网页内容</span></span><br><span class="line">print(h.html.html)</span><br></pre></td></tr></table></figure><p>requests-html和其他解析HTML库最大的不同点在于HTML解析库一般都是专用的，所以我们需要用另一个HTTP库先把网页下载下来，然后传给那些HTML解析库。<br>而requests-html自带了这个功能，所以在爬取网页等方面非常方便</p><h5 id="获取连接"><a href="#获取连接" class="headerlink" title="获取连接"></a>获取连接</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#相对路径</span></span><br><span class="line">print(h.html.links)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#绝对路径</span></span><br><span class="line">print(h.html.absolute_links)</span><br></pre></td></tr></table></figure><p>links和absolute_links两个属性分别返回HTML对象所包含的所有链接和绝对链接（均不包含锚点）。</p><h5 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h5><p>request-html支持CSS选择器和XPATH两种语法来选取HTML元素。<br>1、首先先来看看CSS选择器语法，它需要使用HTML的find函数，该函数有5个参数，作用如下：</p><ul><li>selector，要用的CSS选择器；</li><li>clean，布尔值，如果为真会忽略HTML中style和script标签造成的影响（原文是-sanitize，大概这么理解）;</li><li>containing，如果设置该属性，会返回包含该属性文本的标签；</li><li>first，布尔值，如果为真会返回第一个元素，否则会返回满足条件的元素列表；</li><li>_encoding，编码格式。<br>示例：<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#获取职业名称</span></span><br><span class="line">position = h.html.find(<span class="string">'#resultList &gt; div:nth-child(&#123;num&#125;) &gt; p &gt; span &gt; a'</span>.format(num=i), first=<span class="literal">True</span>).text</span><br><span class="line">print(position)</span><br></pre></td></tr></table></figure>输出结果为：<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python开发工程师</span><br></pre></td></tr></table></figure>2、XPATH语法，这需要另一个函数xpath的支持，它有4个参数如下：</li><li>selector，要用的XPATH选择器；</li><li>clean，布尔值，如果为真会忽略HTML中style和script标签造成的影响（原文是sanitize，大概这么理解）;</li><li>first，布尔值，如果为真会返回第一个元素，否则会返回满足条件的元素列表；</li><li>_encoding，编码格式。<br>示例：</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#获取职业名称</span></span><br><span class="line">position = h.html.xpath(<span class="string">'#resultList &gt; div:nth-child(&#123;num&#125;) &gt; p &gt; span &gt; a'</span>.format(num=i), first=<span class="literal">True</span>).text</span><br><span class="line">print(position)</span><br></pre></td></tr></table></figure><p>输出结果：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python开发工程师</span><br></pre></td></tr></table></figure><h5 id="元素内容"><a href="#元素内容" class="headerlink" title="元素内容"></a>元素内容</h5><p>要获取元素的attribute，用attr属性</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(h.attrs)</span><br></pre></td></tr></table></figure><p>获取元素的html代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(h.html)</span><br></pre></td></tr></table></figure><p>要搜索元素的文本内容，用search函数</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(e.search(<span class="string">'51j&#123;&#125;bs'</span>)[<span class="number">0</span>])</span><br><span class="line"><span class="comment">#输出：o</span></span><br></pre></td></tr></table></figure><p>两个链接属性</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(e.links)  <span class="comment"># 相对路径</span></span><br><span class="line">print(e.absolute_links) <span class="comment"># 绝对路径</span></span><br></pre></td></tr></table></figure><h3 id="实例-爬取51jobs网站有关Python工作的信息"><a href="#实例-爬取51jobs网站有关Python工作的信息" class="headerlink" title="实例 爬取51jobs网站有关Python工作的信息"></a>实例 爬取51jobs网站有关Python工作的信息</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> requests_html <span class="keyword">import</span> HTMLSession</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"></span><br><span class="line">session = HTMLSession()</span><br><span class="line"></span><br><span class="line">file = open(<span class="string">'51jobsinfo.csv'</span>, <span class="string">'w'</span>, newline=<span class="string">''</span>)</span><br><span class="line">csvwriter = csv.writer(file)</span><br><span class="line">csvwriter.writerow([<span class="string">'序号'</span>, <span class="string">'职位名称'</span>, <span class="string">'公司名'</span>, <span class="string">'地点'</span>, <span class="string">'薪资'</span>])</span><br><span class="line">num = <span class="number">1</span>  <span class="comment">#初始化抓取每条信息的序号</span></span><br><span class="line">cont = <span class="number">0</span> <span class="comment">#初始化抓取页数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_jobsinfo</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        h = session.get(url=url)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">'第&#123;&#125;页抓取失败共10页'</span>.format(cont))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">global</span> num</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>,<span class="number">54</span>):</span><br><span class="line">            <span class="comment">#i = int(i)</span></span><br><span class="line">            position = h.html.find(<span class="string">'#resultList &gt; div:nth-child(&#123;num&#125;) &gt; p &gt; span &gt; a'</span>.format(num=i), first=<span class="literal">True</span>).text</span><br><span class="line">            company = h.html.find(<span class="string">'#resultList &gt; div:nth-child(&#123;num&#125;) &gt; span.t2 &gt; a'</span>.format(num=i), first=<span class="literal">True</span>).text</span><br><span class="line">            place = h.html.find(<span class="string">'#resultList &gt; div:nth-child(&#123;num&#125;) &gt; span.t3'</span>.format(num=i), first=<span class="literal">True</span>).text</span><br><span class="line">            salary = h.html.find(<span class="string">'#resultList &gt; div:nth-child(&#123;num&#125;) &gt; span.t4'</span>.format(num=i), first=<span class="literal">True</span>).text</span><br><span class="line">            csvwriter.writerow([num, position, company, place, salary])</span><br><span class="line">            num += <span class="number">1</span></span><br><span class="line">        print(<span class="string">'第&#123;&#125;页抓取完毕共10页'</span>.format(cont))</span><br><span class="line">        </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line"><span class="comment">#设置抓取页数</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">11</span>):</span><br><span class="line">        <span class="keyword">global</span> cont</span><br><span class="line">        cont = i</span><br><span class="line">        url = <span class="string">'https://search.51job.com/list/010000,000000,0000,00,9,99,python,2,'</span> + str(i) + <span class="string">'.html'</span></span><br><span class="line">        get_jobsinfo(url)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">'开始抓取...'</span>)</span><br><span class="line">    main()</span><br><span class="line">    print(<span class="string">'抓取完毕！共&#123;&#125;条信息。'</span>.format(num<span class="number">-1</span>))</span><br><span class="line">    file.close()</span><br></pre></td></tr></table></figure><p>输出结果（由于信息的太多只展示部分）：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">序号,职位名称,公司名,地点,薪资</span><br><span class="line"><span class="number">1</span>,Python开发工程师,北京泽塔云科技股份有限公司,北京-朝阳区,<span class="number">1</span><span class="number">-2</span>万/月</span><br><span class="line"><span class="number">2</span>,EB/JAVA/Python软件研发工程师,中国科学院软件研究所,北京-海淀区,<span class="number">10</span><span class="number">-15</span>万/年</span><br><span class="line"><span class="number">3</span>,Python中级开发工程师,深圳市赢时胜信息技术股份有限公司...,北京-西城区,<span class="number">1</span><span class="number">-1.2</span>万/月</span><br><span class="line"><span class="number">4</span>,Python/PHP开发工程师,北京华脉世纪石油科技有限公司,北京,<span class="number">0.8</span><span class="number">-1</span>万/月</span><br><span class="line"><span class="number">5</span>,Python高级开发工程师,北京文泽智远信息技术有限公司,北京-海淀区,<span class="number">1.5</span><span class="number">-2</span>万/月</span><br><span class="line"><span class="number">6</span>,爬虫工程师（Java或Python）,北京三六九数动科技有限公司,北京,<span class="number">2.5</span><span class="number">-3</span>万/月</span><br><span class="line"><span class="number">7</span>,Python 工程师,北京友聚四海网络科技有限公司,北京-朝阳区,<span class="number">1</span><span class="number">-1.5</span>万/月</span><br><span class="line"><span class="number">8</span>,Python开发工程师-财务报表平台,字节跳动,北京,<span class="number">2</span><span class="number">-4</span>万/月</span><br><span class="line"><span class="number">9</span>,python开发,深圳市捷兴电子商务有限公司,北京-朝阳区,<span class="number">2</span><span class="number">-3</span>万/月</span><br></pre></td></tr></table></figure><hr><p><font color=red>Note: 如果频繁访问爬取的网页有可能会面临着ip被封，可以适当的使用代理ip来防止自己的ip被封，详细使用请参考我的这篇文章——&gt; <a href="https://blog.csdn.net/weixin_43347550/article/details/105380469" target="_blank" rel="noopener">都什么时代了还在裸爬吗，快用IP代理池吧！</a></font></p><h3 id="requests-html官方链接"><a href="#requests-html官方链接" class="headerlink" title="requests_html官方链接"></a>requests_html官方链接</h3><p>(<a href="https://requests-html.kennethreitz.org/" target="_blank" rel="noopener">https://requests-html.kennethreitz.org/</a>)</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Python上有一个非常著名的HTTP库——requests，相比大家都听说过，用过的人都说好！现在requests库的作者又发布了一个新库，叫做requests-html，看名字也能猜出来，这是一个解析HTML的库，而且用起来和requests一样爽，下面就来介绍一下它。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-      <category term="Requests_html" scheme="http://yoursite.com/tags/Requests-html/"/>
+      <category term="list" scheme="http://quanluo.github.io/tags/list/"/>
     
   </entry>
   

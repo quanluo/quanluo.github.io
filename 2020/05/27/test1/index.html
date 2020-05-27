@@ -6,23 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://quanluo.github.io">
-  <title>Python 数据可视化生成词云 WordCloud | Quanluo&#39;s blog</title>
+  <title>test1 | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="演示：不罗嗦，直接先上代码。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Python 数据可视化生成词云 WordCloud">
-<meta property="og:url" content="http://quanluo.github.io/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="test1">
+<meta property="og:url" content="http://quanluo.github.io/2020/05/27/test1/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
-<meta property="og:description" content="演示：不罗嗦，直接先上代码。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200414104754800.gif#pic_center">
-<meta property="article:published_time" content="2020-05-23T15:57:32.000Z">
-<meta property="article:modified_time" content="2020-05-23T15:58:23.784Z">
+<meta property="article:published_time" content="2020-05-27T05:05:47.000Z">
+<meta property="article:modified_time" content="2020-05-27T05:05:47.222Z">
 <meta property="article:author" content="Quanluo">
-<meta property="article:tag" content="Python">
-<meta property="article:tag" content="wordcloud">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="html">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200414104754800.gif#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
   
@@ -190,20 +186,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python-数据可视化生成词云-WordCloud" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-test1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python 数据可视化生成词云 WordCloud
+      test1
     </h1>
   
 
         
-        <a href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/" class="archive-article-date">
-  	<time datetime="2020-05-23T15:57:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
+        <a href="/2020/05/27/test1/" class="archive-article-date">
+  	<time datetime="2020-05-27T05:05:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-27</time>
 </a>
 
         <!-- 不蒜子统计 -->
@@ -216,14 +212,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>演示：<br><img src="https://img-blog.csdnimg.cn/20200414104754800.gif#pic_center" alt="在这里插入图片描述"><br>不罗嗦，直接先上代码。</p>
-<a id="more"></a>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> wordcloud <span class="keyword">import</span> WordCloud</span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">path = <span class="string">r'E:\123\教程'</span>  <span class="comment">#文本路径</span></span><br><span class="line">path_ph = <span class="string">r'E:\123\教程'</span>   <span class="comment">#词云背景模板路径</span></span><br><span class="line">font = <span class="string">r'C:\Windows\Fonts\FZSTK.TTF'</span>  <span class="comment">#设置字体，可以显示中文。</span></span><br><span class="line"></span><br><span class="line">text = (open(path + <span class="string">r'\job.txt'</span>, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>)).read()   <span class="comment"># gbk &lt;--&gt; utf-8</span></span><br><span class="line">cut = jieba.cut(text)  <span class="comment"># 使用 jieba库 分词</span></span><br><span class="line">string = <span class="string">' '</span>.join(cut)</span><br><span class="line">print(len(string))  <span class="comment"># 输出词量</span></span><br><span class="line">img = Image.open(path_ph + <span class="string">r'\2.jpg'</span>)  <span class="comment"># 打开图片</span></span><br><span class="line">img_array = np.array(img)  <span class="comment"># 将图片装换为数组</span></span><br><span class="line">stopword = [<span class="string">'Unword'</span>]  <span class="comment"># 设置停止词，也就是你不想显示的词，可有可无，看情况处理</span></span><br><span class="line">wc = WordCloud(</span><br><span class="line">    background_color=<span class="string">'white'</span>,  <span class="comment">#设置显示内容在什么颜色内</span></span><br><span class="line">    width=<span class="number">1000</span>,    <span class="comment">#设置图片宽</span></span><br><span class="line">    height=<span class="number">800</span>,     <span class="comment">#设置图片高</span></span><br><span class="line">    mask=img_array,  <span class="comment">#设置词云背景模板</span></span><br><span class="line">    font_path=font,  <span class="comment">#设置字体路径</span></span><br><span class="line">    stopwords=stopword,</span><br><span class="line">    scale=<span class="number">10</span>  <span class="comment">#图像清晰度，数值越大越清晰，最好在10-30之间。</span></span><br><span class="line">)</span><br><span class="line">wc.generate_from_text(string)  <span class="comment"># 绘制图片</span></span><br><span class="line">plt.imshow(wc)</span><br><span class="line">plt.axis(<span class="string">'off'</span>) <span class="comment">#关闭坐标轴</span></span><br><span class="line">plt.show()  <span class="comment"># 显示图片</span></span><br><span class="line">wc.to_file(path + <span class="string">r'\wordcloud1.png'</span>)  <span class="comment"># 保存图片</span></span><br></pre></td></tr></table></figure>
-
-<p>使用之前需要将需要的第三方库先下载安装完。（wordcloud、jieba、matplotlib、PIL、numpy）<br>可以通过pip安装。<br>如果还不会的可以看我的另一个文章———&gt;<a href="https://blog.csdn.net/weixin_43347550/article/details/105185238" target="_blank" rel="noopener">pip 安装，更新，卸载，查看模块方法</a></p>
-<p><font color=red>Note：有时候你们生成的词云可能不清晰，是因为没有设置 scale 值 ，设置完后会让生成的词云图像变得清晰。</font></p>
-
+        
       
 
       
@@ -269,21 +258,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">wordcloud</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -334,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/05/27/test1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -348,18 +322,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/05/23/Python%E4%B9%8BRequests-html%E5%BA%93%E5%85%A5%E9%97%A8%E7%AF%87%EF%BC%88%E5%90%AB%E5%AE%9E%E4%BE%8B%EF%BC%9A%E7%88%AC%E5%8F%9651jobs%E7%BD%91%E7%AB%99python%E5%B2%97%E4%BD%8D%E4%BF%A1%E6%81%AF-%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python之Requests_html库入门篇（含实例：爬取51jobs网站python岗位信息 ）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/05/23/Python%E4%B9%8B%E5%BD%BB%E5%BA%95%E5%AD%A6%E4%BC%9A%E5%AD%97%E5%85%B8%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python之彻底学会字典（干货！）</div>
+    <a href="/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mailto links 在chrome不工作问题解决</div>
       <i class="icon-circle-right"></i>
     </a>
   
