@@ -6,24 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://quanluo.github.io">
-  <title>Python之将py文件(一个或多个)打包成exe可执行文件----pyinstaller | Quanluo&#39;s blog</title>
+  <title>实现简单的文件传输功能下:服务器端 | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python之将py文件(一个或多个)打包成exe可执行文件—-pyinstaller一、首先，先安装pyinstallerwin+R,输入cmd，回车进入后输入pip install pyinstaller注：我是因为安装完了pyinstaller所以会出现这样的情况，正常安装情况时需要等待的。">
+  <meta name="description" content="通过 socket 简单实现了文件传输功能下，服务器篇">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python之将py文件(一个或多个)打包成exe可执行文件----pyinstaller">
-<meta property="og:url" content="http://quanluo.github.io/2020/05/23/Python%E4%B9%8B%E5%B0%86py%E6%96%87%E4%BB%B6-%E4%B8%80%E4%B8%AA%E6%88%96%E5%A4%9A%E4%B8%AA-%E6%89%93%E5%8C%85%E6%88%90exe%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6-pyinstaller/index.html">
+<meta property="og:title" content="实现简单的文件传输功能下:服务器端">
+<meta property="og:url" content="http://quanluo.github.io/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8B-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
-<meta property="og:description" content="Python之将py文件(一个或多个)打包成exe可执行文件—-pyinstaller一、首先，先安装pyinstallerwin+R,输入cmd，回车进入后输入pip install pyinstaller注：我是因为安装完了pyinstaller所以会出现这样的情况，正常安装情况时需要等待的。">
+<meta property="og:description" content="通过 socket 简单实现了文件传输功能下，服务器篇">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200406154538630.gif#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200406161418371.gif#pic_center">
-<meta property="article:published_time" content="2020-05-23T15:52:08.000Z">
-<meta property="article:modified_time" content="2020-05-23T15:52:58.679Z">
+<meta property="article:published_time" content="2020-05-28T04:41:35.000Z">
+<meta property="article:modified_time" content="2020-05-28T04:56:27.364Z">
 <meta property="article:author" content="Quanluo">
-<meta property="article:tag" content="Python">
-<meta property="article:tag" content="pyinstaller">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="socket">
+<meta property="article:tag" content="fileupload">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200406154538630.gif#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
   
@@ -197,20 +195,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python之将py文件-一个或多个-打包成exe可执行文件-pyinstaller" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-实现简单的文件传输功能下-服务器端" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python之将py文件(一个或多个)打包成exe可执行文件----pyinstaller
+      实现简单的文件传输功能下:服务器端
     </h1>
   
 
         
-        <a href="/2020/05/23/Python%E4%B9%8B%E5%B0%86py%E6%96%87%E4%BB%B6-%E4%B8%80%E4%B8%AA%E6%88%96%E5%A4%9A%E4%B8%AA-%E6%89%93%E5%8C%85%E6%88%90exe%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6-pyinstaller/" class="archive-article-date">
-  	<time datetime="2020-05-23T15:52:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
+        <a href="/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8B-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/" class="archive-article-date">
+  	<time datetime="2020-05-28T04:41:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-28</time>
 </a>
 
         <!-- 不蒜子统计 -->
@@ -223,16 +221,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Python之将py文件-一个或多个-打包成exe可执行文件—-pyinstaller"><a href="#Python之将py文件-一个或多个-打包成exe可执行文件—-pyinstaller" class="headerlink" title="Python之将py文件(一个或多个)打包成exe可执行文件—-pyinstaller"></a>Python之将py文件(一个或多个)打包成exe可执行文件—-pyinstaller</h1><h2 id="一、首先，先安装pyinstaller"><a href="#一、首先，先安装pyinstaller" class="headerlink" title="一、首先，先安装pyinstaller"></a>一、首先，先安装pyinstaller</h2><h3 id="win-R-输入cmd，回车进入后输入pip-install-pyinstaller"><a href="#win-R-输入cmd，回车进入后输入pip-install-pyinstaller" class="headerlink" title="win+R,输入cmd，回车进入后输入pip install pyinstaller"></a><font color=red>win+R,输入cmd，回车进入后输入pip install pyinstaller</font></h3><p><img src="https://img-blog.csdnimg.cn/20200406154538630.gif#pic_center" alt="在这里插入图片描述"><br>注：我是因为安装完了pyinstaller所以会出现这样的情况，正常安装情况时需要等待的。</p>
+        <p>通过 socket 简单实现了文件传输功能下，服务器篇</p>
 <a id="more"></a>
+<h4 id="服务端代码-server-java"><a href="#服务端代码-server-java" class="headerlink" title="服务端代码  server.java"></a>服务端代码  server.java</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br></pre></td><td class="code"><pre><span class="line">package files_upload;</span><br><span class="line"></span><br><span class="line">import java.io.DataInputStream;</span><br><span class="line">import java.io.File;</span><br><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.FileOutputStream;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.io.PrintStream;</span><br><span class="line">import java.net.ServerSocket;</span><br><span class="line">import java.net.Socket;</span><br><span class="line">import java.util.Properties;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line"> * 服务器端：读取客户端发送的文件</span><br><span class="line"> * </span><br><span class="line"> * @author quanluo</span><br><span class="line"> *</span><br><span class="line"> *&#x2F;</span><br><span class="line">public class TaskFileServer &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) throws Exception &#123;</span><br><span class="line">		System.out.println(&quot;Server&quot;);</span><br><span class="line">		&#x2F;&#x2F; 1. 创建服务器</span><br><span class="line">		ServerSocket server &#x3D; new ServerSocket(18888);</span><br><span class="line"></span><br><span class="line">		while (true) &#123;</span><br><span class="line">			&#x2F;&#x2F; 2. 建立连接，每获取一个客户端就开启一个线程</span><br><span class="line">			Socket client &#x3D; server.accept();</span><br><span class="line">			System.out.println(&quot;客户端已连接&quot;);</span><br><span class="line">			new Thread(new TaskFileThread(client)).start();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class TaskFileThread implements Runnable &#123;</span><br><span class="line">	private Socket client;</span><br><span class="line">	private static Properties prop;</span><br><span class="line">	</span><br><span class="line">	static &#123;</span><br><span class="line">		&#x2F;&#x2F; 从配置文件中读取dirSave，初始化DIR_SAVE</span><br><span class="line">		prop &#x3D; new Properties();</span><br><span class="line">		try &#123;</span><br><span class="line">			prop.load(new InputStreamReader(new FileInputStream(&quot;C:\\Users\\Administrator\\Desktop\\fileServer.properties&quot;), &quot;GBK&quot;));</span><br><span class="line"></span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public final String DIR_SAVE &#x3D; prop.getProperty(&quot;dirSave&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	public TaskFileThread(Socket client) &#123;</span><br><span class="line">		this.client &#x3D; client;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		FileOutputStream fos &#x3D; null;</span><br><span class="line">		try &#123;</span><br><span class="line">			&#x2F;&#x2F; 将 client 的输入流包装为DataInputStream，用于接收客户端发送的文件名与文件</span><br><span class="line">			DataInputStream dis &#x3D; new DataInputStream(client.getInputStream());</span><br><span class="line">			PrintStream printer &#x3D; new PrintStream(client.getOutputStream());</span><br><span class="line">			</span><br><span class="line">			&#x2F;&#x2F; 读取文件名</span><br><span class="line">			String filename &#x3D; dis.readUTF();</span><br><span class="line">			</span><br><span class="line">			&#x2F;&#x2F; 调用getSaveFile()方法得到文件对象</span><br><span class="line">			File file &#x3D; getSaveFile(filename);</span><br><span class="line">			</span><br><span class="line">			&#x2F;&#x2F; 创建在服务器上写文件的FileOutputStream对象</span><br><span class="line">			fos &#x3D; new FileOutputStream(file);</span><br><span class="line"></span><br><span class="line">			&#x2F;&#x2F; 定义缓冲区,边读边写</span><br><span class="line">			byte[] buffer &#x3D; new byte[1024]; &#x2F;&#x2F; 1kb</span><br><span class="line">			int count &#x3D; 0; &#x2F;&#x2F; 统计文件大小</span><br><span class="line">			int length &#x3D; -1; &#x2F;&#x2F; 文件读取标识</span><br><span class="line"></span><br><span class="line">			&#x2F;&#x2F; 读取输入流中的数据</span><br><span class="line">			while ((length &#x3D; dis.read(buffer)) !&#x3D; -1) &#123;</span><br><span class="line">				&#x2F;&#x2F; 写入文件中</span><br><span class="line">				fos.write(buffer, 0, length);</span><br><span class="line">				count +&#x3D; length; &#x2F;&#x2F; 统计数据长度</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			fos.close();</span><br><span class="line">			</span><br><span class="line">			&#x2F;&#x2F; 打印流用于向客户端发送信息</span><br><span class="line">			int fileSize &#x3D; count&#x2F;1024; &#x2F;&#x2F; 文件大小，单位 KB			</span><br><span class="line">			printer.println(filename + &quot;&#x3D;&#x3D;&#x3D;上传成功：&quot; + fileSize + &quot;KB&quot;);</span><br><span class="line">			printer.flush();</span><br><span class="line">			</span><br><span class="line">			&#x2F;&#x2F; 显示接收到的文件的相关信息</span><br><span class="line">			System.out.println(client.getLocalAddress().getHostAddress()+&quot;上传文件&#x3D;&#x3D;&gt;&quot; + filename + &quot;--&quot; + fileSize + &quot;KB&quot;);</span><br><span class="line">			</span><br><span class="line">&#x2F;&#x2F;			&#x2F;&#x2F; 关闭</span><br><span class="line">&#x2F;&#x2F;			client.close();</span><br><span class="line">			</span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	&#x2F;**</span><br><span class="line">	 * 保存客户端上传的文件</span><br><span class="line">	 * </span><br><span class="line">	 * @param filename 文件名</span><br><span class="line">	 * @return 文件路径</span><br><span class="line">	 *&#x2F;</span><br><span class="line">	private File getSaveFile(String filename) &#123;</span><br><span class="line">		String name, suffix;&#x2F;&#x2F; suffix：包含后缀的.</span><br><span class="line">		&#x2F;&#x2F; 1. 查找文件名中最后一个.的位置，并以此拆分文件名与后缀</span><br><span class="line">		int index &#x3D; filename.indexOf(&quot;.&quot;);</span><br><span class="line">		</span><br><span class="line">		name &#x3D; filename.substring(0, index);</span><br><span class="line">		suffix &#x3D; filename.substring(index);</span><br><span class="line">		</span><br><span class="line">		&#x2F;&#x2F; 2. 保存文件的目录</span><br><span class="line">		&#x2F;&#x2F; 创建保存上传文件的目录对象</span><br><span class="line">		File dirSave &#x3D; new File(DIR_SAVE);</span><br><span class="line">		</span><br><span class="line">		&#x2F;&#x2F; 确保目录已存在</span><br><span class="line">		if (!dirSave.exists()) &#123;</span><br><span class="line">			dirSave.mkdirs();</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		&#x2F;&#x2F; 3. 得到可用的文件名</span><br><span class="line">		&#x2F;&#x2F; 在服务器上用客户端上传的文件名保存文件</span><br><span class="line">		File file &#x3D; new File(dirSave, filename);</span><br><span class="line">		</span><br><span class="line">		&#x2F;&#x2F; 循环判断，如果已经有同名文件，则加上(1)、(2)……，即加上(n)，但后缀名保持不变</span><br><span class="line">		int count &#x3D; 1;</span><br><span class="line">		</span><br><span class="line">		while (file.exists()) &#123;</span><br><span class="line">			filename &#x3D; String.format(&quot;%s(%d)%s&quot;, name, count++, suffix);</span><br><span class="line">			file &#x3D; new File(dirSave,filename);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		return file;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="配置文件-fileServer-properties"><a href="#配置文件-fileServer-properties" class="headerlink" title="配置文件 fileServer.properties"></a>配置文件 fileServer.properties</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dirSave&#x3D;C:\\Users\\Administrator\\Desktop\\temp</span><br></pre></td></tr></table></figure>
 
-<h2 id="二、使用pyinstaller进行打包"><a href="#二、使用pyinstaller进行打包" class="headerlink" title="二、使用pyinstaller进行打包"></a>二、使用pyinstaller进行打包</h2><h3 id="命令格式："><a href="#命令格式：" class="headerlink" title="命令格式："></a>命令格式：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller [主文件] -p [其他文件<span class="number">1</span>] -p [其他文件<span class="number">2</span>] -p [其他文件<span class="number">3</span>] --hidden-<span class="keyword">import</span> [自建模块<span class="number">1</span>] --hidden-<span class="keyword">import</span> [自建模块<span class="number">2</span>] --hidden-<span class="keyword">import</span> [自建模块<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<p><font color=red>注：要是只有一个py文件，生成单独的exe文件，可以直接如下命令格式</font></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -F [单个py文件]</span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller main.py -p hello.py -p other.py --hidden-<span class="keyword">import</span> hello --hidden-<span class="keyword">import</span> other</span><br></pre></td></tr></table></figure>
-<h3 id="步骤1-选定需要打包的装py文件的文件夹，2-Shift-鼠标右键打开Windows-PowerShell窗口，3-输入pyinstaller命令。"><a href="#步骤1-选定需要打包的装py文件的文件夹，2-Shift-鼠标右键打开Windows-PowerShell窗口，3-输入pyinstaller命令。" class="headerlink" title="步骤1.选定需要打包的装py文件的文件夹，2.Shift+鼠标右键打开Windows PowerShell窗口，3.输入pyinstaller命令。"></a>步骤1.选定需要打包的装py文件的文件夹，2.Shift+鼠标右键打开Windows PowerShell窗口，3.输入pyinstaller命令。</h3><p><img src="https://img-blog.csdnimg.cn/20200406161418371.gif#pic_center" alt="在这里插入图片描述"><br>然后会在目录下生成build文件夹，dist文件夹和main.spec文件<br><font color=red>生成的文件在根目录下。可执行文件可以在‘根目录\dist\main\’下找到生成的main.exe。注：需要的其他依赖文件(如：xlsx、docx等)需要拷贝进入到‘程序根目录\dist\main\’下，即可运行。</font></p>
+<p><font color=red>注意： 服务器需要开启相应端口的权限，不然会被拦住，无法实现文件传输</font></p>
 
       
 
@@ -284,11 +278,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">pyinstaller</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">socket</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">fileupload</a>
         		</li>
       		
 		</ul>
@@ -344,7 +342,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/05/23/Python%E4%B9%8B%E5%B0%86py%E6%96%87%E4%BB%B6-%E4%B8%80%E4%B8%AA%E6%88%96%E5%A4%9A%E4%B8%AA-%E6%89%93%E5%8C%85%E6%88%90exe%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6-pyinstaller/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8B-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -358,18 +356,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/05/23/%E9%83%BD%E4%BB%80%E4%B9%88%E6%97%B6%E4%BB%A3%E4%BA%86%E8%BF%98%E5%9C%A8%E8%A3%B8%E7%88%AC%E5%90%97%EF%BC%8C%E5%BF%AB%E7%94%A8IP%E4%BB%A3%E7%90%86%E6%B1%A0%E5%90%A7%EF%BC%81/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          都什么时代了还在裸爬吗，快用IP代理池吧！
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/05/23/Python3-File-%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93-%E8%B6%85%E8%AF%A6%E7%BB%86%EF%BC%81/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python3 File 方法总结 (超详细！)</div>
+    <a href="/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8A-%E5%AE%A2%E6%88%B7%E7%AB%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">实现简单的文件传输功能上:客户端</div>
       <i class="icon-circle-right"></i>
     </a>
   
