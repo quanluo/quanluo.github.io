@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://quanluo.github.io">
-  <title>Archives: 2020 | Quanluo&#39;s blog</title>
+  <title>操作系统知识点总结（三） | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Quanluo&#39;s blog">
-<meta property="og:url" content="http://quanluo.github.io/archives/2020/index.html">
+  <meta name="description" content="操作系统复习，知识点总结6.磁盘与文件系统7.操作系统接口">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作系统知识点总结（三）">
+<meta property="og:url" content="http://quanluo.github.io/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
+<meta property="og:description" content="操作系统复习，知识点总结6.磁盘与文件系统7.操作系统接口">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-05T07:33:28.000Z">
+<meta property="article:modified_time" content="2020-06-05T07:36:44.359Z">
 <meta property="article:author" content="Quanluo">
+<meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
@@ -188,37 +193,109 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-操作系统知识点总结（三）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      操作系统知识点总结（三）
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
+
+        
+        <a href="/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
   	<time datetime="2020-06-05T07:33:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-05</time>
 </a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/">操作系统知识点总结（三）</a>
-    </h1>
-  
+        <!-- 不蒜子统计 -->
+        <span class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-        <div class="article-info info-on-right">
-          
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>操作系统复习，知识点总结<br>6.磁盘与文件系统<br>7.操作系统接口</p>
+<a id="more"></a>
+<p>上一篇文章——&gt;<a href="https://quanluo.github.io/2020/06/02/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/">操作系统知识点总结（一）</a><br>上一篇文章——&gt;<a href="https://quanluo.github.io/2020/06/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%BA%8C%EF%BC%89/">操作系统知识点总结（二）</a></p>
+<h3 id="6-磁盘与文件系统"><a href="#6-磁盘与文件系统" class="headerlink" title="6.磁盘与文件系统"></a>6.磁盘与文件系统</h3><h4 id="1-磁盘的结构和基本概念"><a href="#1-磁盘的结构和基本概念" class="headerlink" title="(1)磁盘的结构和基本概念"></a>(1)磁盘的结构和基本概念</h4><p>磁盘设备包括多或一个个物理盘片，每个磁盘片分为一个或两个储存面。每个磁盘被组织成 若干个同心环，称为磁道。每个磁道从逻辑上划分为多个扇区(通常为 512B)，一个扇区称 为一个盘块(数据块)，各个扇区之间保留一定的间隙。<br>磁盘地址:柱面号-盘面号-扇区号<br>磁盘访问时间包括三部分:寻道时间，旋转延迟时间，传输时间。<br><strong>1)寻道时间</strong>:把磁头移动到指定磁道上的时间。是移动磁臂时间 s 与磁头移动 n 条磁道所 花费时间之和。T=m<em>n+s<br>*</em>2)旋转延迟时间<strong>:指扇区移动到磁头下面所经历的时间。T=1/2r,r 为磁盘旋转速度<br>**3)传输时间</strong>:把数据从磁盘读入或写入磁盘所经历的时间，T=b/rN，b 为每次所读的字节 数，N 为一个磁道上的字节数。</p>
+<h4 id="2-磁盘的调度"><a href="#2-磁盘的调度" class="headerlink" title="(2)磁盘的调度"></a>(2)磁盘的调度</h4><p>调度算法直接决定寻找时间，从而决定总的存取时间。<br>常用的磁盘调度算法:<br><strong>1)先来先服务(FCFS)<br>2)最短寻找时间优先(SSTF)<br>3)扫描算法(SCAN)<br>4)循环扫描算法(C-SCAN)</strong></p>
+<h4 id="3-磁盘的性能改善和容错"><a href="#3-磁盘的性能改善和容错" class="headerlink" title="(3)磁盘的性能改善和容错"></a>(3)磁盘的性能改善和容错</h4><p>提高磁盘 IO 速度的主要技术是采用磁盘高速缓存，利用内存中的存储空间来暂存从磁盘读 出一系列盘块中的信息。<br>数据交付方式有数据交付和指针交付。<br>置换算法:。。。不少系统在设计其高速缓存的置换算法时，除了考虑最近最久未使用，还考 虑以下几点:<br>1)访问频率<br>2)可预见性<br>3)数据一致性</p>
+<p>提高 IO 速度的其他方法:<br>1)提前度<br>2)延迟写<br>3)优化物理块分布<br>4)虚拟盘 </p>
+<p>容错技术:廉价磁盘冗余阵列 RAID(除了 0 级以外)，RAID 的优点:<br>1)可靠性高<br>2)磁 盘 IO 速度高<br>3)性价比高</p>
+<h4 id="4-外存分配方法与物理文件组织"><a href="#4-外存分配方法与物理文件组织" class="headerlink" title="(4)外存分配方法与物理文件组织"></a>(4)外存分配方法与物理文件组织</h4><p>文件的物理结构又称文件的存储结构，是指文件在外存上的存储组织形式，不仅与存储介质 的存储性能有关，而且与采用的外存分配方式有关。<br>外存分配方法:连续分配、连接分配、索引分配<br><strong>1)连续分配</strong>:要求为每个文件分配一组相邻的盘块。一组盘块的地址定义了定义了磁盘上 一段线性地址。这样形成的文件结构是顺序文件结构，此时的物理文件称为顺序文件。<br>优点:顺序访问容易、顺序访问速度快。<br>缺点:要求有连续的存储空间、必须事先知道文件 长度。<br><strong>2)链接分配</strong>:通过每个盘快上的链接指针，将同属于一个文件的离散盘块链接成一个链表，这样形成的物理文件称为链接文件。<br>优点:消除了外部碎片，显著提高了外存利用率;当文件动态增长时，可动态的在为他分配 盘块，故无需实现知道文件大小;此外，对文件的增删改也很方便。<br>有两种方式:<br>1)显式链接<br>2)隐式链接 </p>
+<p><strong>1)隐式链接</strong>:在文件目录的每个目录项中，都需要含有指向链接文件的第一个盘块和最后 一个盘块，每个盘块中含有指向下一个盘块的指针。<br><strong>主要问题</strong>:只适合于顺序访问，对于随机访问及其低效，其次只通过一大批指针把离散的盘 块链接起来，可靠性差，只要任何一个盘块的指针出现问题，都将会导致整条链断裂。 为了提高检索速度和减少指针所占用的存储空间，可以将几个盘块组成一个簇，在盘块分配 时，以簇为单位。这样会成倍的减少超找指定块的时间。<br><strong>2)显式链接</strong>:把用于链接文件各个物理块的指针，显式的存放在内存的一张链接表中。该 表在整个磁盘仅设置一张。由于查找记录是在内存中进行的，不仅显著的提高了检索的速度， 而且大大减少了访问磁盘的次数，该表也成为文件分配表(FAT)。 </p>
+<p><strong>3)索引分配</strong>:链接分配的缺点:<br>1)不支持高效的直接存取<br>2)FAT 占用较大的内存空间。 </p>
+<p>索引分配(文件的物理组织结构是 索引式文件机构)为每个文件分配一个索引块(表)， 再把分配给该文件的所有盘块号都记录在该索引块中，因而该索引块就是一个含有多个盘块 号的数组。在建立一个文件时，只需在为其建立的目录项中填上指向该索引块的指针。<br>索引分配优点:支持直接访问，当要读第 i 个盘块时，可以直接从索引块中找到第 i 个盘块 的盘块号。此外，索引分配不会产生外部碎片。文件较大时，索引优于链接。 索引分配的主要问题:可能会花费较多的外存空间。<br>多级索引<br>混合索引。</p>
+<h4 id="5-文件存储空间的管理"><a href="#5-文件存储空间的管理" class="headerlink" title="(5)文件存储空间的管理"></a>(5)文件存储空间的管理</h4><p>储存空间的基本分配单位是磁盘块而非字节。管理包括对空闲块的组织，分配和回收。<br><strong>1)空闲表法</strong>:属于连续分配方式，系统为外存上所有的空闲区建立一张空闲表。<br>存储 空间的分配:同样采取首次适应算法，循环首次适应算法等，回收时，也类似于内存回收的 方法，即要考虑回收区是否与空闲表中插入点的前区和后区相临接，对相临接者予以合并。 文件较小时，采取空闲表法。<br><strong>2)空闲链表法</strong>:将所有空闲盘区拉成一条空闲链，根据构成链所用的基本元素不同，可把链表分为两种形式:<strong>空闲盘块链</strong>，以盘块为单位拉成一条链，<strong>优缺点</strong>:用于分配和回收一个 盘块的过程非常简单，但在为一个文件分配盘块时，可能要重复操作多次;<br><strong>空闲盘区链</strong>，将 磁盘上所有的空闲盘区拉成一条链。分配盘区的算法通常采用首次适应算法，回收时也要考 虑合并，<strong>为提高对空闲盘区的检索速度，可以采用显示连接法，为内存中的空闲盘区建立一 张链表。</strong><br><strong>3)位示图法</strong>:位示图是利用二进制中的一位来表示磁盘中一个盘块的使用情况，0 时空闲， 1 时分配。<br>根据位示图进行盘块的分配时，分为三步:</p>
+<ul>
+<li>1)顺序扫描位示图，找到 0。</li>
+<li>2)将找到的一个 或一组二进制位转化成与之相对应的盘块号。</li>
+<li>3)修改位示图，使相应位置 1。 </li>
+</ul>
+<p>回收分为两步:</p>
+<ul>
+<li>1)将回收的盘块号转化为位示图中的行号和列号。注意转化公式!!!</li>
+<li>2) 修改位示图，使相应位置 0。 </li>
+</ul>
+<p><strong>4)成组链接法</strong>:空闲表法和空闲链表法不适合大型文件，会使链表和空闲表太长。将上述 两种方法结合在一起，兼备了优点，而克服了表太长的缺点。<br><strong>大致思想</strong>:把顺序的 n 个空闲扇区的地址保存在第一个空闲扇区内，其后一个空闲扇区则保 存另一个顺序空闲扇区的地址，在直至所有空闲扇区均已连接。系统只需要保存一个指向第 一个空闲扇区的指针。</p>
+<h4 id="6-逻辑文件组织"><a href="#6-逻辑文件组织" class="headerlink" title="(6)逻辑文件组织"></a>(6)逻辑文件组织</h4><p>文件的逻辑结构是从用户观点出发所观察到的文件组织形式，是用户可以直接处理的数据及 其结构，独立于文件的物理特性，又称为文件组织。<br><strong>文件逻辑结构的类型:有结构文件;无结构文件;</strong><br>有结构文件三种:<br><strong>1)顺序文件</strong>:由一系列记录按某种顺序排列所形成的文件，记录通常是记录文件。又分为 串结构和顺序结构。串结构，记录之间的顺序与关键字无关。顺序结构，所有记录按关键字 顺序排列。<br>优点:只有顺序文件能储存在磁带上，当每次要读或写一大批文件时，顺序文件的存储效率 最高。<br>缺点:顺序文件对于查找、修改、增加、删除等操作比较困难。<br><strong>2)索引文件</strong>:对于定长记录可以方便的实现顺序存取，但对于边长记录难以实现直接存取。 可以为变长文件记录建立一张索引表(本身是一个定长记录的顺序文件)。<br><strong>3)顺序索引文件</strong>:将顺序文件中的所有记录分为若干组，为顺序文件建立一张索引表，在 索引表中为魅族第一条记录建立一个索引项，其中含有该记录的关键字值，和指向该记录 的指针。<br><strong>4)直接文件</strong>:记录值本身就决定了自己的物理地址，键值转换 哈希文件:利用散列函数， 将键值转化为相应的记录的地址，可能会发生冲突。</p>
+<h4 id="7-文件的基本操作"><a href="#7-文件的基本操作" class="headerlink" title="(7)文件的基本操作"></a>(7)文件的基本操作</h4><p>创建文件、删除文件、读文件、写文件、截断文件、设置文件读写位置。<br>文件的打开和关闭。 熟读课本相关知识</p>
+<h4 id="8-文件目录及其管理"><a href="#8-文件目录及其管理" class="headerlink" title="(8)文件目录及其管理"></a>(8)文件目录及其管理</h4><p>对目录管理的要求如下:<br>1)实现“按名存取”<br>2)提高对目录的检索速度<br>3)文件共享<br>4)允许文件重名。<br>文件控制块(FCB):是用来存放控制文件所需要的各种控制信息的数据结构。文件控制块 的有序集合称为文件目录，即一个文件控制块就是一个文件目录项。一个文件目录也可以看 做一个文件，称为目录文件。<br>文件控制块通常包含三类信息:基本信息:文件名，文件物理位置，文件逻辑结构，文件物 理结构;<br>存取控制信息:文件存取权限;<br>使用信息:文件建立时间，修改时间。<br>索引结点:在检索目录文件的过程中，只用到了文件名，其他一些对该文件的描述信息，在 检索目录时，一概不用，所以没必要调入内存。便采用了把文件名与文件描述信息分开的办 法。文件描述信息单独形成一个称谓索引结点的数据结构。<br>在文件目录中，每个目录项仅由文件名和指向该文件所对应的 i 结点的指针构成。<br><strong>目录结构</strong>:目录结构关系到文件系统的存取速度，也关系到文件的共享性和安全性。通常有 单击目录，两级目录和多级目录。<br><strong>单级目录</strong>:只建立一张目录表，每个文件占有一个目录项。访问时，先按文件名在该目录中 找到对应的 FCB。单级目录实现了“按名存取”但是，查找速度慢，不允许重名，不便于实现 文件共享。<br><strong>两级目录</strong>:优点:提高了检索目录的速度;在不同用户名的目录中，可以使用相同文件名; 不同用户可以使用不同的文件名来访问系统中的同一个共享文件。<br><strong>多级目录文件(树形目录文件)</strong>:优点:可以很方便的对文件进行分类，层次结构清晰，能 有效的进行文件的管理和保护。但是在树形文件中，查找一个文件时，需要按路径名逐级访 问，增加了磁盘访问次数，影响查询速度。</p>
+<h4 id="9-文件共享和保护"><a href="#9-文件共享和保护" class="headerlink" title="(9)文件共享和保护"></a>(9)文件共享和保护</h4><p>文件共享是多个用户共享同一文件，系统只要保留该文件的一个副本。<br>文件共享方法:<br>1)基于索引结点的共享方式(硬链接)<br>2)利用符号链实现文件共享(软 连接)<br>文件保护:文件保护通过口令保护，加密保护，访问控制等方式实现。口令保护和加密保护 是为了防止用户文件被他人存取或窃取，访问控制是控制用户对文件的访问方式。<br>检查点:主要目的是对事务记录表中的事务记录清理工作经常化。</p>
+<h3 id="7-操作系统接口"><a href="#7-操作系统接口" class="headerlink" title="7.操作系统接口"></a>7.操作系统接口</h3><h4 id="1-操作系统接口类型"><a href="#1-操作系统接口类型" class="headerlink" title="(1)操作系统接口类型"></a>(1)操作系统接口类型</h4><p>1)用户接口<br>2)程序接口，是程序能取得操作系统服务的唯一途径，大多数程序接口由一 组系统调用组成。</p>
+<h4 id="2-系统调用概念"><a href="#2-系统调用概念" class="headerlink" title="(2)系统调用概念"></a>(2)系统调用概念</h4><p> 一方面由于系统提供保护机制，防止程序至直接调用操作系统得过程，从而避免不安全性， 另一方面，应用程序必须取得操作系统提供的服务。为此，操作系统提供系统调用，使应用 程序通过提供系统调用的方法，间接调用操作系统的相关过程。</p>
+<h4 id="3-系统调用的类型和实现方法"><a href="#3-系统调用的类型和实现方法" class="headerlink" title="(3)系统调用的类型和实现方法"></a>(3)系统调用的类型和实现方法</h4><p>类型:进程控制类系统调用、文件操纵类系统调用、进程通信类系统调用。<br>实现:熟读课本相关知识。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/Appreciation/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/Appreciation/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<div style="text-align:center;color: #00BFFF;font-size:14px;">
+     -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+</div>
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -230,413 +307,134 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-06-04T04:20:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-04</time>
-</a>
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/06/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">操作系统知识点总结（二）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/04/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%BA%8C%EF%BC%89/">操作系统知识点总结（二）</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/03/%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3java-lang-ClassNotFoundException-com-mysql-jdbc-Driver%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-06-03T05:40:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-03</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/03/%E5%BD%BB%E5%BA%95%E8%A7%A3%E5%86%B3java-lang-ClassNotFoundException-com-mysql-jdbc-Driver%E9%97%AE%E9%A2%98/">彻底解决java.lang.ClassNotFoundException: com.mysql.jdbc.Driver问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JDBC</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/02/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-06-02T09:48:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/02/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/">操作系统知识点总结（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8B-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/" class="archive-article-date">
-  	<time datetime="2020-05-28T04:41:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-28</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8B-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF/">实现简单的文件传输功能下:服务器端</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">socket</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">fileupload</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8A-%E5%AE%A2%E6%88%B7%E7%AB%AF/" class="archive-article-date">
-  	<time datetime="2020-05-28T04:41:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-28</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8A-%E5%AE%A2%E6%88%B7%E7%AB%AF/">实现简单的文件传输功能上:客户端</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">socket</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">fileupload</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/27/%E8%A7%A3%E5%86%B3%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8Selenium-WebDriver-%E5%9C%A8Python%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%B6%E5%87%BA%E9%94%99/" class="archive-article-date">
-  	<time datetime="2020-05-27T12:10:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-27</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/27/%E8%A7%A3%E5%86%B3%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8Selenium-WebDriver-%E5%9C%A8Python%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%B6%E5%87%BA%E9%94%99/">解决关于使用Selenium WebDriver 在Python打开浏览器时出错</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Selenium</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">WebDriver</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="archive-article-date">
-  	<time datetime="2020-05-26T11:54:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/26/Mailto-links-%E5%9C%A8chrome%E4%B8%8D%E5%B7%A5%E4%BD%9C%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">Mailto links 在chrome不工作问题解决</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Mailto</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">chrome</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/" class="archive-article-date">
-  	<time datetime="2020-05-26T11:28:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/">hexo+yilia添加RSS订阅功能</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">RSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/25/%E6%88%91%E9%80%9A%E8%BF%87Python%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%BE%97%E5%88%B0%E4%BA%86%E6%84%8F%E6%83%B3%E4%B8%8D%E5%88%B0%E7%9A%84%E7%AD%94%E6%A1%88/" class="archive-article-date">
-  	<time datetime="2020-05-25T14:55:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-25</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/25/%E6%88%91%E9%80%9A%E8%BF%87Python%E5%AF%B9%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BF%9B%E8%A1%8C%E4%BA%86%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%BE%97%E5%88%B0%E4%BA%86%E6%84%8F%E6%83%B3%E4%B8%8D%E5%88%B0%E7%9A%84%E7%AD%94%E6%A1%88/">我通过Python对自己的微信朋友圈进行了可视化分析得到了意想不到的答案</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">数据可视化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
+  
+  <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+  </style>
+  <div class="valine_comment"></div>
+<!--载入js，在<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/z16.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/z16.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/z16.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script></body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'qVOFRs7k88jJICcsBe0Cdabr-gzGzoHsz',
+      app_key: 'GyrSWO53F9s3q95vzNutRcNp',
+      placeholder: '老铁，唠两句，证明你来过？',
+      avatar:"monsterid"
+    });
+</script>
+
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="page-number" href="/archives/2020/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2020/page/5/">5</a><a class="extend next" rel="next" href="/archives/2020/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -667,8 +465,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
