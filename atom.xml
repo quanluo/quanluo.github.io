@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-06-05T07:36:44.359Z</updated>
+  <updated>2020-06-09T09:53:44.379Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IntelliJ idea 登录和退出账户</title>
+    <link href="http://quanluo.github.io/2020/06/09/IntelliJ-idea-%E7%99%BB%E5%BD%95%E5%92%8C%E9%80%80%E5%87%BA%E8%B4%A6%E6%88%B7/"/>
+    <id>http://quanluo.github.io/2020/06/09/IntelliJ-idea-%E7%99%BB%E5%BD%95%E5%92%8C%E9%80%80%E5%87%BA%E8%B4%A6%E6%88%B7/</id>
+    <published>2020-06-09T09:49:12.000Z</published>
+    <updated>2020-06-09T09:53:44.379Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png" alt=""></p><a id="more"></a><p>一、首先打开账户界面<br>选择菜单栏的help –&gt; register<br><img src="https://img-blog.csdnimg.cn/20200609173508521.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200609173521627.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt=""></p><p>二、登录账户<br>在username和password填写自己的账户和密码，然后单击Activate登录就ok了<br><img src="https://img-blog.csdnimg.cn/20200609173619121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt=""><br>三、退出账户<br>在出现的菜单中选择remove license，然后单击确定就okle<br><img src="https://img-blog.csdnimg.cn/20200609173749835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="IntelliJ IDEA" scheme="http://quanluo.github.io/tags/IntelliJ-IDEA/"/>
+    
+  </entry>
   
   <entry>
     <title>操作系统知识点总结（三）</title>
@@ -485,27 +506,6 @@
       <category term="with" scheme="http://quanluo.github.io/tags/with/"/>
     
       <category term="上下文管理器" scheme="http://quanluo.github.io/tags/%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python，通过一行代码输出python和库的版本信息</title>
-    <link href="http://quanluo.github.io/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/"/>
-    <id>http://quanluo.github.io/2020/05/24/python%EF%BC%8C%E9%80%9A%E8%BF%87%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BApython%E5%92%8C%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</id>
-    <published>2020-05-23T16:06:49.000Z</published>
-    <updated>2020-05-23T16:07:34.623Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>话不多说先上效果图：</strong><br><img src="https://img-blog.csdnimg.cn/20200505185619150.png" alt="在这里插入图片描述"><br><strong>原理：通过自带的 ==__version__== 功能实现</strong><br>代码模板：</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># package_name version</span></span><br><span class="line"><span class="keyword">import</span> package_name</span><br><span class="line">print(<span class="string">'package_name: &#123;&#125;'</span>.format(package_name.__version__))</span><br></pre></td></tr></table></figure><p> <strong>注意:检查python版本需要修改代码，如下：</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python version</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">print(<span class="string">'Python: &#123;&#125;'</span>.format(sys.version))</span><br></pre></td></tr></table></figure><p><strong>效果图实现代码：</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python version</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">print(<span class="string">'Python: &#123;&#125;'</span>.format(sys.version))</span><br><span class="line"></span><br><span class="line"><span class="comment"># requests</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">print(<span class="string">'requests: &#123;&#125;'</span>.format(requests.__version__))</span><br><span class="line"></span><br><span class="line"><span class="comment"># numpy</span></span><br><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line">print(<span class="string">'numpy: &#123;&#125;'</span>.format(numpy.__version__))</span><br><span class="line"></span><br><span class="line"><span class="comment"># matplotlib</span></span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">print(<span class="string">'matplotlib: &#123;&#125;'</span>.format(matplotlib.__version__))</span><br><span class="line"></span><br><span class="line"><span class="comment"># pandas</span></span><br><span class="line"><span class="keyword">import</span> pandas</span><br><span class="line">print(<span class="string">'pandas: &#123;&#125;'</span>.format(pandas.__version__))</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;话不多说先上效果图：&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20200505185619150.png&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;br&gt;&lt;strong&gt;原理：通过自带的 ==__version__== 功能实现&lt;/strong&gt;&lt;br&gt;代码模板：&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
   </entry>
   
