@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://quanluo.github.io">
-  <title>Tag: helloworld | Quanluo&#39;s blog</title>
+  <title>python中68个内置函数的总结 | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Quanluo&#39;s blog">
-<meta property="og:url" content="http://quanluo.github.io/tags/helloworld/index.html">
+  <meta name="description" content="内置函数就是python给你提供的, 拿来直接用的函数, 比如print., input等. 截止到python版本3.6.2 python一共提供了68个内置函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python中68个内置函数的总结">
+<meta property="og:url" content="http://quanluo.github.io/2020/06/12/python%E4%B8%AD68%E4%B8%AA%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
+<meta property="og:description" content="内置函数就是python给你提供的, 拿来直接用的函数, 比如print., input等. 截止到python版本3.6.2 python一共提供了68个内置函数">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://images.alphacoders.com/107/1079732.jpg">
+<meta property="article:published_time" content="2020-06-12T10:49:30.000Z">
+<meta property="article:modified_time" content="2020-06-12T11:04:14.904Z">
 <meta property="article:author" content="Quanluo">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="内置函数">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.alphacoders.com/107/1079732.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
   
@@ -188,61 +196,309 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-python中68个内置函数的总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/" class="archive-article-date">
-  	<time datetime="2020-05-21T11:47:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/21/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/">我的第一篇blog HelloWorld</a>
+    <h1 class="article-title" itemprop="name">
+      python中68个内置函数的总结
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/06/12/python%E4%B8%AD68%E4%B8%AA%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-06-12T10:49:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-12</time>
+</a>
+
+        <!-- 不蒜子统计 -->
+        <span class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://images.alphacoders.com/107/1079732.jpg" alt=""><br>内置函数就是python给你提供的, 拿来直接用的函数, 比如print., input等. 截止到python版本3.6.2 python一共提供了68个内置函数</p>
+<a id="more"></a>
+<h1 id="68个内置函数"><a href="#68个内置函数" class="headerlink" title="68个内置函数"></a>68个内置函数</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># abs()         　　dict()      　　help()       　　min()       　　setattr()</span><br><span class="line"># all()         　　dir()       　　hex()        　　next()      　　slice() </span><br><span class="line"># any()         　　divmod()    　　id()         　　object()    　　sorted() </span><br><span class="line"># ascii()       　　enumerate() 　　input()      　　oct()       　　staticmethod() </span><br><span class="line"># bin()         　　eval()      　　int()        　　open()      　　str() </span><br><span class="line"># bool()        　　exec()      　　isinstance() 　　ord()       　　sum() </span><br><span class="line"># bytearray()   　　ﬁlter()     　　issubclass() 　　pow()       　　super() </span><br><span class="line"># bytes()       　　ﬂoat()      　　iter()       　　print()     　　tuple() </span><br><span class="line"># callable()    　　format()    　　len()        　　property()  　　type() </span><br><span class="line"># chr()         　　frozenset() 　　list()       　　range()     　　vars() </span><br><span class="line"># classmethod() 　　getattr()   　　locals()     　　repr()      　　zip() </span><br><span class="line"># compile()     　　globals()   　　map()        　　reversed()  　　__import__() </span><br><span class="line"># complex()     　　hasattr()   　　max()        　　round() </span><br><span class="line"># delattr()     　　hash()      　　memoryview() 　　set()</span><br></pre></td></tr></table></figure>
+<ol>
+<li>和数字相关</li>
+</ol>
+<p>(1) 数据类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1) bool : 布尔型(True,False)</span><br><span class="line"></span><br><span class="line">2) int : 整型(整数)</span><br><span class="line"></span><br><span class="line">3) float : 浮点型(小数)</span><br><span class="line"></span><br><span class="line">4) complex : 复数</span><br></pre></td></tr></table></figure>
+<p>(2) 进制转换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1) bin() 将给的参数转换成二进制</span><br><span class="line"></span><br><span class="line">2) otc() 将给的参数转换成八进制</span><br><span class="line"></span><br><span class="line">3) hex() 将给的参数转换成十六进制</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(bin(10))  # 二进制:0b1010</span><br><span class="line">print(hex(10))  # 十六进制:0xa</span><br><span class="line">print(oct(10))  # 八进制:0o12</span><br></pre></td></tr></table></figure>
+<p>(3) 数学运算</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">1) abs() 返回绝对值</span><br><span class="line"></span><br><span class="line">2) divmode() 返回商和余数</span><br><span class="line"></span><br><span class="line">3) round() 四舍五入</span><br><span class="line"></span><br><span class="line">4) pow(a, b) 求a的b次幂, 如果有三个参数. 则求完次幂后对第三个数取余</span><br><span class="line"></span><br><span class="line">5) sum() 求和</span><br><span class="line"></span><br><span class="line">6) min() 求最小值</span><br><span class="line"></span><br><span class="line">7) max() 求最大值</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">print(abs(-2))  # 绝对值:2</span><br><span class="line"></span><br><span class="line">print(divmod(20,3)) # 求商和余数:(6,2)</span><br><span class="line"></span><br><span class="line">print(round(4.50))   # 五舍六入:4</span><br><span class="line">print(round(4.51))   #5</span><br><span class="line"></span><br><span class="line">print(pow(10,2,3))  # 如果给了第三个参数. 表示最后取余:1</span><br><span class="line"></span><br><span class="line">print(sum([1,2,3,4,5,6,7,8,9,10]))  # 求和:55</span><br><span class="line"></span><br><span class="line">print(min(5,3,9,12,7,2))  #求最小值:2</span><br><span class="line"></span><br><span class="line">print(max(7,3,15,9,4,13))  #求最大值:15</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>和数据结构相关</li>
+</ol>
+<p>(1) 序列</p>
+<p>1) 列表和元组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">list() 将一个可迭代对象转换成列表</span><br><span class="line"></span><br><span class="line">tuple() 将一个可迭代对象转换成元组</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(list((1,2,3,4,5,6)))  #[1, 2, 3, 4, 5, 6]</span><br><span class="line">print(tuple([1,2,3,4,5,6]))  #(1, 2, 3, 4, 5, 6)</span><br></pre></td></tr></table></figure>
+<p>相关内置函数<br> reversed() 将一个序列翻转, 返回翻转序列的迭代器</p>
+<p> slice() 列表的切片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">lst &#x3D; &quot;你好啊&quot;</span><br><span class="line">it &#x3D; reversed(lst)   # 不会改变原列表. 返回一个迭代器, 设计上的一个规则</span><br><span class="line">print(list(it))  #[&#39;啊&#39;, &#39;好&#39;, &#39;你&#39;]</span><br><span class="line"></span><br><span class="line">lst &#x3D; [1, 2, 3, 4, 5, 6, 7]</span><br><span class="line">print(lst[1:3:1])  #[2,3]</span><br><span class="line"></span><br><span class="line">s &#x3D; slice(1, 3, 1)  #  切片用的</span><br><span class="line">print(lst[s])  #[2,3]</span><br></pre></td></tr></table></figure>
+<p>3) 字符串</p>
+<p> str() 将数据转化成字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">print(str(123)+&#39;456&#39;)  #123456</span><br><span class="line">　　format()     与具体数据相关, 用于计算各种小数, 精算等.</span><br><span class="line">s &#x3D; &quot;hello world!&quot;</span><br><span class="line">print(format(s, &quot;^20&quot;))  #剧中</span><br><span class="line">print(format(s, &quot;&lt;20&quot;))  #左对齐</span><br><span class="line">print(format(s, &quot;&gt;20&quot;))  #右对齐</span><br><span class="line">#     hello world!    </span><br><span class="line"># hello world!        </span><br><span class="line">#         hello world!</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">print(format(3, &#39;b&#39; ))    # 二进制:11</span><br><span class="line">print(format(97, &#39;c&#39; ))   # 转换成unicode字符:a</span><br><span class="line">print(format(11, &#39;d&#39; ))   # ⼗进制:11</span><br><span class="line">print(format(11, &#39;o&#39; ))   # 八进制:13 </span><br><span class="line">print(format(11, &#39;x&#39; ))   # 十六进制(⼩写字母):b</span><br><span class="line">print(format(11, &#39;X&#39; ))   # 十六进制(大写字母):B</span><br><span class="line">print(format(11, &#39;n&#39; ))   # 和d⼀样:11</span><br><span class="line">print(format(11))         # 和d⼀样:11</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">print(format(123456789, &#39;e&#39; ))      # 科学计数法. 默认保留6位小数:1.234568e+08</span><br><span class="line">print(format(123456789, &#39;0.2e&#39; ))   # 科学计数法. 保留2位小数(小写):1.23e+08</span><br><span class="line">print(format(123456789, &#39;0.2E&#39; ))   # 科学计数法. 保留2位小数(大写):1.23E+08</span><br><span class="line">print(format(1.23456789, &#39;f&#39; ))     # 小数点计数法. 保留6位小数:1.234568</span><br><span class="line">print(format(1.23456789, &#39;0.2f&#39; ))  # 小数点计数法. 保留2位小数:1.23</span><br><span class="line">print(format(1.23456789, &#39;0.10f&#39;))  # 小数点计数法. 保留10位小数:1.2345678900</span><br><span class="line">print(format(1.23456789e+3, &#39;F&#39;))   # 小数点计数法. 很大的时候输出</span><br><span class="line">INF:1234.567890</span><br></pre></td></tr></table></figure>
+
+<p>bytes() 把字符串转化成bytes类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bs &#x3D; bytes(&quot;今天吃饭了吗&quot;, encoding&#x3D;&quot;utf-8&quot;)</span><br><span class="line">print(bs)  #b&#39;\xe4\xbb\x8a\xe5\xa4\xa9\xe5\x90\x83\xe9\xa5\xad\xe4\xba\x86\xe5\x90\x97&#39;</span><br></pre></td></tr></table></figure>
+<p>　　 bytearray()    返回一个新字节数组. 这个数字的元素是可变的, 并且每个元素的值得范围是[0,256)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ret &#x3D; bytearray(&quot;alex&quot; ,encoding &#x3D;&#39;utf-8&#39;)</span><br><span class="line">print(ret[0])  #97</span><br><span class="line">print(ret)  #bytearray(b&#39;alex&#39;)</span><br><span class="line">ret[0] &#x3D; 65  #把65的位置A赋值给ret[0]</span><br><span class="line">print(str(ret))  #bytearray(b&#39;Alex&#39;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ord() 输入字符找带字符编码的位置</span><br><span class="line"></span><br><span class="line">chr() 输入位置数字找出对应的字符</span><br><span class="line"></span><br><span class="line">ascii() 是ascii码中的返回该值 不是就返回u...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">print(ord(&#39;a&#39;))  # 字母a在编码表中的码位:97</span><br><span class="line">print(ord(&#39;中&#39;))  # &#39;中&#39;字在编码表中的位置:20013</span><br><span class="line"></span><br><span class="line">print(chr(65))  # 已知码位,求字符是什么:A</span><br><span class="line">print(chr(19999))  #丟</span><br><span class="line"></span><br><span class="line">for i in range(65536):  #打印出0到65535的字符</span><br><span class="line">    print(chr(i), end&#x3D;&quot; &quot;)</span><br><span class="line"></span><br><span class="line">print(ascii(&quot;@&quot;))  #&#39;@&#39;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">repr() 返回一个对象的string形式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">s &#x3D; &quot;今天\n吃了%s顿\t饭&quot; % 3</span><br><span class="line">print(s)</span><br><span class="line">#今天</span><br><span class="line"># 吃了3顿    饭</span><br><span class="line">print(repr(s))   # 原样输出,过滤掉转义字符 \n \t \r 不管百分号%</span><br><span class="line">#&#39;今天\n吃了3顿\t饭&#39;</span><br></pre></td></tr></table></figure>
+<p>(2) 数据集合</p>
+<p> 1) 字典</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dict 创建一个字典</span><br></pre></td></tr></table></figure>
+<p> 2) 集合</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> set 创建一个集合</span><br><span class="line"></span><br><span class="line">frozenset() 创建一个冻结的集合. 冻结的集合不能进行添加和删除操作</span><br></pre></td></tr></table></figure>
+<p>(3) 相关内置函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">len() 返回一个对象中的元素的个数</span><br><span class="line"></span><br><span class="line">sorted() 对可迭代对象进行排序操作 (lamda)</span><br></pre></td></tr></table></figure>
+<p> 语法:</p>
+<p> sorted(Iterable, key=函数(排序规则), reverse=False)</p>
+<p>Iterable: 可迭代对象</p>
+<p>key: 排序规则(排序函数), 在sorted内部会将可迭代对象中的每一个元素传递给这个函数的参数. 根据函数运算的结果进行排序</p>
+<p>reverse: 是否是倒叙. True: 倒叙, False: 正序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">lst &#x3D; [5,7,6,12,1,13,9,18,5]</span><br><span class="line">lst.sort()  # sort是list里面的一个方法</span><br><span class="line">print(lst)  #[1, 5, 5, 6, 7, 9, 12, 13, 18]</span><br><span class="line"></span><br><span class="line">ll &#x3D; sorted(lst) # 内置函数. 返回给你一个新列表  新列表是被排序的</span><br><span class="line">print(ll)  #[1, 5, 5, 6, 7, 9, 12, 13, 18]</span><br><span class="line"></span><br><span class="line">l2 &#x3D; sorted(lst,reverse&#x3D;True)  #倒序</span><br><span class="line">print(l2)  #[18, 13, 12, 9, 7, 6, 5, 5, 1]</span><br></pre></td></tr></table></figure>
+
+<p>#根据字符串长度给列表排序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">lst &#x3D; [&#39;one&#39;, &#39;two&#39;, &#39;three&#39;, &#39;four&#39;, &#39;five&#39;, &#39;six&#39;]</span><br><span class="line">def f(s):</span><br><span class="line">    return len(s)</span><br><span class="line">l1 &#x3D; sorted(lst, key&#x3D;f, )</span><br><span class="line">print(l1)  #[&#39;one&#39;, &#39;two&#39;, &#39;six&#39;, &#39;four&#39;, &#39;five&#39;, &#39;three&#39;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enumerate() 获取集合的枚举对象</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">lst &#x3D; [&#39;one&#39;,&#39;two&#39;,&#39;three&#39;,&#39;four&#39;,&#39;five&#39;]</span><br><span class="line">for index, el in enumerate(lst,1):    # 把索引和元素一起获取,索引默认从0开始. 可以更改</span><br><span class="line">    print(index)</span><br><span class="line">    print(el)</span><br><span class="line"></span><br><span class="line"># 1</span><br><span class="line"># one</span><br><span class="line"># 2</span><br><span class="line"># two</span><br><span class="line"># 3</span><br><span class="line"># three</span><br><span class="line"># 4</span><br><span class="line"># four</span><br><span class="line"># 5</span><br><span class="line"># five</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">　all() 可迭代对象中全部是True, 结果才是True</span><br><span class="line"></span><br><span class="line"> any() 可迭代对象中有一个是True, 结果就是True</span><br><span class="line"></span><br><span class="line">print(all([1,&#39;hello&#39;,True,9]))  #True</span><br><span class="line">print(any([0,0,0,False,1,&#39;good&#39;]))  #True</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">zip() 函数用于将可迭代的对象作为参数, 将对象中对应的元素打包成一个元组, 然后返回由这些元组组成的列表. 如果各个迭代器的元素个数不一致, 则返回列表长度与最短的对象相同</span><br><span class="line"></span><br><span class="line">lst1 &#x3D; [1, 2, 3, 4, 5, 6]</span><br><span class="line">lst2 &#x3D; [&#39;醉乡民谣&#39;, &#39;驴得水&#39;, &#39;放牛班的春天&#39;, &#39;美丽人生&#39;, &#39;辩护人&#39;, &#39;被嫌弃的松子的一生&#39;]</span><br><span class="line">lst3 &#x3D; [&#39;美国&#39;, &#39;中国&#39;, &#39;法国&#39;, &#39;意大利&#39;, &#39;韩国&#39;, &#39;日本&#39;]</span><br><span class="line">print(zip(lst1, lst1, lst3))  #&lt;zip object at 0x00000256CA6C7A88&gt;</span><br><span class="line">for el in zip(lst1, lst2, lst3):</span><br><span class="line">    print(el)</span><br><span class="line"># (1, &#39;醉乡民谣&#39;, &#39;美国&#39;)</span><br><span class="line"># (2, &#39;驴得水&#39;, &#39;中国&#39;)</span><br><span class="line"># (3, &#39;放牛班的春天&#39;, &#39;法国&#39;)</span><br><span class="line"># (4, &#39;美丽人生&#39;, &#39;意大利&#39;)</span><br><span class="line"># (5, &#39;辩护人&#39;, &#39;韩国&#39;)</span><br><span class="line"># (6, &#39;被嫌弃的松子的一生&#39;, &#39;日本&#39;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fiter() 过滤 (lamda)</span><br></pre></td></tr></table></figure>
+
+<p>语法:<br>fiter(function. Iterable)<br>function: 用来筛选的函数. 在ﬁlter中会自动的把iterable中的元素传递给function. 然后根据function返回的True或者False来判断是否保留留此项数据 , Iterable: 可迭代对象<br>def func(i):    # 判断奇数<br>    return i % 2 == 1<br>lst = [1,2,3,4,5,6,7,8,9]<br>l1 = filter(func, lst)  #l1是迭代器<br>print(l1)  #&lt;filter object at 0x000001CE3CA98AC8&gt;<br>print(list(l1))  #[1, 3, 5, 7, 9]</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map() 会根据提供的函数对指定序列列做映射(lamda)</span><br></pre></td></tr></table></figure>
+<p>语法 : map(function, iterable) 可以对可迭代对象中的每一个元素进行映射. 分别去执行 function</p>
+<p>def f(i):<br>    return i<br>lst = [1,2,3,4,5,6,7,]<br>it = map(f, lst) # 把可迭代对象中的每一个元素传递给前面的函数进行处理. 处理的结果会返回成迭代器<br>print(list(it))  #[1, 2, 3, 4, 5, 6, 7]<br>3. 和作用域相关</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">locals() 返回当前作用域中的名字</span><br><span class="line"></span><br><span class="line">globals() 返回全局作用域中的名字</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def func():</span><br><span class="line">    a &#x3D; 10</span><br><span class="line">    print(locals())  # 当前作用域中的内容</span><br><span class="line">    print(globals())  # 全局作用域中的内容</span><br><span class="line">    print(&quot;今天内容很多&quot;)</span><br><span class="line">func()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># &#123;&#39;a&#39;: 10&#125;</span><br><span class="line"># &#123;&#39;__name__&#39;: &#39;__main__&#39;, &#39;__doc__&#39;: None, &#39;__package__&#39;: None, &#39;__loader__&#39;: </span><br><span class="line"># &lt;_frozen_importlib_external.SourceFileLoader object at 0x0000026F8D566080&gt;, </span><br><span class="line"># &#39;__spec__&#39;: None, &#39;__annotations__&#39;: &#123;&#125;, &#39;__builtins__&#39;: &lt;module &#39;builtins&#39; </span><br><span class="line"># (built-in)&gt;, &#39;__file__&#39;: &#39;D:&#x2F;pycharm&#x2F;练习&#x2F;week03&#x2F;new14.py&#39;, &#39;__cached__&#39;: None,</span><br><span class="line">#  &#39;func&#39;: &lt;function func at 0x0000026F8D6B97B8&gt;&#125;</span><br><span class="line"># 今天内容很多</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>和迭代器/生成器相关<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">range() 生成数据</span><br><span class="line">next() 迭代器向下执行一次, 内部实际使⽤用了__ next__()⽅方法返回迭代器的下一个项目</span><br><span class="line">iter() 获取迭代器, 内部实际使用的是__ iter__()⽅方法来获取迭代器</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">for i in range(15,-1,-5):</span><br><span class="line">    print(i)</span><br><span class="line"># 15</span><br><span class="line"># 10</span><br><span class="line"># 5</span><br><span class="line"># 0</span><br><span class="line"></span><br><span class="line">lst &#x3D; [1,2,3,4,5]</span><br><span class="line">it &#x3D; iter(lst)  #  __iter__()获得迭代器</span><br><span class="line">print(it.__next__())  #1</span><br><span class="line">print(next(it)) #2  __next__()  </span><br><span class="line">print(next(it))  #3</span><br><span class="line">print(next(it))  #4</span><br></pre></td></tr></table></figure></li>
+<li>字符串类型代码的执行<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">eval() 执行字符串类型的代码. 并返回最终结果</span><br><span class="line">exec() 执行字符串类型的代码</span><br><span class="line">compile() 将字符串类型的代码编码. 代码对象能够通过exec语句来执行或者eval()进行求值</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">s1 &#x3D; input(&quot;请输入a+b:&quot;)  #输入:8+9</span><br><span class="line">print(eval(s1))  # 17 可以动态的执行代码. 代码必须有返回值</span><br><span class="line"></span><br><span class="line">s2 &#x3D; &quot;for i in range(5): print(i)&quot;</span><br><span class="line">a &#x3D; exec(s2) # exec 执行代码不返回任何内容</span><br><span class="line"># 0</span><br><span class="line"># 1</span><br><span class="line"># 2</span><br><span class="line"># 3</span><br><span class="line"># 4</span><br><span class="line">print(a)  #None</span><br><span class="line"></span><br><span class="line"># 动态执行代码</span><br><span class="line">exec(&quot;&quot;&quot;</span><br><span class="line">def func():</span><br><span class="line">    print(&quot; 我是周杰伦&quot;)</span><br><span class="line">&quot;&quot;&quot; )</span><br><span class="line">func()  #我是周杰伦</span><br><span class="line">code1 &#x3D; &quot;for i in range(3): print(i)&quot;</span><br><span class="line">com &#x3D; compile(code1, &quot;&quot;, mode&#x3D;&quot;exec&quot;)   # compile并不会执行你的代码.只是编译</span><br><span class="line">exec(com)   # 执行编译的结果</span><br><span class="line"># 0</span><br><span class="line"># 1</span><br><span class="line"># 2</span><br><span class="line"></span><br><span class="line">code2 &#x3D; &quot;5+6+7&quot;</span><br><span class="line">com2 &#x3D; compile(code2, &quot;&quot;, mode&#x3D;&quot;eval&quot;)</span><br><span class="line">print(eval(com2))  # 18</span><br><span class="line"></span><br><span class="line">code3 &#x3D; &quot;name &#x3D; input(&#39;请输入你的名字:&#39;)&quot;  #输入:hello</span><br><span class="line">com3 &#x3D; compile(code3, &quot;&quot;, mode&#x3D;&quot;single&quot;)</span><br><span class="line">exec(com3)</span><br><span class="line">print(name)  #hello</span><br></pre></td></tr></table></figure></li>
+<li>输入输出<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print() : 打印输出</span><br><span class="line">input() : 获取用户输出的内容</span><br><span class="line">print(&quot;hello&quot;, &quot;world&quot;, sep&#x3D;&quot;*&quot;, end&#x3D;&quot;@&quot;) # sep:打印出的内容用什么连接,end:以什么为结尾</span><br><span class="line">#hello*world@</span><br></pre></td></tr></table></figure></li>
+<li>内存相关<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hash() : 获取到对象的哈希值(int, str, bool, tuple). hash算法:(1) 目的是唯一性 (2) dict 查找效率非常高, hash表.用空间换的时间 比较耗费内存</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">s &#x3D; &#39;alex&#39;</span><br><span class="line">print(hash(s))  #-168324845050430382</span><br><span class="line"></span><br><span class="line">lst &#x3D; [1, 2, 3, 4, 5]</span><br><span class="line">print(hash(lst))  #报错,列表是不可哈希的</span><br><span class="line">　　id() :  获取到对象的内存地址</span><br><span class="line"></span><br><span class="line">s &#x3D; &#39;alex&#39;</span><br><span class="line">print(id(s))  #2278345368944</span><br></pre></td></tr></table></figure></li>
+<li>文件操作相关<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open() : 用于打开一个文件, 创建一个文件句柄</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f &#x3D; open(&#39;file&#39;,mode&#x3D;&#39;r&#39;,encoding&#x3D;&#39;utf-8&#39;)</span><br><span class="line">f.read()</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure></li>
+<li>模块相关<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">__ import__() : 用于动态加载类和函数</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 让用户输入一个要导入的模块</span><br><span class="line">import os</span><br><span class="line">name &#x3D; input(&quot;请输入你要导入的模块:&quot;)</span><br><span class="line">__import__(name)    # 可以动态导入模块</span><br></pre></td></tr></table></figure></li>
+<li>帮助<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">help() : 函数用于查看函数或模块用途的详细说明</span><br><span class="line"></span><br><span class="line">print(help(str))  #查看字符串的用途</span><br></pre></td></tr></table></figure></li>
+<li>调用相关<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">callable() : 用于检查一个对象是否是可调用的. 如果返回True, object有可能调用失败, 但如果返回False. 那调用绝对不会成功</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; 10</span><br><span class="line">print(callable(a))  #False  变量a不能被调用</span><br><span class="line">#</span><br><span class="line">def f():</span><br><span class="line">    print(&quot;hello&quot;)</span><br><span class="line">print(callable(f))   # True 函数是可以被调用的</span><br></pre></td></tr></table></figure></li>
+<li>查看内置属性<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dir() : 查看对象的内置属性, 访问的是对象中的__dir__()方法</span><br><span class="line"></span><br><span class="line">print(dir(tuple))  #查看元组的方法</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/Appreciation/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/Appreciation/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<div style="text-align:center;color: #00BFFF;font-size:14px;">
+     -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+</div>
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">helloworld</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">内置函数</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/06/12/python%E4%B8%AD68%E4%B8%AA%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/06/12/Java%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84GUI%E7%99%BB%E5%BD%95%E5%92%8C%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java实现简单的GUI登录和注册界面</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+  <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+  </style>
+  <div class="valine_comment"></div>
+<!--载入js，在<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/z16.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/z16.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/z16.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script></body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'qVOFRs7k88jJICcsBe0Cdabr-gzGzoHsz',
+      app_key: 'GyrSWO53F9s3q95vzNutRcNp',
+      placeholder: '老铁，唠两句，证明你来过？',
+      avatar:"monsterid"
+    });
+</script>
+
   
 
-    
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -272,9 +528,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
