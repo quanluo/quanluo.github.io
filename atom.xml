@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-06-16T04:27:01.006Z</updated>
+  <updated>2020-06-21T07:31:11.037Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo+yilia主题博客如何设置网站的图标Favicon</title>
+    <link href="http://quanluo.github.io/2020/06/21/hexo-yilia%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9B%BE%E6%A0%87Favicon/"/>
+    <id>http://quanluo.github.io/2020/06/21/hexo-yilia%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9B%BE%E6%A0%87Favicon/</id>
+    <published>2020-06-21T07:19:51.000Z</published>
+    <updated>2020-06-21T07:31:11.037Z</updated>
+    
+    <content type="html"><![CDATA[<p>效果图：<br><img src="https://img-blog.csdnimg.cn/20200621152703964.png" alt="在这里插入图片描述"></p><a id="more"></a><h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h2><h3 id="1-先去比特虫网站做ico图标"><a href="#1-先去比特虫网站做ico图标" class="headerlink" title="1. 先去比特虫网站做ico图标"></a>1. 先去比特虫网站做ico图标</h3><p>网址链接——&gt;<a href="http://www.bitbug.net/" target="_blank" rel="noopener">比特虫</a></p><h3 id="2-将-ico图标放到themes-yilia-source-img文件夹下"><a href="#2-将-ico图标放到themes-yilia-source-img文件夹下" class="headerlink" title="2. 将.ico图标放到themes/yilia/source/img文件夹下"></a>2. 将.ico图标放到themes/yilia/source/img文件夹下</h3><h3 id="3-找到hexo-themes-yilia-layout-partial-head-ejs，修改下面一段代码为"><a href="#3-找到hexo-themes-yilia-layout-partial-head-ejs，修改下面一段代码为" class="headerlink" title="3. 找到hexo\themes\yilia\layout_partial\head.ejs，修改下面一段代码为"></a>3. 找到hexo\themes\yilia\layout_partial\head.ejs，修改下面一段代码为</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.favicon)&#123; %&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;icon&quot; href&#x3D;&quot;&#x2F;img&#x2F;favicon.ico&quot;&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure><h3 id="4-部署到远端"><a href="#4-部署到远端" class="headerlink" title="4.部署到远端"></a>4.部署到远端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;效果图：&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20200621152703964.png&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="yilia" scheme="http://quanluo.github.io/tags/yilia/"/>
+    
+  </entry>
   
   <entry>
     <title>某些同学已经落伍了，考试时还是不会Ctrl c/v</title>
@@ -469,30 +490,6 @@
       <category term="DaraFrame" scheme="http://quanluo.github.io/tags/DaraFrame/"/>
     
       <category term="映射" scheme="http://quanluo.github.io/tags/%E6%98%A0%E5%B0%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>论Python导入模块的三种修养【干货】</title>
-    <link href="http://quanluo.github.io/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/"/>
-    <id>http://quanluo.github.io/2020/05/24/%E8%AE%BAPython%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BF%AE%E5%85%BB%E3%80%90%E5%B9%B2%E8%B4%A7%E3%80%91/</id>
-    <published>2020-05-23T16:11:32.000Z</published>
-    <updated>2020-05-23T16:12:16.641Z</updated>
-    
-    <content type="html"><![CDATA[<p>最进有些萌新老是混洗python导入模块的三种方法，甚至不知道各个都有什么作用，这回我来彻底讲解下，让你们不再迷茫。<br>@<a href="`Python导入模块有三种方法`">TOC</a></p><h4 id="修养一：-import-模块名"><a href="#修养一：-import-模块名" class="headerlink" title="修养一： import 模块名"></a><code>修养一： import 模块名</code></h4><p>直接使用 import ，但是再调用模块中的函数的时候，需要加上模块的命名空间。写个例子看看：</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#用于计算摄氏度和华氏度的相互转换</span></span><br><span class="line"><span class="comment"># cf_t1.py</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">c2f</span><span class="params">(cel)</span>:</span></span><br><span class="line">fah = cel * <span class="number">1.8</span> + <span class="number">32</span></span><br><span class="line"><span class="keyword">return</span> fah</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f2c</span><span class="params">(fah)</span>:</span></span><br><span class="line">cel = (fah <span class="number">-32</span>) / <span class="number">1.8</span></span><br><span class="line"><span class="keyword">return</span> cel</span><br></pre></td></tr></table></figure><p>再写一个文件来导入刚才所写的模块：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cf_t2.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> cf_t1</span><br><span class="line">print(<span class="string">"32摄氏度 = %.2f 华氏度"</span> % cf_t1.c2f(<span class="number">32</span>))</span><br><span class="line">print(<span class="string">"99华氏度 = %.2f 摄氏度"</span> % cf_t1.f2c(<span class="number">99</span>))</span><br></pre></td></tr></table></figure><p>程序实现如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">32</span>摄氏度 = <span class="number">89.60</span> 华氏度</span><br><span class="line"><span class="number">99</span>华氏度 = <span class="number">37.22</span> 摄氏度</span><br></pre></td></tr></table></figure><h4 id="修养二：-from-模块名-import-函数名"><a href="#修养二：-from-模块名-import-函数名" class="headerlink" title="修养二： from 模块名 import 函数名"></a><code>修养二： from 模块名 import 函数名</code></h4><p>第一种方法有些读者可能不是很喜欢，因为这个模块的名字太长了，每次调用模块里的函数都要写这么长的命名空间，真是费力不讨好又容易出错，所以第二种方法应运而生。<br>这种导入方法会直接将模块的命名空间覆盖进来，所以调用的时候也就不需要再加上命名空间了：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cf_t3.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> cf_t1 <span class="keyword">import</span> c2f, f2c</span><br><span class="line">print(<span class="string">"32摄氏度 = %.2f 华氏度"</span> % c2f(<span class="number">32</span>))</span><br><span class="line">print(<span class="string">"99华氏度 = %.2f 摄氏度"</span> % f2c(<span class="number">99</span>))</span><br></pre></td></tr></table></figure><p><strong>如果要写入的函数名过多，这里还可以使用通配符星号（*）来导入模块中所有的命名空间：</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> cf_t1 <span class="keyword">import</span> *</span><br></pre></td></tr></table></figure><p>笔者个人观点：<code>在导入模块的时候应尽量避免通配符的导入，因为这样就不清楚当前名称空间中存在哪些名称了。为了清楚起见，最好坚持使用常规导入方法 （import 模块名）。（毕竟在写大项目的时候，某个函数出现了BUG，为了能找到这个函数是来自哪个模块是必不可少的，所以为了以后方便也不在乎多打点字的）建议：可以遵循PEP 8 的建议不使用通配符导入 。</code></p><h4 id="修养三：-import-模块名-as-新名字"><a href="#修养三：-import-模块名-as-新名字" class="headerlink" title="修养三： import 模块名 as 新名字"></a><code>修养三： import 模块名 as 新名字</code></h4><p>最好的总是留在最后，第三种方法结合了前两种的优势，使用这种方法可以给导入的命名空间起个新名字：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cf_t4.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> cf_t1 <span class="keyword">as</span> tc</span><br><span class="line">print(<span class="string">"32摄氏度 = %.2f 华氏度"</span> % tc.c2f(<span class="number">32</span>))</span><br><span class="line">print(<span class="string">"99华氏度 = %.2f 摄氏度"</span> % tc.f2c(<span class="number">99</span>))</span><br></pre></td></tr></table></figure><p>提示：<code>强烈要求大家不要使用这种方法，因为这样做会使得命名空间的优势荡然无存，一不小心还会陷入名字混乱的局面。</code></p><hr><p>真是的，是不是发现了，说了这么多，到头来还是建议使用常规方法导入模块。<br>是的，这只是建议而已，这个其实是根据自身情况来判定的啦，多数情况下是使用常规方式而已。<br>因此你可根据自身情况灵活使用的。</p><hr><p>原文链接<a href="https://blog.csdn.net/weixin_43347550/article/details/106048759" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43347550/article/details/106048759</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最进有些萌新老是混洗python导入模块的三种方法，甚至不知道各个都有什么作用，这回我来彻底讲解下，让你们不再迷茫。&lt;br&gt;@&lt;a href=&quot;`Python导入模块有三种方法`&quot;&gt;TOC&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;修养一：-import-模块名&quot;&gt;&lt;a href=&quot;#修养一：-import-模块名&quot; class=&quot;headerlink&quot; title=&quot;修养一： import 模块名&quot;&gt;&lt;/a&gt;&lt;code&gt;修养一： import 模块名&lt;/code&gt;&lt;/h4&gt;&lt;p&gt;直接使用 import ，但是再调用模块中的函数的时候，需要加上模块的命名空间。写个例子看看：&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
-    
-      <category term="python导入模块" scheme="http://quanluo.github.io/tags/python%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97/"/>
     
   </entry>
   
