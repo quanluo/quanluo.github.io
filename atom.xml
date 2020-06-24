@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-06-24T10:41:21.332Z</updated>
+  <updated>2020-06-24T10:42:50.778Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://quanluo.github.io/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/"/>
     <id>http://quanluo.github.io/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/</id>
     <published>2020-06-24T10:17:54.000Z</published>
-    <updated>2020-06-24T10:41:21.332Z</updated>
+    <updated>2020-06-24T10:42:50.778Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://images5.alphacoders.com/108/1081273.jpg" alt=""></p><p>包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。</p><a id="more"></a><p>我先放一段代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">long</span> i = <span class="number">1l</span>;</span><br><span class="line">        System.out.println(<span class="string">"i的两倍是:"</span> + (i+i));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>请思考下这段代码会打印出的结果是什么？</p><p>sure， 肯定会有人说：这部很简单嘛，运行部出错的话，结果肯定为<code>22</code>！<br>好吧，实践是检验真理的唯一标准，我们将这段代码，放到Eclipse中运行一下看看，咦？，你会发现结果是<code>2</code>,而不是22，难道是Eclipse有问题，怎么少了个’2’？</p><p>其实吧，是因为赋给变量 i 的数字就是 <code>1</code>,只是后面加了长整型变量的标志字母 <code>&quot;l&quot;</code>而已。</p><p>所以，为了让我们的程序代码更容易理解，字母<code>&#39;l&#39;</code>(还包括大写字母<code>&#39;O&#39;</code>)，尽量不要和数字混用，以避免阅读者的理解和程序意图产生差异。<br>如果字母和数字必须混用，字母<code>&#39;l&#39;</code>务必大写（<code>&#39;L&#39;</code>）， 字母<code>&#39;O&#39;</code>则增加注释。</p><p><code>注意： 字母“l”作为长整型标志时务必大写</code></p><hr><blockquote><p>文章参考书籍：《编写高质量代码之Java》 著:秦小波。</p></blockquote><hr>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://images5.alphacoders.com/108/1081273.jpg" alt=""></p><p>包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（camelCase）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。</p><a id="more"></a><p>我先放一段代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">long</span> i = <span class="number">1l</span>;</span><br><span class="line">        System.out.println(<span class="string">"i的两倍是:"</span> + (i+i));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>请思考下这段代码会打印出的结果是什么？</p><p>sure， 肯定会有人说：这部很简单嘛，运行部出错的话，结果肯定为<code>22</code>！<br>好吧，实践是检验真理的唯一标准，我们将这段代码，放到Eclipse中运行一下看看，咦？，你会发现结果是<code>2</code>,而不是22，难道是Eclipse有问题，怎么少了个’2’？</p><p>其实吧，是因为赋给变量 i 的数字就是 <code>1</code>,只是后面加了长整型变量的标志字母 <code>&quot;l&quot;</code>而已。</p><p>所以，为了让我们的程序代码更容易理解，字母<code>&#39;l&#39;</code>(还包括大写字母<code>&#39;O&#39;</code>)，尽量不要和数字混用，以避免阅读者的理解和程序意图产生差异。<br>如果字母和数字必须混用，字母<code>&#39;l&#39;</code>务必大写（<code>&#39;L&#39;</code>）， 字母<code>&#39;O&#39;</code>则增加注释。</p><p><code>注意： 字母“l”作为长整型标志时务必大写</code></p><hr><blockquote><p>文章参考书籍：《编写高质量代码之Java》 著:秦小波。</p></blockquote><hr>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://images5.alphacoders.com/108/1081273.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。&lt;/p&gt;
+&lt;p&gt;包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（camelCase）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。&lt;/p&gt;
     
     </summary>
     

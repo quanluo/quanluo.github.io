@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://quanluo.github.io">
   <title>Java代码编写提升（1）不要在常量和变量中出现易混淆的字母 | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。">
+  <meta name="description" content="包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（camelCase）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java代码编写提升（1）不要在常量和变量中出现易混淆的字母">
 <meta property="og:url" content="http://quanluo.github.io/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
-<meta property="og:description" content="包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。">
+<meta property="og:description" content="包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（camelCase）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://images5.alphacoders.com/108/1081273.jpg">
 <meta property="article:published_time" content="2020-06-24T10:17:54.000Z">
-<meta property="article:modified_time" content="2020-06-24T10:41:21.332Z">
+<meta property="article:modified_time" content="2020-06-24T10:42:50.778Z">
 <meta property="article:author" content="Quanluo">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="JavaPro">
@@ -223,7 +223,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="https://images5.alphacoders.com/108/1081273.jpg" alt=""></p>
-<p>包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。</p>
+<p>包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（camelCase）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。</p>
 <a id="more"></a>
 <p>我先放一段代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">long</span> i = <span class="number">1l</span>;</span><br><span class="line">        System.out.println(<span class="string">"i的两倍是:"</span> + (i+i));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
