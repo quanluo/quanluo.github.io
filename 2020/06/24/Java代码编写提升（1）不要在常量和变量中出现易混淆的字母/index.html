@@ -6,23 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://quanluo.github.io">
-  <title>Python3 File 方法总结 (超详细！) | Quanluo&#39;s blog</title>
+  <title>Java代码编写提升（1）不要在常量和变量中出现易混淆的字母 | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="@[TOC](Python3 File 方法总结目录)">
+  <meta name="description" content="包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python3 File 方法总结 (超详细！)">
-<meta property="og:url" content="http://quanluo.github.io/2020/05/23/Python3-File-%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93-%E8%B6%85%E8%AF%A6%E7%BB%86%EF%BC%81/index.html">
+<meta property="og:title" content="Java代码编写提升（1）不要在常量和变量中出现易混淆的字母">
+<meta property="og:url" content="http://quanluo.github.io/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
-<meta property="og:description" content="@[TOC](Python3 File 方法总结目录)">
+<meta property="og:description" content="包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/quanluo/photos/blob/master/%E5%A3%81%E7%BA%B8/1.png?raw=true">
-<meta property="article:published_time" content="2020-05-23T15:48:30.000Z">
-<meta property="article:modified_time" content="2020-05-23T15:51:26.581Z">
+<meta property="og:image" content="https://images5.alphacoders.com/108/1081273.jpg">
+<meta property="article:published_time" content="2020-06-24T10:17:54.000Z">
+<meta property="article:modified_time" content="2020-06-24T10:38:39.994Z">
 <meta property="article:author" content="Quanluo">
-<meta property="article:tag" content="Python">
-<meta property="article:tag" content="file方法">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="JavaPro">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/quanluo/photos/blob/master/%E5%A3%81%E7%BA%B8/1.png?raw=true">
+<meta name="twitter:image" content="https://images5.alphacoders.com/108/1081273.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
   
@@ -196,20 +196,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python3-File-方法总结-超详细！" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java代码编写提升（1）不要在常量和变量中出现易混淆的字母" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python3 File 方法总结 (超详细！)
+      Java代码编写提升（1）不要在常量和变量中出现易混淆的字母
     </h1>
   
 
         
-        <a href="/2020/05/23/Python3-File-%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93-%E8%B6%85%E8%AF%A6%E7%BB%86%EF%BC%81/" class="archive-article-date">
-  	<time datetime="2020-05-23T15:48:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
+        <a href="/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/" class="archive-article-date">
+  	<time datetime="2020-06-24T10:17:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-24</time>
 </a>
 
         <!-- 不蒜子统计 -->
@@ -222,133 +222,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>@[TOC](Python3 File 方法总结目录)<br><img src="https://github.com/quanluo/photos/blob/master/%E5%A3%81%E7%BA%B8/1.png?raw=true" alt="123"></p>
+        <p><img src="https://images5.alphacoders.com/108/1081273.jpg" alt=""></p>
+<p>包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。</p>
 <a id="more"></a>
-<h2 id="1-file-close-—-关闭一个已打开的文件"><a href="#1-file-close-—-关闭一个已打开的文件" class="headerlink" title="1. file.close() — 关闭一个已打开的文件"></a>1. <font color=red>file.close()</font> — 关闭一个已打开的文件</h2><p>close()方法用于==关闭一个已打开的文件==。关闭后的文件不能再进行读写操作，否则会报错。该方法允许调用多次。使用close()方法关闭文件是一个好习惯。<br>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fileObject.close()  <span class="comment">#无参数，无返回值</span></span><br></pre></td></tr></table></figure>
+<p>我先放一段代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">long</span> i = <span class="number">1l</span>;</span><br><span class="line">        System.out.println(<span class="string">"i的两倍是:"</span> + (i+i));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>实例：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">文件名为： hello.txt</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-file-flush-—-用来刷新缓冲区的"><a href="#2-file-flush-—-用来刷新缓冲区的" class="headerlink" title="2. file.flush() — 用来刷新缓冲区的"></a>2. <font color=red>file.flush()</font> — 用来刷新缓冲区的</h2><p>flush()方法是==用来刷新缓冲区的==，即将缓冲区中的数据立刻写入文件，同时清空缓冲区，不需要是被动的等待输出缓冲区写入。<br>一般情况下，文件关闭后会自动刷新缓冲区，但是有时你需要在关闭之前刷新它，这时就可以使用flush()方法。<br>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fileObject.flush() <span class="comment">#无参数，无返回值</span></span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line"><span class="comment">#刷新缓冲区</span></span><br><span class="line">fo.flush()</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">文件名为： hello.txt</span><br></pre></td></tr></table></figure>
-<h2 id="3-file-fileno-—-返回一个整型的文件描述符-file-descriptor-FD-整型"><a href="#3-file-fileno-—-返回一个整型的文件描述符-file-descriptor-FD-整型" class="headerlink" title="3. file.fileno() — 返回一个整型的文件描述符(file descriptor FD 整型)"></a>3. <font color=red>file.fileno()</font> — 返回一个整型的文件描述符(file descriptor FD 整型)</h2><p>fileno()方法==返回一个整型的文件描述符(file descriptor FD 整型)==，可用于底层操作系统的I/O操作。</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fileObject.fileno() <span class="comment">#无参数，无返回值</span></span><br></pre></td></tr></table></figure>
-<p>实例：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#文件打开</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">fd = fo.fileno()</span><br><span class="line">print(<span class="string">"文件描述符为： "</span>, fd)</span><br><span class="line"></span><br><span class="line"><span class="comment">#文件关闭</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">文件名为： hello.txt</span><br><span class="line">文件描述符为： <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-file-isatty-—-检测文件是否连接到一个终端设备，如果是返回-True，否则返回-False"><a href="#4-file-isatty-—-检测文件是否连接到一个终端设备，如果是返回-True，否则返回-False" class="headerlink" title="4. file.isatty() — 检测文件是否连接到一个终端设备，如果是返回 True，否则返回 False"></a>4. <font color=red>file.isatty()</font> — 检测文件是否连接到一个终端设备，如果是返回 True，否则返回 False</h2><p>isatty()方法==检测文件是否连接到一个终端设备，如果是返回 True，否则返回 False。==</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fileObject.isatty() <span class="comment">#无参数，返回值为True或则False</span></span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">isa = fo.isatty()</span><br><span class="line">print(<span class="string">"返回值为： "</span>, isa)</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">文件名： hello.txt</span><br><span class="line">返回值为： <span class="literal">False</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="5-file-next-—-python3的内置函数next-通过迭代器调用next-方法返回下一项"><a href="#5-file-next-—-python3的内置函数next-通过迭代器调用next-方法返回下一项" class="headerlink" title="5. file.next() — python3的内置函数next()通过迭代器调用next()方法返回下一项"></a>5. <font color=red>file.next()</font> — python3的内置函数next()通过迭代器调用<strong>next</strong>()方法返回下一项</h2><p>python3 中的file对象不支持next()方法。==python3的内置函数next()通过迭代器调用<strong>next</strong>()方法返回下一项==。 在循环中，next()方法会在每次循环中调用，该方法返回文件的下一行，如果到达结尾(EOF)，则触发Stoplteration</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">next(fileobject) </span><br><span class="line"><span class="comment">#参数 命名的打开文件名</span></span><br><span class="line"><span class="comment">#返回值 返回文件下一行</span></span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">           line = next(fo)</span><br><span class="line">           print(<span class="string">"第 %d 行 ： %s"</span>  % (index, line))</span><br><span class="line">        </span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">第 <span class="number">1</span> 行 ： 第一行內容</span><br><span class="line"></span><br><span class="line">第 <span class="number">2</span> 行 ： 第二行內容</span><br><span class="line"></span><br><span class="line">第 <span class="number">3</span> 行 ： 第三行內容</span><br><span class="line"></span><br><span class="line">第 <span class="number">4</span> 行 ： 第四行內容</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-file-read-—-用于从文件读取指定的字节数"><a href="#6-file-read-—-用于从文件读取指定的字节数" class="headerlink" title="6. file.read() — 用于从文件读取指定的字节数"></a>6. <font color=red>file.read()</font> — 用于从文件读取指定的字节数</h2><p>read()方法==用于从文件读取指定的字节数==，如果未给出或为负数则读取所有。读取包括”\n”字符。</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fileObjext.read(size)</span><br><span class="line"><span class="comment">#参数 size    从文件中读取的字节数</span></span><br><span class="line"><span class="comment">#返回值  返回从字符串中读取的字节</span></span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">line = fo.read(<span class="number">10</span>)</span><br><span class="line">print(<span class="string">"读取的字符串： %s"</span> % (line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">读取的字符串： 第一行內容</span><br><span class="line">第二行內</span><br></pre></td></tr></table></figure>
-<h2 id="7-file-readline-—-用于从文件读取整行"><a href="#7-file-readline-—-用于从文件读取整行" class="headerlink" title="7. file.readline() — 用于从文件读取整行"></a>7. <font color=red>file.readline()</font> — 用于从文件读取整行</h2><p>readline()方法==用于从文件读取整行==，包括”\n”字符。如果指定了一个非负数的参数，则返回指定大小的字节数，包括”\n”字符。如果未给定，则输出整行。</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fileObject.readline(size)</span><br><span class="line"><span class="comment">#参数 size    从文件中读取的字节数</span></span><br><span class="line"><span class="comment">#返回值  返回从字符串中读取的字节</span></span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">line = fo.readline()</span><br><span class="line">print(<span class="string">"读取第一行:  %s"</span> % (line))</span><br><span class="line"></span><br><span class="line">line = fo.readline(<span class="number">3</span>)</span><br><span class="line">print(<span class="string">"读取字符串为： %s"</span> % (line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">文件名： hello.txt</span><br><span class="line">读取第一行： 第一行内容</span><br><span class="line"></span><br><span class="line">读取的字符串： 第一行</span><br></pre></td></tr></table></figure>
-
-<h2 id="8-file-readlines-—-用于读取所有行-直到结束符EOF-并返回列表"><a href="#8-file-readlines-—-用于读取所有行-直到结束符EOF-并返回列表" class="headerlink" title="8. file.readlines() — 用于读取所有行(直到结束符EOF)并返回列表"></a>8. <font color=red>file.readlines()</font> — 用于读取所有行(直到结束符EOF)并返回列表</h2><p>readlines()方法==用于读取所有行(直到结束符EOF)并返回列表，==若给定size&gt;0，返回总和大约为size字节的行，实际读取值可能比size较大，因为需要填充缓冲区。<br>如果碰到结束符EOF则返回空字符串。</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fileObject.readlines(size)</span><br><span class="line"><span class="comment">#参数  size   从文件中读取的字节数</span></span><br><span class="line"><span class="comment">#返回值  返回列表，包含所有行</span></span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">line = fo.readlines()</span><br><span class="line">print(<span class="string">"读取的数据为:  %s"</span> % (line))</span><br><span class="line"></span><br><span class="line">line = fo.readline(<span class="number">2</span>)</span><br><span class="line">print(<span class="string">"读取的数据为： %s"</span> % (line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">读取的数据为:  [<span class="string">'第一行內容\n'</span>, <span class="string">'第二行內容\n'</span>, <span class="string">'第三行內容\n'</span>, <span class="string">'第四行內容'</span>]</span><br><span class="line">读取的数据为： []</span><br></pre></td></tr></table></figure>
-
-<h2 id="9-file-seek-—-用于移动文件读取指针-到-指定位置"><a href="#9-file-seek-—-用于移动文件读取指针-到-指定位置" class="headerlink" title="9. file.seek() — 用于移动文件读取指针 到 指定位置"></a>9. <font color=red>file.seek()</font> — 用于移动文件读取指针 到 指定位置</h2><p>seek()方法==用于移动文件读取指针 到 指定位置==。</p>
-<p>语法： </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fileObject.seek(offset, whence)</span><br><span class="line"><span class="comment">#参数 </span></span><br><span class="line">* offset 开始的偏移量，也就是代表需要移动偏移的字节数</span><br><span class="line">* whence 可选，默认值为<span class="number">0</span>。给whence参数一个定义，表示要从哪个位置开始偏移；<span class="number">0</span>代表从文件开头开始算起，<span class="number">1</span>代表从当前位置开始算起，<span class="number">2</span>代表从文件末尾开始算起。</span><br><span class="line"><span class="comment">#返回值 无返回值</span></span><br></pre></td></tr></table></figure>
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">line = fo.readline()</span><br><span class="line">print(<span class="string">"读取的数据为： %s"</span> % (line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#重新设置文件读取指针到开头</span></span><br><span class="line">fo.seek(<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">line = fo.readline()</span><br><span class="line">print(<span class="string">"读取的数据为： %s"</span> % (line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#从当前位置指针开始</span></span><br><span class="line">fo.seek(<span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line">line = fo.readline()</span><br><span class="line">print(<span class="string">"读取的数据为： %s"</span> % (line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#从文件末尾开始</span></span><br><span class="line">fo.seek(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line">line = fo.readline()</span><br><span class="line">print(<span class="string">"读取的数据为： %s"</span> % (line))</span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">读取的数据为： 第一行內容</span><br><span class="line"></span><br><span class="line">读取的数据为： 第一行內容</span><br><span class="line"></span><br><span class="line">读取的数据为： 第二行內容</span><br><span class="line"></span><br><span class="line">读取的数据为：</span><br></pre></td></tr></table></figure>
-
-<h2 id="10-file-tell-—-返回文件的当前位置"><a href="#10-file-tell-—-返回文件的当前位置" class="headerlink" title="10. file.tell() — 返回文件的当前位置"></a>10. <font color=red>file.tell()</font> — 返回文件的当前位置</h2><p>tell()方法==返回文件的当前位置==，即文件指针当前位置。</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fileObject.tell()</span><br><span class="line"><span class="comment">#无参数</span></span><br><span class="line"><span class="comment">#返回值 返回文件指针当前位置</span></span><br></pre></td></tr></table></figure>
-
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">line = fo.readline()</span><br><span class="line">print(<span class="string">"读取的数据为:  %s"</span> % (line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#获取当前文件指针位置</span></span><br><span class="line">path = fo.tell()</span><br><span class="line">print(<span class="string">"当前指针位置： %d"</span> % (path))</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">读取的数据为:  第一行內容</span><br><span class="line"></span><br><span class="line">当前指针位置： <span class="number">17</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="11-file-truncate-—-用于截断文件"><a href="#11-file-truncate-—-用于截断文件" class="headerlink" title="11. file.truncate() — 用于截断文件"></a>11. <font color=red>file.truncate()</font> — 用于截断文件</h2><p>truncate()方法==用于截断文件==，如果指定了可选参数size，则表示截断文件为size个字符。如果没有指定size，则重置到当前位置。（换行符’\n‘也会被计算）</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fileObject.truncate(size)</span><br><span class="line"><span class="comment">#参数 size 可选，如果存在则文件截断为size个字节。</span></span><br><span class="line"><span class="comment">#返回值 无返回值</span></span><br></pre></td></tr></table></figure>
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#hello.txt</span><br><span class="line">hello</span><br><span class="line">world</span><br><span class="line">everyone</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>, <span class="string">'r+'</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">fo.truncate(<span class="number">10</span>)</span><br><span class="line"><span class="comment">#读取现在文件所有的内容</span></span><br><span class="line">line = fo.read()</span><br><span class="line">print(line)</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">hello</span><br><span class="line">wor</span><br></pre></td></tr></table></figure>
-<p>现在hello.txt文件内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#hello.txt</span><br><span class="line">hello</span><br><span class="line">wor</span><br></pre></td></tr></table></figure>
-<h2 id="12-file-write-—-用于向文件中写入指定字符串"><a href="#12-file-write-—-用于向文件中写入指定字符串" class="headerlink" title="12. file.write() — 用于向文件中写入指定字符串"></a>12. <font color=red>file.write()</font> — 用于向文件中写入指定字符串</h2><p>write()方法==用于向文件中写入指定字符串==。在文件关闭前或缓冲区刷新前，字符串内容存储在缓冲区中，这时你在文件中看不到写入的内容的。</p>
-<p>语法： </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fileObject.write(str)</span><br><span class="line"><span class="comment">#参数 str ---要写入文件的字符串</span></span><br><span class="line"><span class="comment">#返回值 无返回值</span></span><br></pre></td></tr></table></figure>
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,<span class="string">"r+"</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">str = <span class="string">'\n第五行内容'</span></span><br><span class="line"><span class="comment">#在文件末尾写入一行</span></span><br><span class="line">fo.seek(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line">line = fo.write(str)</span><br><span class="line"></span><br><span class="line"><span class="comment">#回到文件开头，读取文件所有内容</span></span><br><span class="line">fo.seek(<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">6</span>):</span><br><span class="line">    line = next(fo)</span><br><span class="line">    print(<span class="string">'第 %d 行 -- %s'</span> % (index, line))</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">第 <span class="number">1</span> 行 -- 第一行內容</span><br><span class="line"></span><br><span class="line">第 <span class="number">2</span> 行 -- 第二行內容</span><br><span class="line"></span><br><span class="line">第 <span class="number">3</span> 行 -- 第三行內容</span><br><span class="line"></span><br><span class="line">第 <span class="number">4</span> 行 -- 第四行內容</span><br><span class="line"></span><br><span class="line">第 <span class="number">5</span> 行 -- 第五行内容</span><br></pre></td></tr></table></figure>
-<p>现在hello.txt,文件内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br><span class="line">第五行内容</span><br></pre></td></tr></table></figure>
-<h2 id="13-file-writelines-—-用于向文件中写入一序列的字符串"><a href="#13-file-writelines-—-用于向文件中写入一序列的字符串" class="headerlink" title="13. file.writelines() — 用于向文件中写入一序列的字符串"></a>13. <font color=red>file.writelines()</font> — 用于向文件中写入一序列的字符串</h2><p>writelines() 方法==用于向文件中写入一序列的字符串==。这一序列字符串可以是由迭代对象产生的，如一个字符串列表。换行需要制定换行符\n.</p>
-<p>语法：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fileObject.writelines([str])</span><br><span class="line"><span class="comment">#参数 str --要写入文件的字符串序列</span></span><br><span class="line"><span class="comment">#返回值 无返回值</span></span><br></pre></td></tr></table></figure>
-<p>实例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="comment">#打开文件</span></span><br><span class="line">fo = open(<span class="string">"hello.txt"</span>,<span class="string">"r+"</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">print(<span class="string">"文件名为： "</span>, fo.name)</span><br><span class="line"></span><br><span class="line">seq = [<span class="string">'\n添加第五行内容'</span>, <span class="string">'\n添加第六行内容'</span>]</span><br><span class="line"><span class="comment">#在文件末尾写入</span></span><br><span class="line">fo.seek(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line">line = fo.writelines(seq)</span><br><span class="line"></span><br><span class="line"><span class="comment">#回到文件开头，读取文件所有内容</span></span><br><span class="line">fo.seek(<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">line = fo.read()</span><br><span class="line">print(line)</span><br><span class="line"></span><br><span class="line"><span class="comment">#关闭文件</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
-<p>输入结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">文件名为：  hello.txt</span><br><span class="line">第一行內容</span><br><span class="line">第二行內容</span><br><span class="line">第三行內容</span><br><span class="line">第四行內容</span><br><span class="line">第五行内容</span><br><span class="line">添加第五行内容</span><br><span class="line">添加第六行内容</span><br></pre></td></tr></table></figure>
-
+<p>请思考下这段代码会打印出的结果是什么？</p>
+<p>sure， 肯定会有人说：这部很简单嘛，运行部出错的话，结果肯定为<code>22</code>！<br>好吧，实践是检验真理的唯一标准，我们将这段代码，放到Eclipse中运行一下看看，咦？，你会发现结果是<code>2</code>,而不是22，难道是Eclipse有问题，怎么少了个’2’？</p>
+<p>其实吧，是因为赋给变量 i 的数字就是 <code>1</code>,只是后面加了长整型变量的标志字母 <code>&quot;l&quot;</code>而已。</p>
+<p>所以，为了让我们的程序代码更容易理解，字母<code>&#39;l&#39;</code>(还包括大写字母<code>&#39;O&#39;</code>)，尽量不要和数字混用，以避免阅读者的理解和程序意图产生差异。<br>如果字母和数字必须混用，字母<code>&#39;l&#39;</code>务必大写（<code>&#39;L&#39;</code>）， 字母<code>&#39;O&#39;</code>则增加注释。</p>
+<p><code>注意： 字母“l”作为长整型标志时务必大写</code></p>
+<hr>
+<p>文章参考书籍：《编写高质量代码之Java》 著:秦小波。</p>
 <hr>
 
       
@@ -401,11 +287,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">file方法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JavaPro</a>
         		</li>
       		
 		</ul>
@@ -461,7 +347,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/05/23/Python3-File-%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93-%E8%B6%85%E8%AF%A6%E7%BB%86%EF%BC%81/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -475,18 +361,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/05/23/Python%E4%B9%8B%E5%B0%86py%E6%96%87%E4%BB%B6-%E4%B8%80%E4%B8%AA%E6%88%96%E5%A4%9A%E4%B8%AA-%E6%89%93%E5%8C%85%E6%88%90exe%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6-pyinstaller/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python之将py文件(一个或多个)打包成exe可执行文件----pyinstaller
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/05/23/%E8%BF%99%E5%9B%9E%E7%BB%88%E4%BA%8E%E7%9F%A5%E9%81%93%E4%BA%86if-name-main-%E5%B9%B2%E5%98%9B%E7%9A%84%E4%BA%86/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">这回终于知道了if __name__==&#39;__main__&#39;干嘛的了</div>
+    <a href="/2020/06/21/hexo-yilia%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9B%BE%E6%A0%87Favicon/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo+yilia主题博客如何设置网站的图标Favicon</div>
       <i class="icon-circle-right"></i>
     </a>
   

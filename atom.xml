@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-06-21T07:31:11.037Z</updated>
+  <updated>2020-06-24T10:38:39.994Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java代码编写提升（1）不要在常量和变量中出现易混淆的字母</title>
+    <link href="http://quanluo.github.io/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/"/>
+    <id>http://quanluo.github.io/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/</id>
+    <published>2020-06-24T10:17:54.000Z</published>
+    <updated>2020-06-24T10:38:39.994Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://images5.alphacoders.com/108/1081273.jpg" alt=""></p><p>包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。</p><a id="more"></a><p>我先放一段代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">long</span> i = <span class="number">1l</span>;</span><br><span class="line">        System.out.println(<span class="string">"i的两倍是:"</span> + (i+i));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>请思考下这段代码会打印出的结果是什么？</p><p>sure， 肯定会有人说：这部很简单嘛，运行部出错的话，结果肯定为<code>22</code>！<br>好吧，实践是检验真理的唯一标准，我们将这段代码，放到Eclipse中运行一下看看，咦？，你会发现结果是<code>2</code>,而不是22，难道是Eclipse有问题，怎么少了个’2’？</p><p>其实吧，是因为赋给变量 i 的数字就是 <code>1</code>,只是后面加了长整型变量的标志字母 <code>&quot;l&quot;</code>而已。</p><p>所以，为了让我们的程序代码更容易理解，字母<code>&#39;l&#39;</code>(还包括大写字母<code>&#39;O&#39;</code>)，尽量不要和数字混用，以避免阅读者的理解和程序意图产生差异。<br>如果字母和数字必须混用，字母<code>&#39;l&#39;</code>务必大写（<code>&#39;L&#39;</code>）， 字母<code>&#39;O&#39;</code>则增加注释。</p><p><code>注意： 字母“l”作为长整型标志时务必大写</code></p><hr><p>文章参考书籍：《编写高质量代码之Java》 著:秦小波。</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://images5.alphacoders.com/108/1081273.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（Camel Case）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Java" scheme="http://quanluo.github.io/tags/Java/"/>
+    
+      <category term="JavaPro" scheme="http://quanluo.github.io/tags/JavaPro/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo+yilia主题博客如何设置网站的图标Favicon</title>
@@ -465,31 +489,6 @@
       <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
       <category term="plotly" scheme="http://quanluo.github.io/tags/plotly/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对一个DataFrame的一个列进行映射，得出一个新列。学习笔记</title>
-    <link href="http://quanluo.github.io/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://quanluo.github.io/2020/05/24/%E5%AF%B9%E4%B8%80%E4%B8%AADataFrame%E7%9A%84%E4%B8%80%E4%B8%AA%E5%88%97%E8%BF%9B%E8%A1%8C%E6%98%A0%E5%B0%84%EF%BC%8C%E5%BE%97%E5%87%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%88%97%E3%80%82%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-05-23T16:12:43.000Z</published>
-    <updated>2020-05-23T16:13:32.495Z</updated>
-    
-    <content type="html"><![CDATA[<p>通过字典映射，将<code>DataFrame</code>某个文字列映射出一个数字列，使得在程序里使用更加方便。</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = pd.DataFrame(&#123;<span class="string">'name'</span>: [<span class="string">'h1'</span>, <span class="string">'h1'</span>, <span class="string">'h2'</span>, <span class="string">'h2'</span> ,<span class="string">'h3'</span> ,<span class="string">'h4'</span>,<span class="string">'h3'</span> ,<span class="string">'h4'</span>]&#125;)</span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">  name</span></span><br><span class="line"><span class="string">0 h1</span></span><br><span class="line"><span class="string">1 h1</span></span><br><span class="line"><span class="string">2 h2</span></span><br><span class="line"><span class="string">3 h2</span></span><br><span class="line"><span class="string">4 h3</span></span><br><span class="line"><span class="string">5 h4</span></span><br><span class="line"><span class="string">6 h3</span></span><br><span class="line"><span class="string">7 h4</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">name_to_color = &#123;</span><br><span class="line">  <span class="string">'h1'</span>: <span class="number">0</span>,</span><br><span class="line">  <span class="string">'h2'</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="string">'h3'</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="string">'h4'</span>: <span class="number">3</span>,</span><br><span class="line">&#125;</span><br><span class="line">data[<span class="string">'color'</span>] = data[<span class="string">'name'</span>].map(name_to_color)</span><br><span class="line">print(data)</span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">  name  color</span></span><br><span class="line"><span class="string">0   h1      0</span></span><br><span class="line"><span class="string">1   h1      0</span></span><br><span class="line"><span class="string">2   h2      1</span></span><br><span class="line"><span class="string">3   h2      1</span></span><br><span class="line"><span class="string">4   h3      2</span></span><br><span class="line"><span class="string">5   h4      3</span></span><br><span class="line"><span class="string">6   h3      2</span></span><br><span class="line"><span class="string">7   h4      3</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;通过字典映射，将&lt;code&gt;DataFrame&lt;/code&gt;某个文字列映射出一个数字列，使得在程序里使用更加方便。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
-    
-      <category term="DaraFrame" scheme="http://quanluo.github.io/tags/DaraFrame/"/>
-    
-      <category term="映射" scheme="http://quanluo.github.io/tags/%E6%98%A0%E5%B0%84/"/>
     
   </entry>
   
