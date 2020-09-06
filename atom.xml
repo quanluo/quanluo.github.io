@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-09-06T03:32:03.848Z</updated>
+  <updated>2020-09-06T03:49:50.312Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Java基本数据类型默认值总结</title>
-    <link href="http://quanluo.github.io/2020/09/06/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E9%BB%98%E8%AE%A4%E5%80%BC%E6%80%BB%E7%BB%93/"/>
-    <id>http://quanluo.github.io/2020/09/06/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E9%BB%98%E8%AE%A4%E5%80%BC%E6%80%BB%E7%BB%93/</id>
+    <link href="http://quanluo.github.io/2020/09/06/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E9%BB%98%E8%AE%A4%E5%80%BC%E6%80%BB%E7%BB%93-1/"/>
+    <id>http://quanluo.github.io/2020/09/06/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E9%BB%98%E8%AE%A4%E5%80%BC%E6%80%BB%E7%BB%93-1/</id>
     <published>2020-09-06T03:23:26.000Z</published>
-    <updated>2020-09-06T03:32:03.848Z</updated>
+    <updated>2020-09-06T03:49:50.312Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://images.alphacoders.com/147/thumb-1920-147323.png" alt=""></p><h3 id="byte："><a href="#byte：" class="headerlink" title="byte："></a>byte：</h3><p>默认值：<code>0</code></p><h3 id="shor"><a href="#shor" class="headerlink" title="shor:"></a>shor:</h3><p>默认值：<code>0</code></p><h3 id="int"><a href="#int" class="headerlink" title="int:"></a>int:</h3><a id="more"></a><p>默认值：<code>0</code></p><h3 id="long"><a href="#long" class="headerlink" title="long:"></a>long:</h3><p>默认值：<code>0L</code></p><h3 id="float"><a href="#float" class="headerlink" title="float:"></a>float:</h3><p>默认值：<code>0.0f</code></p><h3 id="double"><a href="#double" class="headerlink" title="double:"></a>double:</h3><p>默认值：<code>0.0d</code></p><h3 id="boolean"><a href="#boolean" class="headerlink" title="boolean:"></a>boolean:</h3><p>默认值：<code>false</code></p><h3 id="char"><a href="#char" class="headerlink" title="char:"></a>char:</h3>]]></content>
     
