@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-11-13T03:01:44.103Z</updated>
+  <updated>2020-11-23T10:30:27.036Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>完美解决Mac软件意外退出的方法（软件签名）</title>
+    <link href="http://quanluo.github.io/2020/11/23/%E5%AE%8C%E7%BE%8E%E8%A7%A3%E5%86%B3Mac%E8%BD%AF%E4%BB%B6%E6%84%8F%E5%A4%96%E9%80%80%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%88%E8%BD%AF%E4%BB%B6%E7%AD%BE%E5%90%8D%EF%BC%89/"/>
+    <id>http://quanluo.github.io/2020/11/23/%E5%AE%8C%E7%BE%8E%E8%A7%A3%E5%86%B3Mac%E8%BD%AF%E4%BB%B6%E6%84%8F%E5%A4%96%E9%80%80%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%88%E8%BD%AF%E4%BB%B6%E7%AD%BE%E5%90%8D%EF%BC%89/</id>
+    <published>2020-11-23T10:28:53.000Z</published>
+    <updated>2020-11-23T10:30:27.036Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="因为Apple苹果公司删除了TNT的证书，所以在2019年7月12日后软件都不能运行了，临时的解决办法，就是自己签名，具体往下看。"><a href="#因为Apple苹果公司删除了TNT的证书，所以在2019年7月12日后软件都不能运行了，临时的解决办法，就是自己签名，具体往下看。" class="headerlink" title="因为Apple苹果公司删除了TNT的证书，所以在2019年7月12日后软件都不能运行了，临时的解决办法，就是自己签名，具体往下看。"></a>因为Apple苹果公司删除了TNT的证书，所以在2019年7月12日后软件都不能运行了，临时的解决办法，就是自己签名，具体往下看。</h5><p>比如安装美版的LOL，安装完后，LOL图标会是一个白色的未签名图标，因此，我们需要对lol进行手动签名。</p><p>签名：<br>打开终端工具输入并执行如下命令：<br><code>sudo codesign --force --deep --sign - /Applications/name.app</code><br>注意后面的文件路径，你可以打开访达找到应用程序，找到要签名的软件，直接拖入 终端 界面，即可自动生成路径。</p><h3 id="命令输完回车后，输入你电脑设置的密码就可以了。"><a href="#命令输完回车后，输入你电脑设置的密码就可以了。" class="headerlink" title="命令输完回车后，输入你电脑设置的密码就可以了。"></a>命令输完回车后，输入你电脑设置的密码就可以了。</h3><p><img src="https://img-blog.csdnimg.cn/20201123182537185.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;因为Apple苹果公司删除了TNT的证书，所以在2019年7月12日后软件都不能运行了，临时的解决办法，就是自己签名，具体往下看。&quot;&gt;&lt;a href=&quot;#因为Apple苹果公司删除了TNT的证书，所以在2019年7月12日后软件都不能运行了，临时的解决办法，就是自
+      
+    
+    </summary>
+    
+    
+    
+      <category term="mac" scheme="http://quanluo.github.io/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>解决Mac电脑连接校园网不弹出登陆窗口问题汇总</title>
@@ -450,33 +474,6 @@
       <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
     
       <category term="数据可视化" scheme="http://quanluo.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IndexError: list index out of range的错误分析</title>
-    <link href="http://quanluo.github.io/2020/05/25/IndexError-list-index-out-of-range%E7%9A%84%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/"/>
-    <id>http://quanluo.github.io/2020/05/25/IndexError-list-index-out-of-range%E7%9A%84%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/</id>
-    <published>2020-05-25T12:56:46.000Z</published>
-    <updated>2020-05-25T12:57:31.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>造成错误有以下两种情况：</p><h3 id="第1种"><a href="#第1种" class="headerlink" title="第1种"></a>第1种</h3><p><code>list[index]</code> index超出范围<br>index索引是从0开始的，因此如果list列表里有10个元素，那它最后一个元素的索引是9，而不是10。</p><h3 id="第2种"><a href="#第2种" class="headerlink" title="第2种"></a>第2种</h3><p>list是一个空列表，没有一个元素。<br>所以进行<code>list[index]</code>就会出现该错误。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;造成错误有以下两种情况：&lt;/p&gt;
-&lt;h3 id=&quot;第1种&quot;&gt;&lt;a href=&quot;#第1种&quot; class=&quot;headerlink&quot; title=&quot;第1种&quot;&gt;&lt;/a&gt;第1种&lt;/h3&gt;&lt;p&gt;&lt;code&gt;list[index]&lt;/code&gt; index超出范围&lt;br&gt;index索引是
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
-    
-      <category term="error" scheme="http://quanluo.github.io/tags/error/"/>
     
   </entry>
   
