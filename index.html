@@ -190,6 +190,100 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-将十进制转换成短浮点数格式（IEEE745）并用十六进制表示（组成原理）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/30/%E5%B0%86%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%88%90%E7%9F%AD%E6%B5%AE%E7%82%B9%E6%95%B0%E6%A0%BC%E5%BC%8F%EF%BC%88IEEE745%EF%BC%89%E5%B9%B6%E7%94%A8%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%EF%BC%88%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%EF%BC%89/">将十进制转换成短浮点数格式（IEEE745）并用十六进制表示（组成原理）</a>
+    </h1>
+  
+
+        
+        <a href="/2020/11/30/%E5%B0%86%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%88%90%E7%9F%AD%E6%B5%AE%E7%82%B9%E6%95%B0%E6%A0%BC%E5%BC%8F%EF%BC%88IEEE745%EF%BC%89%E5%B9%B6%E7%94%A8%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%EF%BC%88%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2020-11-30T02:56:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-30</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="IEEE-745-标准中有三种形式的浮点数，具体如下表："><a href="#IEEE-745-标准中有三种形式的浮点数，具体如下表：" class="headerlink" title="IEEE 745 标准中有三种形式的浮点数，具体如下表："></a>IEEE 745 标准中有三种形式的浮点数，具体如下表：</h3><p>类型  | 数符 |阶码 | 尾数数值 | 总位数 | 偏置值 |偏置值 |<br>|——– | ——— | —– | —- | —- | —- | —|<br> | | | | | |十六进制 | 十进制<br> | 短浮点数|1 |8 |23 |32 |7FH | 127<br> |长浮点数 |1 |11 |52 |64 |3FFH | 1023<br> |临时浮点数 |1 |15 |64 |80 |3FFFH | 16383</p>
+<h3 id="列题-：将（100-25）十进制转换成短浮点数格式。"><a href="#列题-：将（100-25）十进制转换成短浮点数格式。" class="headerlink" title="列题 ：将（100.25）十进制转换成短浮点数格式。"></a>列题 ：将（100.25）十进制转换成短浮点数格式。</h3><ol>
+<li><p>把十进制转换成二进制。<br> (100.25)十进制 = （1100100.01）二进制</p>
+</li>
+<li><p>规格化二进制<br> 1100100.01 = 1.10010001✖️2^6</p>
+</li>
+<li><p>计算出阶码的移码（偏置值 + 阶码真值） ==阶码真值就是上面2^k 中的k==<br> 127 + 6 = 1111111 + 110 = 10000101</p>
+</li>
+<li><p>以短浮点数格式存储该数<br>因为，<br>符号为 = 0      ==（正数为0，负数为1）==<br>阶码（E） = 10000101<br>尾数 = 1001 0001 0000 0000 0000 000   （==规格化二进制后小数点后面的数然后用零补齐23位数位==）<br>所以，短浮点数代码为：<br>0，1000 0101，1001 0001 0000 0000 0000 000</p>
+<p>表示为十六进制的代码：</p>
+<h3 id="42C88000H"><a href="#42C88000H" class="headerlink" title="42C88000H"></a>42C88000H</h3><p><img src="https://img-blog.csdnimg.cn/20201130105022993.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">组成原理</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">IEEE745</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/11/30/%E5%B0%86%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%88%90%E7%9F%AD%E6%B5%AE%E7%82%B9%E6%95%B0%E6%A0%BC%E5%BC%8F%EF%BC%88IEEE745%EF%BC%89%E5%B9%B6%E7%94%A8%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%EF%BC%88%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%EF%BC%89/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-完美解决Mac软件意外退出的方法（软件签名）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -927,86 +1021,6 @@
 
 
   
-    <article id="post-操作系统知识点总结（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/">操作系统知识点总结（三）</a>
-    </h1>
-  
-
-        
-        <a href="/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-06-05T07:33:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-05</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>操作系统复习，知识点总结<br>6.磁盘与文件系统<br>7.操作系统接口</p>
-        
-          <a class="article-more-a" href="/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%89%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1296,6 +1310,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">mac</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">组成原理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">IEEE745</a>
               </li>
             
             <div class="clearfix"></div>
