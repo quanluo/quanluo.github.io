@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-11-30T03:00:34.027Z</updated>
+  <updated>2020-12-01T02:25:06.267Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决Mac打开应用提示已损坏的办法</title>
+    <link href="http://quanluo.github.io/2020/12/01/%E8%A7%A3%E5%86%B3Mac%E6%89%93%E5%BC%80%E5%BA%94%E7%94%A8%E6%8F%90%E7%A4%BA%E5%B7%B2%E6%8D%9F%E5%9D%8F%E7%9A%84%E5%8A%9E%E6%B3%95/"/>
+    <id>http://quanluo.github.io/2020/12/01/%E8%A7%A3%E5%86%B3Mac%E6%89%93%E5%BC%80%E5%BA%94%E7%94%A8%E6%8F%90%E7%A4%BA%E5%B7%B2%E6%8D%9F%E5%9D%8F%E7%9A%84%E5%8A%9E%E6%B3%95/</id>
+    <published>2020-12-01T02:23:18.000Z</published>
+    <updated>2020-12-01T02:25:06.267Z</updated>
+    
+    <content type="html"><![CDATA[<p>相信很多升级了最新Mac系统的用户在打开一些应用的时候都会出现“应用XX已损坏”的系统提示，安装这些应用的时候总是提示“已损坏，移至废纸篓”这类信息，根本无法打开应用，那么Mac打开应用提示已损坏怎么办？Mac安装软件时提示已损坏怎么办？一起来了解一下！<br><img src="https://img-blog.csdnimg.cn/20201201101149217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><a id="more"></a><h3 id="更新10-15以及新系统应用提示损坏打不开的方法："><a href="#更新10-15以及新系统应用提示损坏打不开的方法：" class="headerlink" title="更新10.15以及新系统应用提示损坏打不开的方法："></a><code>更新10.15以及新系统应用提示损坏打不开的方法：</code></h3><blockquote><p>打开终端(屏幕下方“小火箭”——“其他”——打开“终端”)，在终端中粘贴下面命令：</p></blockquote><p>　　<code>sudo xattr -r -d com.apple.quarantine</code> ,然后输入个空格，再将应用程序目录中的软件拖拽到命令后面，按回车后输入密码执行，比如需要打开sketch应用的命令是：</p><p>　　</p><p><code>sudo xattr -r -d com.apple.quarantine  /Applications/sketch.app/</code></p><p>　　打开应用提示已损坏是因为新系统的原因。新的系统为了加强安全机制，默认不允许用户自行下载安装应用程序，只能从Mac App Store里安装应用。那么怎么解决呢？</p><h4 id="1、首先，打开终端，在系统的Dock栏找到并启动控制台（Launchpad），终端默认在“其他”这个文件夹中。"><a href="#1、首先，打开终端，在系统的Dock栏找到并启动控制台（Launchpad），终端默认在“其他”这个文件夹中。" class="headerlink" title="1、首先，打开终端，在系统的Dock栏找到并启动控制台（Launchpad），终端默认在“其他”这个文件夹中。"></a>1、首先，打开终端，在系统的Dock栏找到并启动控制台（Launchpad），终端默认在“其他”这个文件夹中。</h4><p><img src="https://img-blog.csdnimg.cn/20201201101639801.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h4 id="2、然后，输入代码：sudo-spctl-–master-disable（master前面为两个短横线）注意红框处是空格。"><a href="#2、然后，输入代码：sudo-spctl-–master-disable（master前面为两个短横线）注意红框处是空格。" class="headerlink" title="2、然后，输入代码：sudo spctl –master-disable（master前面为两个短横线）注意红框处是空格。"></a>2、然后，输入代码：sudo spctl –master-disable（master前面为两个短横线）注意红框处是空格。</h4><p><img src="https://img-blog.csdnimg.cn/20201201101657845.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>按回车输入自己电脑的密码，然后回车（这里输入的密码不会显示出来，实际你已经输入了），输完按下回车即可。<br><img src="https://img-blog.csdnimg.cn/20201201101723489.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h4 id="3、打开系统偏好设置-»-安全性与隐私，若显示任何来源，大功告成。"><a href="#3、打开系统偏好设置-»-安全性与隐私，若显示任何来源，大功告成。" class="headerlink" title="3、打开系统偏好设置 » 安全性与隐私，若显示任何来源，大功告成。"></a>3、打开系统偏好设置 » 安全性与隐私，若显示任何来源，大功告成。</h4><p><img src="https://img-blog.csdnimg.cn/20201201101744658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h4 id="4、如果还有类似出现下图打不开“xxxx”应用的情况，还可以看下面的处理方法"><a href="#4、如果还有类似出现下图打不开“xxxx”应用的情况，还可以看下面的处理方法" class="headerlink" title="4、如果还有类似出现下图打不开“xxxx”应用的情况，还可以看下面的处理方法"></a>4、如果还有类似出现下图打不开“xxxx”应用的情况，还可以看下面的处理方法</h4><p><img src="https://img-blog.csdnimg.cn/20201201101801390.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>　在<code>“系统偏好设置—安全性与隐私—通用—允许从以下位置下载的应用”</code>选择“仍要打开”，让系统同意应用运行即可（如下图所示）<br>　<img src="https://img-blog.csdnimg.cn/20201201101824833.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>本篇文章转载于：<br>Mac打开应用提示已损坏怎么办 Mac安装软件时提示已损坏怎么办(<a href="http://www.pc6.com/edu/168719.html" target="_blank" rel="noopener">http://www.pc6.com/edu/168719.html</a>)</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;相信很多升级了最新Mac系统的用户在打开一些应用的时候都会出现“应用XX已损坏”的系统提示，安装这些应用的时候总是提示“已损坏，移至废纸篓”这类信息，根本无法打开应用，那么Mac打开应用提示已损坏怎么办？Mac安装软件时提示已损坏怎么办？一起来了解一下！&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20201201101149217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="mac" scheme="http://quanluo.github.io/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>将十进制转换成短浮点数格式（IEEE745）并用十六进制表示（组成原理）</title>
@@ -449,29 +470,6 @@
       <category term="Mailto" scheme="http://quanluo.github.io/tags/Mailto/"/>
     
       <category term="chrome" scheme="http://quanluo.github.io/tags/chrome/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo+yilia添加RSS订阅功能</title>
-    <link href="http://quanluo.github.io/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/"/>
-    <id>http://quanluo.github.io/2020/05/26/hexo-yilia%E6%B7%BB%E5%8A%A0RSS%E8%AE%A2%E9%98%85%E5%8A%9F%E8%83%BD/</id>
-    <published>2020-05-26T11:28:22.000Z</published>
-    <updated>2020-05-26T11:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近自己在往自己的个人博客添加RSS订阅功能，走了些坑，所以在这里想将这些记录下，也好让其他同学们想添加RSS的不用踩坑了。<br>本文添加RSS订阅功能共需要四步。</p><a id="more"></a><h3 id="第一步安装插件"><a href="#第一步安装插件" class="headerlink" title="第一步安装插件"></a>第一步安装插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br></pre></td></tr></table></figure><p>安装插件的时候记住是在自己博客的根目录上安装，<br>如果npm安装失败，我建议使用 <code>cnpm</code> 安装<br>首先我们先安装 <code>cnpm</code>:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>然后使用：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-feed</span><br></pre></td></tr></table></figure><p>进行安装（推荐）</p><h3 id="第一部成功后，进行第二步在hexo根目录配置文件-config-yml中配置插件"><a href="#第一部成功后，进行第二步在hexo根目录配置文件-config-yml中配置插件" class="headerlink" title="第一部成功后，进行第二步在hexo根目录配置文件_config.yml中配置插件:"></a>第一部成功后，进行第二步在hexo根目录配置文件_config.yml中配置插件:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">plugins:</span><br><span class="line">  hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20 # 最新的20篇文章</span><br></pre></td></tr></table></figure><h3 id="第三步开启主题的左侧边栏的RSS功能"><a href="#第三步开启主题的左侧边栏的RSS功能" class="headerlink" title="第三步开启主题的左侧边栏的RSS功能"></a>第三步开启主题的左侧边栏的RSS功能</h3><p>在主题的配置文件theme/yilia/_config.yml中进行设置:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># SubNav</span><br><span class="line">subnav:</span><br><span class="line">  rss: &quot;atom.xml&quot;</span><br></pre></td></tr></table></figure><h3 id="第四步重新生成文件并加载到远端"><a href="#第四步重新生成文件并加载到远端" class="headerlink" title="第四步重新生成文件并加载到远端"></a>第四步重新生成文件并加载到远端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure><hr><p>插件官方github网址：<a href="https://github.com/hexojs/hexo-generator-feed。" target="_blank" rel="noopener">https://github.com/hexojs/hexo-generator-feed。</a></p><hr><p><img src="https://images4.alphacoders.com/975/97548.jpg" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近自己在往自己的个人博客添加RSS订阅功能，走了些坑，所以在这里想将这些记录下，也好让其他同学们想添加RSS的不用踩坑了。&lt;br&gt;本文添加RSS订阅功能共需要四步。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="yilia" scheme="http://quanluo.github.io/tags/yilia/"/>
-    
-      <category term="RSS" scheme="http://quanluo.github.io/tags/RSS/"/>
     
   </entry>
   

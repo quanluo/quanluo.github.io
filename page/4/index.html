@@ -190,6 +190,98 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-with语句还能这么用，你会吗-with语句和上下文管理器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/">with语句还能这么用，你会吗?--with语句和上下文管理器</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/" class="archive-article-date">
+  	<time datetime="2020-05-23T16:07:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>@<a href="with语句和上下文管理器">TOC</a></p>
+<h4 id="启程"><a href="#启程" class="headerlink" title="启程"></a><code>启程</code></h4><p>&emsp;&emsp; <code>with 语句</code>究竟有哪些好处？它有助于简化一些通用资源管理模式，抽象出其中的功能，将其分解并重用。</p>
+<p>&emsp;&emsp;若想充分的使用这个特性，比较好的办法是查看Python标准库的示例。内置的 <code>open()</code>函数就是一个很好的例子：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'hello.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	f.write(<span class="string">'hello, world!'</span>)</span><br></pre></td></tr></table></figure>
+<p>我们应该都知道打开文件的时候一般建议使用 <code>with 语句</code>，因为这样能确保打开的文件描述符在程序执行离开 <code>with语句</code> 的上下文后自动关闭。本质上来说，上面的代码示例可转换成下面这样：</p>
+        
+          <a class="article-more-a" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/#more">more >></a>
+        
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">with</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">上下文管理器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/with%E8%AF%AD%E5%8F%A5%E8%BF%98%E8%83%BD%E8%BF%99%E4%B9%88%E7%94%A8%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%90%97-with%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-python，通过一行代码输出python和库的版本信息" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -911,91 +1003,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python之彻底学会字典（干货！）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/23/Python%E4%B9%8B%E5%BD%BB%E5%BA%95%E5%AD%A6%E4%BC%9A%E5%AD%97%E5%85%B8%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/">Python之彻底学会字典（干货！）</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/23/Python%E4%B9%8B%E5%BD%BB%E5%BA%95%E5%AD%A6%E4%BC%9A%E5%AD%97%E5%85%B8%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-05-23T15:56:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>@<a href="干货！！！">TOC</a></p>
-<h1 id="Python-字典"><a href="#Python-字典" class="headerlink" title="Python 字典"></a>Python 字典</h1><p>字典是另一种可变容器模型，且可存储任意类型对象。<br>字典的使用非常简单，它有自己的标志性符号，就是用大括号（{}）定义。<br>字典由“键”和“值”共同构成，每个键值对用冒号（  ：）分割，每一对键值组合称为“项”,每个项之间用逗号（,）分割。<br>格式如下：</p>
-        
-          <a class="article-more-a" href="/2020/05/23/Python%E4%B9%8B%E5%BD%BB%E5%BA%95%E5%AD%A6%E4%BC%9A%E5%AD%97%E5%85%B8%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/#more">more >></a>
-        
-      
-
-      
-    </div>
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">dict</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/23/Python%E4%B9%8B%E5%BD%BB%E5%BA%95%E5%AD%A6%E4%BC%9A%E5%AD%97%E5%85%B8%EF%BC%88%E5%B9%B2%E8%B4%A7%EF%BC%81%EF%BC%89/">展开全文 >></a>
         </p>
       
 
