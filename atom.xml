@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2020-12-13T02:58:17.367Z</updated>
+  <updated>2021-01-23T16:30:52.177Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 一键创建依赖包和一键安装依赖包</title>
+    <link href="http://quanluo.github.io/2021/01/24/Python-%E4%B8%80%E9%94%AE%E5%88%9B%E5%BB%BA%E4%BE%9D%E8%B5%96%E5%8C%85%E5%92%8C%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85/"/>
+    <id>http://quanluo.github.io/2021/01/24/Python-%E4%B8%80%E9%94%AE%E5%88%9B%E5%BB%BA%E4%BE%9D%E8%B5%96%E5%8C%85%E5%92%8C%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85/</id>
+    <published>2021-01-23T16:28:28.000Z</published>
+    <updated>2021-01-23T16:30:52.177Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="使用-pip创建依赖包"><a href="#使用-pip创建依赖包" class="headerlink" title="使用 pip创建依赖包"></a>使用 pip创建依赖包</h3><p><code>requirements.txt</code> 用来记录项目所有的依赖包和版本号，只需要一个简单的 pip 命令就能完成。<br>记住在你代码文件夹下创建你这些代码所需要的依赖包</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip freeze &gt; requirements.txt</span><br></pre></td></tr></table></figure><a id="more"></a><p>会生成的一个<code>requirements.txt</code> 文件内容会像这个样子</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">alabaster==<span class="number">0.7</span><span class="number">.12</span></span><br><span class="line">anaconda-client==<span class="number">1.7</span><span class="number">.2</span></span><br><span class="line">anaconda-navigator==<span class="number">1.9</span><span class="number">.12</span></span><br><span class="line">anaconda-project==<span class="number">0.8</span><span class="number">.3</span></span><br><span class="line">applaunchservices==<span class="number">0.2</span><span class="number">.1</span></span><br></pre></td></tr></table></figure><h3 id="然后就可以用来一键安装依赖包了，也只需要一个简单的pip命令就能完成"><a href="#然后就可以用来一键安装依赖包了，也只需要一个简单的pip命令就能完成" class="headerlink" title="然后就可以用来一键安装依赖包了，也只需要一个简单的pip命令就能完成"></a>然后就可以用来一键安装依赖包了，也只需要一个简单的pip命令就能完成</h3><p>记住在你需要依赖的代码文件夹下安装</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure><blockquote><p>这种一次性安装 requirements.txt 里面所有的依赖包，真的是非常方便。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;使用-pip创建依赖包&quot;&gt;&lt;a href=&quot;#使用-pip创建依赖包&quot; class=&quot;headerlink&quot; title=&quot;使用 pip创建依赖包&quot;&gt;&lt;/a&gt;使用 pip创建依赖包&lt;/h3&gt;&lt;p&gt;&lt;code&gt;requirements.txt&lt;/code&gt; 用来记录项目所有的依赖包和版本号，只需要一个简单的 pip 命令就能完成。&lt;br&gt;记住在你代码文件夹下创建你这些代码所需要的依赖包&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pip freeze &amp;gt; requirements.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
+    
+      <category term="依赖包" scheme="http://quanluo.github.io/tags/%E4%BE%9D%E8%B5%96%E5%8C%85/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac版 WPS尾部空格没有下划线解决</title>
@@ -445,31 +469,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>解决关于使用Selenium WebDriver 在Python打开浏览器时出错</title>
-    <link href="http://quanluo.github.io/2020/05/27/%E8%A7%A3%E5%86%B3%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8Selenium-WebDriver-%E5%9C%A8Python%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%B6%E5%87%BA%E9%94%99/"/>
-    <id>http://quanluo.github.io/2020/05/27/%E8%A7%A3%E5%86%B3%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8Selenium-WebDriver-%E5%9C%A8Python%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%B6%E5%87%BA%E9%94%99/</id>
-    <published>2020-05-27T12:10:33.000Z</published>
-    <updated>2020-05-27T12:13:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>解决关于使用Selenium WebDriver 在Python打开浏览器时出错问题</p><a id="more"></a><p>错误1：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">File <span class="string">"E:/codes/python/script.py"</span>, line <span class="number">5</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">driver.get(<span class="string">"http://www.python.org"</span>)</span><br><span class="line">TypeError: get() missing <span class="number">1</span> required positional argument: <span class="string">'url'</span></span><br></pre></td></tr></table></figure><p>错误2：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SessionNotCreatedException: Message: session <span class="keyword">not</span> created: This version of ChromeDriver only supports Chrome version <span class="number">81</span></span><br></pre></td></tr></table></figure><p>解决办法：<br>使用webdrive管理器解决这类问题。<br>您可以使用webdrive-manager自动使用正确的chromedriver。安装webdrive-manager：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install webdriver-manager</span><br></pre></td></tr></table></figure><p>然后如下所示在python中使用驱动程序</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> webdriver_manager.chrome <span class="keyword">import</span> ChromeDriverManager</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(ChromeDriverManager().install())</span><br></pre></td></tr></table></figure><p>实例：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> webdriver_manager.chrome <span class="keyword">import</span> ChromeDriverManager</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(ChromeDriverManager().install())</span><br><span class="line">driver.get(<span class="string">'http://quanluo.github.io/'</span>)</span><br><span class="line">driver.get_screenshot_as_file(<span class="string">"123.png"</span>)</span><br><span class="line">driver.quit()</span><br><span class="line"><span class="comment"># driver.close()</span></span><br><span class="line">print(<span class="string">'ok'</span>)</span><br></pre></td></tr></table></figure><p>得到网页截图：<br><img src="https://img-blog.csdnimg.cn/20200527200630777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>表明问题已解决。</p><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;解决关于使用Selenium WebDriver 在Python打开浏览器时出错问题&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Python" scheme="http://quanluo.github.io/tags/Python/"/>
-    
-      <category term="Selenium" scheme="http://quanluo.github.io/tags/Selenium/"/>
-    
-      <category term="WebDriver" scheme="http://quanluo.github.io/tags/WebDriver/"/>
     
   </entry>
   
