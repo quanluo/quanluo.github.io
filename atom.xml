@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2021-01-23T16:30:52.177Z</updated>
+  <updated>2021-02-17T07:04:17.067Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法</title>
+    <link href="http://quanluo.github.io/2021/02/17/mysql%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%8B%E6%B2%A1%E6%9C%89%E8%B7%AF%E5%BE%84%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E7%99%BB%E9%99%86%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%B7%AF%E5%BE%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://quanluo.github.io/2021/02/17/mysql%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%8B%E6%B2%A1%E6%9C%89%E8%B7%AF%E5%BE%84%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E7%99%BB%E9%99%86%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%B7%AF%E5%BE%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+    <published>2021-02-17T07:02:43.000Z</published>
+    <updated>2021-02-17T07:04:17.067Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法"><a href="#mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法" class="headerlink" title="mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法"></a>mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法</h4><p><img src="https://img-blog.csdnimg.cn/20210217145307423.png" alt="在这里插入图片描述"></p><h4 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h4><a id="more"></a><h3 id="一、打开终端，为Path路径附加MySQL的bin目录"><a href="#一、打开终端，为Path路径附加MySQL的bin目录" class="headerlink" title="一、打开终端，为Path路径附加MySQL的bin目录"></a>一、打开终端，为Path路径附加MySQL的bin目录</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PATH=<span class="string">"$PATH"</span>:/usr/local/mysql/bin</span><br></pre></td></tr></table></figure><p><img src="https://img-blog.csdnimg.cn/20210217145412233.png" alt="在这里插入图片描述"></p><h3 id="二、然后就可以通过以下命令登陆MySQL"><a href="#二、然后就可以通过以下命令登陆MySQL" class="headerlink" title="二、然后就可以通过以下命令登陆MySQL"></a>二、然后就可以通过以下命令登陆MySQL</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure><p><img src="https://img-blog.csdnimg.cn/2021021714564471.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法&quot;&gt;&lt;a href=&quot;#mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法&quot; class=&quot;headerlink&quot; title=&quot;mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法&quot;&gt;&lt;/a&gt;mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20210217145307423.png&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;解决办法如下：&quot;&gt;&lt;a href=&quot;#解决办法如下：&quot; class=&quot;headerlink&quot; title=&quot;解决办法如下：&quot;&gt;&lt;/a&gt;解决办法如下：&lt;/h4&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="mac" scheme="http://quanluo.github.io/tags/mac/"/>
+    
+      <category term="mysql" scheme="http://quanluo.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 一键创建依赖包和一键安装依赖包</title>
@@ -447,28 +471,6 @@
       <category term="socket" scheme="http://quanluo.github.io/tags/socket/"/>
     
       <category term="fileupload" scheme="http://quanluo.github.io/tags/fileupload/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>留言板</title>
-    <link href="http://quanluo.github.io/2020/05/28/%E7%95%99%E8%A8%80%E6%9D%BF/index/"/>
-    <id>http://quanluo.github.io/2020/05/28/%E7%95%99%E8%A8%80%E6%9D%BF/index/</id>
-    <published>2020-05-28T04:18:15.000Z</published>
-    <updated>2020-05-28T04:25:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="留言板开通了。"><a href="#留言板开通了。" class="headerlink" title="留言板开通了。"></a><font color=red>留言板开通了。</font></h1><h1 id="欢迎大家来留言。"><a href="#欢迎大家来留言。" class="headerlink" title="欢迎大家来留言。"></a><font color=red>欢迎大家来留言。</font></h1><p><img src="https://images2.alphacoders.com/595/595606.png" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;留言板开通了。&quot;&gt;&lt;a href=&quot;#留言板开通了。&quot; class=&quot;headerlink&quot; title=&quot;留言板开通了。&quot;&gt;&lt;/a&gt;&lt;font color=red&gt;留言板开通了。&lt;/font&gt;&lt;/h1&gt;&lt;h1 id=&quot;欢迎大家来留言。&quot;&gt;&lt;a href=&quot;#欢迎
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
