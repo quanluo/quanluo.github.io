@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2021-02-17T07:04:17.067Z</updated>
+  <updated>2021-03-03T03:13:52.113Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac下启动jupyter notebook</title>
+    <link href="http://quanluo.github.io/2021/03/03/mac%E4%B8%8B%E5%90%AF%E5%8A%A8jupyter-notebook/"/>
+    <id>http://quanluo.github.io/2021/03/03/mac%E4%B8%8B%E5%90%AF%E5%8A%A8jupyter-notebook/</id>
+    <published>2021-03-03T03:12:08.000Z</published>
+    <updated>2021-03-03T03:13:52.113Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://img-blog.csdnimg.cn/20210303110634532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><a id="more"></a><h3 id="首先打开终端"><a href="#首先打开终端" class="headerlink" title="首先打开终端"></a>首先打开终端</h3><p><img src="https://img-blog.csdnimg.cn/20210303110209276.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t%60_70" alt="在这里插入图片描述"></p><h3 id="然后输入start-jupyter-notebook命令"><a href="#然后输入start-jupyter-notebook命令" class="headerlink" title="然后输入start jupyter notebook命令"></a>然后输入start jupyter notebook命令</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">python -m IPython notebook</span><br><span class="line"></span><br><span class="line"><span class="comment">### 如果是python3的环境就用下面的命令</span></span><br><span class="line">python3 -m IPython notebook</span><br></pre></td></tr></table></figure><p><img src="https://img-blog.csdnimg.cn/20210303110501413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h3 id="最后浏览器就会自动打开-jupyter-notebook"><a href="#最后浏览器就会自动打开-jupyter-notebook" class="headerlink" title="最后浏览器就会自动打开 jupyter notebook"></a>最后浏览器就会自动打开 jupyter notebook</h3><p><img src="https://img-blog.csdnimg.cn/20210303110634532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20210303110634532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="mac" scheme="http://quanluo.github.io/tags/mac/"/>
+    
+      <category term="jupyter notebook" scheme="http://quanluo.github.io/tags/jupyter-notebook/"/>
+    
+      <category term="python" scheme="http://quanluo.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>mysql在mac终端下没有路径不能直接登陆数据库如何添加路径解决办法</title>
@@ -436,31 +461,6 @@
     <summary type="html">
     
       &lt;p&gt;通过 socket 简单实现了文件传输功能下，服务器篇&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Java" scheme="http://quanluo.github.io/tags/Java/"/>
-    
-      <category term="socket" scheme="http://quanluo.github.io/tags/socket/"/>
-    
-      <category term="fileupload" scheme="http://quanluo.github.io/tags/fileupload/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>实现简单的文件传输功能上:客户端</title>
-    <link href="http://quanluo.github.io/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8A-%E5%AE%A2%E6%88%B7%E7%AB%AF/"/>
-    <id>http://quanluo.github.io/2020/05/28/%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD%E4%B8%8A-%E5%AE%A2%E6%88%B7%E7%AB%AF/</id>
-    <published>2020-05-28T04:41:20.000Z</published>
-    <updated>2020-05-28T04:56:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>通过 socket 简单实现了文件传输功能上，客户端篇</p><a id="more"></a><h5 id="客户端代码-client-java"><a href="#客户端代码-client-java" class="headerlink" title="客户端代码 client.java"></a>客户端代码 client.java</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">package files_upload;</span><br><span class="line"></span><br><span class="line">import java.io.BufferedReader;</span><br><span class="line">import java.io.DataOutputStream;</span><br><span class="line">import java.io.File;</span><br><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.net.Socket;</span><br><span class="line">import java.util.Properties;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line"> * 客户端：上传文件到服务器</span><br><span class="line"> * </span><br><span class="line"> * @author quanluo</span><br><span class="line"> *</span><br><span class="line"> *&#x2F;</span><br><span class="line">public class TaskFileClient &#123;</span><br><span class="line">private Socket client;</span><br><span class="line"></span><br><span class="line">public static void main(String[] args) throws Exception &#123;</span><br><span class="line">System.out.println(&quot;Client&quot;);</span><br><span class="line">new TaskFileClient();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public TaskFileClient() throws Exception &#123;</span><br><span class="line">&#x2F;&#x2F; 1. 读取配置文件中的服务器端 ip 地址，端口号，要上传的文件路径</span><br><span class="line">Properties prop &#x3D; new Properties();</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 读取配置文件</span><br><span class="line">FileInputStream fis &#x3D; (new FileInputStream(&quot;E:\\eclipse-workspace\\files_upload\\bin\\files_upload\\fileClient.properties&quot;));</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 使用 GBK 字符集，防止加载配置文件时中文乱码</span><br><span class="line">prop.load(new InputStreamReader(fis, &quot;GBK&quot;));</span><br><span class="line"></span><br><span class="line">String ip &#x3D; prop.getProperty(&quot;ip&quot;);</span><br><span class="line">int port &#x3D; Integer.parseInt(prop.getProperty(&quot;port&quot;));  </span><br><span class="line">String fileName &#x3D; prop.getProperty(&quot;filename&quot;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 检查该文件是否存在，不存在则程序结束</span><br><span class="line">File file &#x3D; new File(fileName);</span><br><span class="line"></span><br><span class="line">if (!file.exists()) &#123;</span><br><span class="line">System.out.println(&quot;待上传的文件不存在，运行结束！&quot;);</span><br><span class="line">return;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 2. 创建客户端</span><br><span class="line">client &#x3D; new Socket(ip, port);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 3. 操作 调用upload()方法上传文件</span><br><span class="line">upload(file);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 上传文件</span><br><span class="line">private void upload(File file) throws IOException &#123;</span><br><span class="line">&#x2F;&#x2F; 将 client 的输出流包装为 DataOutputStream</span><br><span class="line">DataOutputStream dos &#x3D; new DataOutputStream(client.getOutputStream());</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 先传文件名</span><br><span class="line">dos.writeUTF(file.getName());</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 创建FileInputStream对象</span><br><span class="line">FileInputStream fis &#x3D; new FileInputStream(file);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 定义缓冲区，边读边传</span><br><span class="line">byte buffer[] &#x3D; new byte[1024]; &#x2F;&#x2F; 1kb</span><br><span class="line">int length &#x3D; -1; &#x2F;&#x2F; 文件读取标识</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 将输出流中的数据读到缓冲区，length &gt; 0 则代表数据未读取完毕</span><br><span class="line">while((length &#x3D; fis.read(buffer)) !&#x3D; -1) &#123; </span><br><span class="line">&#x2F;&#x2F; 发送此数据</span><br><span class="line">dos.write(buffer, 0, length);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 关闭客户端输出流，发送结束</span><br><span class="line">client.shutdownOutput();</span><br><span class="line">fis.close();</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 接收服务端返回的结果，并输出到控制台</span><br><span class="line">BufferedReader reader &#x3D; new BufferedReader(new InputStreamReader(client.getInputStream()));</span><br><span class="line">System.out.println(reader.readLine());</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 关闭客户端</span><br><span class="line">client.close();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="配置文件-fileClient-properties"><a href="#配置文件-fileClient-properties" class="headerlink" title="配置文件   fileClient.properties"></a>配置文件   fileClient.properties</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ip&#x3D;192.168.1.107</span><br><span class="line">port&#x3D;18889</span><br><span class="line">filename&#x3D;C:\\Users\\Administrator\\Desktop\\Quicksort.mkv</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;通过 socket 简单实现了文件传输功能上，客户端篇&lt;/p&gt;
     
     </summary>
     
