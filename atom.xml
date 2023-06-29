@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2023-06-27T08:06:00.870Z</updated>
+  <updated>2023-06-29T08:55:41.777Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring中Bean创建完后打印语句的两种方法（Bean的生命周期）</title>
+    <link href="http://quanluo.github.io/2023/06/29/spring%E4%B8%ADBean%E5%88%9B%E5%BB%BA%E5%AE%8C%E5%90%8E%E6%89%93%E5%8D%B0%E8%AF%AD%E5%8F%A5%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%EF%BC%88Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%89/"/>
+    <id>http://quanluo.github.io/2023/06/29/spring%E4%B8%ADBean%E5%88%9B%E5%BB%BA%E5%AE%8C%E5%90%8E%E6%89%93%E5%8D%B0%E8%AF%AD%E5%8F%A5%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%EF%BC%88Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%89/</id>
+    <published>2023-06-29T08:44:57.000Z</published>
+    <updated>2023-06-29T08:55:41.777Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Bean的生命周期"><a href="#Bean的生命周期" class="headerlink" title="Bean的生命周期"></a>Bean的生命周期</h2><p>Bean的生命周期包括四个阶段：</p><ul><li><p>实例化阶段（Instantiation）：容器通过调用构造函数或者工厂方法来创建Bean的实例。</p></li><li><p>属性赋值阶段（Populate properties）：容器将相应的属性值设置给Bean的实例，可以通过setter方法、直接字段注入或者其他自定义的方式完成属性赋值。</p></li><li><p>初始化阶段（Initialization）：在Bean的属性赋值完成后，容器会调用相关的初始化方法（如果有的话），如实现了InitializingBean接口的afterPropertiesSet()方法，或者通过@Bean注解的initMethod属性指定的方法。开发者可以在初始化方法中进行一些额外的操作，例如数据校验、初始化资源等。</p><a id="more"></a></li><li><p>使用阶段（In use）：</p></li><li><p>经过初始化阶段后，Bean进入可用状态，可以被容器及其他对象使用。</p></li><li><p>销毁阶段（Destruction）：当Bean不再被使用时，容器可以对其进行销毁操作。这包括调用实现了DisposableBean接口的destroy()方法，或者通过@Bean注解的destroyMethod属性指定的方法。开发者可以在销毁方法中释放资源、关闭连接等。</p></li></ul><h2 id="两种方式在Bean创建完后打印语句（Bean的初始化阶段）"><a href="#两种方式在Bean创建完后打印语句（Bean的初始化阶段）" class="headerlink" title="两种方式在Bean创建完后打印语句（Bean的初始化阶段）"></a>两种方式在Bean创建完后打印语句（Bean的初始化阶段）</h2><h3 id="实现InitializingBean接口："><a href="#实现InitializingBean接口：" class="headerlink" title="实现InitializingBean接口："></a>实现InitializingBean接口：</h3><ul><li><p>创建一个类，实现InitializingBean接口。</p></li><li><p>在该类中实现afterPropertiesSet()方法，在该方法中编写创建Bean后要执行的操作，例如打印语句。</p></li><li><p>当Bean被创建后，容器会自动调用afterPropertiesSet()方法。</p><p>代码示例：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.InitializingBean;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyBean</span> <span class="keyword">implements</span> <span class="title">InitializingBean</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">afterPropertiesSet</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Bean已创建。"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="使用-Bean注解和initMethod属性："><a href="#使用-Bean注解和initMethod属性：" class="headerlink" title="使用@Bean注解和initMethod属性："></a>使用@Bean注解和initMethod属性：</h3><ul><li><p>在Bean对应的配置类中，使用@Bean注解定义Bean的创建方法。</p></li><li><p>在@Bean注解中，使用initMethod属性指定在Bean创建后要调用的初始化方法。</p></li><li><p>在初始化方法中，编写需要执行的操作，例如打印语句。</p><p>代码示例：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Bean;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AppConfig</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Bean</span>(initMethod = <span class="string">"init"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> MyBean <span class="title">myBean</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> MyBean();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyBean</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Bean已创建。"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>无论使用哪种方式，当Bean被创建后，打印语句将会在<strong>初始化阶段</strong>执行。</p><p>具体使用哪种方式都可以，当然根据具体的场景选择适合的方式最好。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Bean的生命周期&quot;&gt;&lt;a href=&quot;#Bean的生命周期&quot; class=&quot;headerlink&quot; title=&quot;Bean的生命周期&quot;&gt;&lt;/a&gt;Bean的生命周期&lt;/h2&gt;&lt;p&gt;Bean的生命周期包括四个阶段：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;实例化阶段（Instantiation）：容器通过调用构造函数或者工厂方法来创建Bean的实例。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;属性赋值阶段（Populate properties）：容器将相应的属性值设置给Bean的实例，可以通过setter方法、直接字段注入或者其他自定义的方式完成属性赋值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;初始化阶段（Initialization）：在Bean的属性赋值完成后，容器会调用相关的初始化方法（如果有的话），如实现了InitializingBean接口的afterPropertiesSet()方法，或者通过@Bean注解的initMethod属性指定的方法。开发者可以在初始化方法中进行一些额外的操作，例如数据校验、初始化资源等。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="java" scheme="http://quanluo.github.io/tags/java/"/>
+    
+      <category term="spring" scheme="http://quanluo.github.io/tags/spring/"/>
+    
+      <category term="Bean的生命周期" scheme="http://quanluo.github.io/tags/Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>解决feign调用时开发环境与正式环境需要增减URL的烦恼</title>
@@ -488,27 +519,6 @@
       <category term="Java" scheme="http://quanluo.github.io/tags/Java/"/>
     
       <category term="JavaPro" scheme="http://quanluo.github.io/tags/JavaPro/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo+yilia主题博客如何设置网站的图标Favicon</title>
-    <link href="http://quanluo.github.io/2020/06/21/hexo-yilia%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9B%BE%E6%A0%87Favicon/"/>
-    <id>http://quanluo.github.io/2020/06/21/hexo-yilia%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9B%BE%E6%A0%87Favicon/</id>
-    <published>2020-06-21T07:19:51.000Z</published>
-    <updated>2020-06-21T07:31:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>效果图：<br><img src="https://img-blog.csdnimg.cn/20200621152703964.png" alt="在这里插入图片描述"></p><a id="more"></a><h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h2><h3 id="1-先去比特虫网站做ico图标"><a href="#1-先去比特虫网站做ico图标" class="headerlink" title="1. 先去比特虫网站做ico图标"></a>1. 先去比特虫网站做ico图标</h3><p>网址链接——&gt;<a href="http://www.bitbug.net/" target="_blank" rel="noopener">比特虫</a></p><h3 id="2-将-ico图标放到themes-yilia-source-img文件夹下"><a href="#2-将-ico图标放到themes-yilia-source-img文件夹下" class="headerlink" title="2. 将.ico图标放到themes/yilia/source/img文件夹下"></a>2. 将.ico图标放到themes/yilia/source/img文件夹下</h3><h3 id="3-找到hexo-themes-yilia-layout-partial-head-ejs，修改下面一段代码为"><a href="#3-找到hexo-themes-yilia-layout-partial-head-ejs，修改下面一段代码为" class="headerlink" title="3. 找到hexo\themes\yilia\layout_partial\head.ejs，修改下面一段代码为"></a>3. 找到hexo\themes\yilia\layout_partial\head.ejs，修改下面一段代码为</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.favicon)&#123; %&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;icon&quot; href&#x3D;&quot;&#x2F;img&#x2F;favicon.ico&quot;&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure><h3 id="4-部署到远端"><a href="#4-部署到远端" class="headerlink" title="4.部署到远端"></a>4.部署到远端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;效果图：&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20200621152703964.png&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="yilia" scheme="http://quanluo.github.io/tags/yilia/"/>
     
   </entry>
   
