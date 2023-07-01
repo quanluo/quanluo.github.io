@@ -16,13 +16,27 @@
 <meta property="og:site_name" content="Quanluo&#39;s blog">
 <meta property="og:description" content="1. 什么是循环依赖？通俗来讲，循环依赖指的是一个实例或多个实例存在相互依赖的关系（类之间循环嵌套引用）。 举个例子 1234567public class AService &amp;#123;    private BService bService;&amp;#125;public class BService &amp;#123;    private AService aService;&amp;#125;  上述例子">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/82fcae531d9a47b09a72c05c85c67aa1.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7983014a8e83491ead2759641939cb80.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/36952edcc9bb491ab3f27d116ebd0162.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7e40764da2c042c3a0dc074becf31a33.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2ec8b645ed1e4e438b002c0d64f58b32.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/e6a26511dcb540cf852ff0cc76228799.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c8c5d9b21cf942a9b5e24eca6bcf9855.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/8fefe0ef648f4261bb1a93b7fce740c6.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c8e411fa884d499492a3c2aed14af34f.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/97e65a93c0c949e5bde3623288d99e08.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d7365a617df74c49891f373ed63acf2f.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/47c926d30aa64b5d87c386eac3cc8508.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/254eea85cca34b39ab6c847d8cf0ee9d.png#pic_center">
 <meta property="article:published_time" content="2023-07-01T07:03:10.000Z">
-<meta property="article:modified_time" content="2023-07-01T07:38:56.162Z">
+<meta property="article:modified_time" content="2023-07-01T07:52:34.345Z">
 <meta property="article:author" content="Quanluo">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="Spring">
 <meta property="article:tag" content="循环依赖">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/82fcae531d9a47b09a72c05c85c67aa1.png#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
   
@@ -284,7 +298,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  🔤字数统计: </span>
-        <span class="post-count">4.8k字</span>
+        <span class="post-count">4.6k字</span>
       </span>
     </span>
 
@@ -293,7 +307,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  📖阅读时长≈ </span>
-        <span class="post-count">17分</span>
+        <span class="post-count">16分</span>
       </span>
     </span>
 </div>
@@ -309,7 +323,9 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> BService bService;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> AService aService;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>上述例子中 <code>AService</code> 依赖了 <code>BService</code>，<code>BService</code> 也依赖了 <code>AService</code>，这就是两个对象之间的相互依赖。当然循环依赖还包括 <strong>自身依赖、多个实例之间相互依赖</strong>。</p>
-<p>![image-20230701150523074](/Users/josentong/Library/Application Support/typora-user-images/image-20230701150523074.png)</p>
+<a id="more"></a>
+
+<p><img src="https://img-blog.csdnimg.cn/82fcae531d9a47b09a72c05c85c67aa1.png#pic_center" alt="在这里插入图片描述"></p>
 <p>正常运行上面的代码调用 <code>AService</code> 对象并不会出现问题，也就是说普通对象就算出现循环依赖也不会存在问题，因为对象之间存在依赖关系是很常见的，那么为什么被 Spring 容器管理后的对象会出现循环依赖问题呢？</p>
 <h2 id="2-Spring-Bean-的循环依赖问题"><a href="#2-Spring-Bean-的循环依赖问题" class="headerlink" title="2. Spring Bean 的循环依赖问题"></a>2. Spring Bean 的循环依赖问题</h2><p>被 Spring 容器管理的对象叫做 Bean，为什么 Bean 会存在循环依赖问题呢？</p>
 <p>想要了解 Bean 的循环依赖问题，首先需要了解 Bean 是如何创建的。</p>
@@ -325,7 +341,7 @@
 <p>Spring 的 AOP 代理就是作为 <code>BeanPostProcessor</code> 实现的，而 <code>BeanPostProcessor</code> 是发生在属性注入阶段后的，所以 <strong>AOP</strong> 是在 <strong>属性注入</strong> 后执行的。</p>
 <h3 id="2-2-为什么-Spring-Bean-会产生循环依赖问题？"><a href="#2-2-为什么-Spring-Bean-会产生循环依赖问题？" class="headerlink" title="2.2 为什么 Spring Bean 会产生循环依赖问题？"></a>2.2 为什么 Spring Bean 会产生循环依赖问题？</h3><p>通过上面的 Bean 创建步骤可知：实例化 Bean 后会进行 属性注入（依赖注入）</p>
 <p>如上面的 <code>AService</code> 和 <code>BService</code> 的依赖关系，当 <code>AService</code> 创建时，会先对 <code>AService</code> 进行实例化生成一个原始对象，然后在进行属性注入时发现了需要 <code>BService</code> 对应的 Bean，此时就会去为 <code>BService</code> 进行创建，在 <code>BService</code> 实例化后生成一个原始对象后进行属性注入，此时会发现也需要 <code>AService</code> 对应的 Bean。</p>
-<p>![image-20230701150936401](/Users/josentong/Library/Application Support/typora-user-images/image-20230701150936401.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/7983014a8e83491ead2759641939cb80.png#pic_center" alt="在这里插入图片描述"></p>
 <p>这样就会造成 <code>AService</code> 和 <code>BService</code> 的 Bean 都无法创建，就会产生 <strong>循环依赖</strong> 问题。</p>
 <h3 id="2-3-三大循环依赖问题场景"><a href="#2-3-三大循环依赖问题场景" class="headerlink" title="2.3 三大循环依赖问题场景"></a>2.3 三大循环依赖问题场景</h3><p>Spring 并不能解决所有 Bean 的循环依赖问题，接下来通过例子来看看哪些场景下的循环依赖问题是不能被解决的。循环依赖是指在应用程序中存在相互引用的对象，导致无法正确地初始化这些对象。以下是三个常见的循环依赖问题场景：</p>
 <ol>
@@ -366,29 +382,29 @@
 <p>上文中可以看到 <code>AService</code> 和 <code>BService</code> 的循环依赖问题是因为 <code>AService的创建</code> 需要 <code>BService的注入</code>，<code>BService的注入</code> 需要 <code>BService的创建</code>，<code>BService的创建</code> 需要 <code>AService的注入</code>，<code>AService的注入</code> 需要 <code>AService的创建</code>，从而形成的环形调用。</p>
 <p>想要打破这一环形，只需要增加一个 <strong>缓存</strong> 来存放 <strong>原始对象</strong> 即可。</p>
 <p>在创建 <code>AService</code> 时，实例化后将 <strong>原始对象</strong> 存放到缓存中（提早暴露），然后依赖注入时发现需要 <code>BService</code>，便会去创建 <code>BService</code>，实例化后同样将 <strong>原始对象</strong> 存放到缓存中，然后依赖注入时发现需要 <code>AService</code> 便会从缓存中取出并注入，这样 <code>BService</code> 就完成了创建，随后 <code>AService</code> 也就能完成属性注入，最后也完成创建。这样就打破了环形调用，避免循环依赖问题。</p>
-<p>![image-20230701151814576](/Users/josentong/Library/Application Support/typora-user-images/image-20230701151814576.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/36952edcc9bb491ab3f27d116ebd0162.png#pic_center" alt="在这里插入图片描述"></p>
 <h3 id="3-3-为什么还需要第三级缓存？"><a href="#3-3-为什么还需要第三级缓存？" class="headerlink" title="3.3 为什么还需要第三级缓存？"></a>3.3 为什么还需要第三级缓存？</h3><p>通过上面的分析可以发现只需要一个存放 <strong>原始对象</strong> 的缓存就可以解决循环依赖问题，也就是说只要二级缓存（<code>earlySingletonObjects</code>）就够了，那么为什么 Spring 还设置了三级缓存（<code>singletonFactories</code>）呢？</p>
 <p>其实 <strong>第三级缓存（<code>singletonFactories</code>）</strong> 是为了处理 Spring 的 AOP的。</p>
 <p>如上面的例子如果 <code>AService</code> 中方法没有使用 AOP 操作，会发现 <code>BService</code> 注入的 <strong>原始对象</strong> 与最后 <code>AService</code> 完成创建后的最终对象是<strong>同一个对象</strong>。</p>
 <p>如果 <code>AService</code> 方法中有 AOP 操作，Bean 的创建会如下图：</p>
-<p>![image-20230701151831930](/Users/josentong/Library/Application Support/typora-user-images/image-20230701151831930.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/7e40764da2c042c3a0dc074becf31a33.png#pic_center" alt="在这里插入图片描述"></p>
 <p>所以如果 <code>AService</code> 方法中有 AOP 操作时，当 <code>AService</code> 的原始对象赋值（注入）给 <code>BService</code>，<code>AService</code> 会进行 AOP 操作产生一个 <strong>代理对象</strong>，这个代理对象最后会被放入单例池（一级缓存）中，也就是说此时 <code>BService</code> 中注入的对象是原始对象，而 <code>AService</code> 最终创建的完成后是代理对象，这样就会<strong>导致 <code>BService</code> 依赖的 <code>AService</code> 和 最终的 <code>AService</code> 不是同一个对象</strong>。</p>
 <p>出现这个问题主要是上文提到过的 AOP 是通过 <code>BeanPostProcessor</code> 实现的，而 <code>BeanPostProcessor</code> 是在 <strong>属性注入阶段后</strong> 才执行的，所以会导致<strong>注入的对象有可能和最终的对象不一致</strong>。</p>
 <hr>
 <h3 id="3-4-Spring-是如何通过第三级缓存来避免-AOP-问题的？"><a href="#3-4-Spring-是如何通过第三级缓存来避免-AOP-问题的？" class="headerlink" title="3.4 Spring 是如何通过第三级缓存来避免 AOP 问题的？"></a>3.4 Spring 是如何通过第三级缓存来避免 AOP 问题的？</h3><p>三级缓存中存放的是 <code>ObjectFactory</code> 对象，那 <code>ObjectFactory</code> 是什么呢？</p>
 <p><strong><code>ObjectFactory</code> 是什么？</strong></p>
 <p>深入源码会发现 Spring 在 <code>doCreateBean()</code> 方法中的 <code>addSingletonFactory(beanName, () -&gt; getEarlyBeanReference(beanName, mbd, bean))</code> 加入缓存。</p>
-<p>![image-20230701152401159](/Users/josentong/Library/Application Support/typora-user-images/image-20230701152401159.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/2ec8b645ed1e4e438b002c0d64f58b32.png#pic_center" alt="在这里插入图片描述"></p>
 <p>深入 <code>addSingletonFactory</code> 方法：可以看到方法中的第二个参数就是 <code>ObjectFactory</code> 类型，并且将其添加进 <strong>三级缓存（<code>singletonFactories</code>）</strong> 中。</p>
-<p>![image-20230701152502777](/Users/josentong/Library/Application Support/typora-user-images/image-20230701152502777.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/e6a26511dcb540cf852ff0cc76228799.png#pic_center" alt="在这里插入图片描述"></p>
 <p>这里放一下 <code>ObjectFactory</code> 类：</p>
-<p>![image-20230701152550368](/Users/josentong/Library/Application Support/typora-user-images/image-20230701152550368.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/c8c5d9b21cf942a9b5e24eca6bcf9855.png#pic_center" alt="在这里插入图片描述"></p>
 <p>也就是说 Spring 在加入缓存时，会将 <strong>实例化后生成的原始对象</strong> 通过 <strong>lambda 表达式调用 <code>getObject()</code> 方法，<code>getObject()</code> 方法里调用 <code>getEarlyBeanReference()</code> 方法</strong> 来封装成 <code>ObjectFactory</code> 对象。</p>
 <p><strong><code>getEarlyBeanReference()</code> 方法的作用</strong></p>
 <p>进入 <code>getEarlyBeanReference()</code> 中，会发现调用了 <code>SmartInstantiationAwareBeanPostProcessor</code> 的 <code>getEarlyBeanReference()</code> 方法。</p>
-<p>![image-20230701152714513](/Users/josentong/Library/Application Support/typora-user-images/image-20230701152714513.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/8fefe0ef648f4261bb1a93b7fce740c6.png#pic_center" alt="在这里插入图片描述"></p>
 <p>找到 <code>SmartInstantiationAwareBeanPostProcessor</code> 的实现类 <code>AbstractAutoProxyCreator</code> 实现的 <code>getEarlyBeanReference()</code> 方法就可以看到其作用了。</p>
-<p>![image-20230701152759882](/Users/josentong/Library/Application Support/typora-user-images/image-20230701152759882.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/c8e411fa884d499492a3c2aed14af34f.png#pic_center" alt="在这里插入图片描述"></p>
 <ul>
 <li><code>earlyProxyReferences</code> 存储的是 <code>(beanName, bean)</code> 键值对，这里的 bean 指的是原始对象（刚实例化后的对象）。</li>
 <li><code>wrapIfNecessary()</code> 方法用于执行 AOP 操作，生成一个<strong>代理对象</strong>（也就是说<strong>如果有 AOP 操作最后返回的是代理对象，否则返回的还是原始对象</strong>）。</li>
@@ -397,7 +413,7 @@
 <p><strong>Spring 真正意义上地创建 Bean 的流程</strong></p>
 </blockquote>
 <p>先放具体流程图：</p>
-<p>![image-20230701152828312](/Users/josentong/Library/Application Support/typora-user-images/image-20230701152828312.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/97e65a93c0c949e5bde3623288d99e08.png#pic_center" alt="在这里插入图片描述"></p>
 <p>要点说明：</p>
 <ol>
 <li>并不是马上就执行 <code>ObjectFactory</code> 的 <code>getEarlyBeanReference()</code> 方法（有循环依赖时才执行）。<ul>
@@ -430,14 +446,14 @@
 <p>由于前面的内容过于繁琐，这里就以文字概括，只关注几个主要的方法：</p>
 <p>以 <code>AbstractApplicationContext</code> 的 <code>refresh()</code> 方法出发，进入 <code>finishBeanFactoryInitialization()</code> 方法再进入 <code>preInstantiateSingletons()</code> 方法再进入 <code>getBean()</code> 方法再进入 <code>doGetBean()</code> 方法。</p>
 <p>看看 <code>doGetBean()</code> 方法：</p>
-<p>![image-20230701153124427](/Users/josentong/Library/Application Support/typora-user-images/image-20230701153124427.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/d7365a617df74c49891f373ed63acf2f.png#pic_center" alt="在这里插入图片描述"></p>
 <p>其中的第一个 <code>getSingleton(beanName)</code> 是判断 <strong>三级缓存</strong> 中是否有创建好的 Bean 对象，看看源码：</p>
-<p>![image-20230701153316280](/Users/josentong/Library/Application Support/typora-user-images/image-20230701153316280.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/47c926d30aa64b5d87c386eac3cc8508.png#pic_center" alt="在这里插入图片描述"></p>
 <p>可以看到这里分别去每一级的缓存中取数据，依次从第一级开始取数据，如果取得到则直接返回，取不到则往下一级查找。</p>
 <p>可以看到在<strong>第三级缓存</strong>中调用了 <code>singletonFactories.get(beanName)</code> 按照上文所说的会触发执行有 AOP 操作返回代理对象，没有返回原始对象，并且在这里会判断取出的数据是否存在，存在则上移到二级缓存中并删除三级缓存的数据。</p>
 <p>如果都没有的话就会执行第二个 <code>getSingleton()</code> 也就是去执行 <code>createBean()</code> 创建一个 Bean 对象出来。</p>
 <p>会执行 <code>createBean()</code> 方法中的 <code>doCreateBean()</code> 方法，看看源码：</p>
-<p>![image-20230701153634950](/Users/josentong/Library/Application Support/typora-user-images/image-20230701153634950.png)</p>
+<p><img src="https://img-blog.csdnimg.cn/254eea85cca34b39ab6c847d8cf0ee9d.png#pic_center" alt="在这里插入图片描述"></p>
 <p>到这里应该就一目了然了。</p>
 <blockquote>
 <p><strong>梳理整个流程</strong></p>
@@ -868,19 +884,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">wps</a>
+                <a href="javascript:void(0)" class="js-tag color5">list</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">wordcloud</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">依赖包</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">list</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -889,6 +897,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">file方法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">依赖包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">wps</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -932,15 +948,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">内置函数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">plotly</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">sshkeys</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jupyter notebook</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">内置函数</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -956,10 +976,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">sshkeys</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
@@ -972,7 +988,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jupyter notebook</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -981,10 +1001,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">JDK1.8</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1008,14 +1024,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">组成原理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">IEEE745</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">helloworld</a>
               </li>
              
@@ -1024,11 +1032,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">live2d</a>
+                <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">组成原理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">IEEE745</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1044,6 +1056,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">live2d</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">spider</a>
               </li>
              
@@ -1056,6 +1072,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Huffman code</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">python导入模块</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Selenium</a>
               </li>
              
@@ -1064,19 +1088,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">python导入模块</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Huffman code</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ip代理池</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
