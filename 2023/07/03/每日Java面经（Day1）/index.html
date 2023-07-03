@@ -7,17 +7,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://quanluo.github.io">
-  <title>Tag: wordcloud | Quanluo&#39;s blog</title>
+  <title>每日Java面经（Day1） | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Personal Technology blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Quanluo&#39;s blog">
-<meta property="og:url" content="http://quanluo.github.io/tags/wordcloud/index.html">
+  <meta name="description" content="1、HttpServletRequest 如何重复读body？在标准的HttpServletRequest中，只能通过一次读取request.getInputStream()或request.getReader()来获取请求体的内容。一旦读取完成，就无法再次重复读取。这是因为请求体是一个流式数据，只能读取一次。 但是，如果您想在需要时多次访问请求体的内容，您可以考虑将请求体内容保存到一个临时变量或">
+<meta property="og:type" content="article">
+<meta property="og:title" content="每日Java面经（Day1）">
+<meta property="og:url" content="http://quanluo.github.io/2023/07/03/%E6%AF%8F%E6%97%A5Java%E9%9D%A2%E7%BB%8F%EF%BC%88Day1%EF%BC%89/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
-<meta property="og:description" content="Personal Technology blog">
+<meta property="og:description" content="1、HttpServletRequest 如何重复读body？在标准的HttpServletRequest中，只能通过一次读取request.getInputStream()或request.getReader()来获取请求体的内容。一旦读取完成，就无法再次重复读取。这是因为请求体是一个流式数据，只能读取一次。 但是，如果您想在需要时多次访问请求体的内容，您可以考虑将请求体内容保存到一个临时变量或">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b2a76a505aea4bd78e6c41538db244bd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCY6aOOeWY=,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center">
+<meta property="article:published_time" content="2023-07-03T09:21:06.000Z">
+<meta property="article:modified_time" content="2023-07-03T11:01:22.512Z">
 <meta property="article:author" content="Quanluo">
+<meta property="article:tag" content="Java面经">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/b2a76a505aea4bd78e6c41538db244bd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCY6aOOeWY=,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
   
@@ -256,66 +261,398 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-每日Java面经（Day1）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/" class="archive-article-date">
-  	<time datetime="2020-05-23T15:57:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/23/Python-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%94%9F%E6%88%90%E8%AF%8D%E4%BA%91-WordCloud/">Python 数据可视化生成词云 WordCloud</a>
+    <h1 class="article-title" itemprop="name">
+      每日Java面经（Day1）
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        <a href="/2023/07/03/%E6%AF%8F%E6%97%A5Java%E9%9D%A2%E7%BB%8F%EF%BC%88Day1%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2023-07-03T09:21:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-07-03</time>
+</a>
+
+        <!-- 不蒜子统计 -->
+        <span class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  🔤字数统计: </span>
+        <span class="post-count">6.8k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  📖阅读时长≈ </span>
+        <span class="post-count">24分</span>
+      </span>
+    </span>
+</div>
           
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、HttpServletRequest-如何重复读body？"><a href="#1、HttpServletRequest-如何重复读body？" class="headerlink" title="1、HttpServletRequest 如何重复读body？"></a>1、HttpServletRequest 如何重复读body？</h3><p>在标准的<code>HttpServletRequest</code>中，只能通过一次读取<code>request.getInputStream()</code>或<code>request.getReader()</code>来获取请求体的内容。一旦读取完成，就无法再次重复读取。这是因为请求体是一个流式数据，只能读取一次。</p>
+<p>但是，如果您想在需要时多次访问请求体的内容，您可以考虑将请求体内容保存到一个临时变量或者使用缓冲区来存储它。下面是一个示例代码，展示了如何将请求体内容保存为字符串：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 读取请求体内容并保存</span></span><br><span class="line">StringBuilder requestBody = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">BufferedReader reader = request.getReader();</span><br><span class="line">String line;</span><br><span class="line"><span class="keyword">while</span> ((line = reader.readLine()) != <span class="keyword">null</span>) &#123;</span><br><span class="line">    requestBody.append(line);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 在需要的地方使用请求体内容</span></span><br><span class="line">String requestBodyString = requestBody.toString();</span><br><span class="line"><span class="comment">// 使用 requestBodyString 进行后续操作</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 当需要再次访问请求体内容时，可以使用 requestBodyString 变量</span></span><br></pre></td></tr></table></figure>
+
+<p>请注意，将请求体保存为字符串或其他形式的变量可能会导致内存占用增加。因此，如果请求体非常大或者频繁访问请求体内容会对性能产生不利影响，您可能需要重新评估您的需求并考虑其他解决方案。</p>
+<a id="more"></a>
+
+<h3 id="2、说一下你对-JMM-的理解"><a href="#2、说一下你对-JMM-的理解" class="headerlink" title="2、说一下你对 JMM 的理解"></a>2、说一下你对 JMM 的理解</h3><p>JMM（Java内存模型）是Java程序中用来定义多线程并发访问共享内存的规范。它确保了不同线程之间对共享变量的读写操作具有可见性、有序性和原子性。</p>
+<ol>
+<li>可见性：JMM保证一个线程对共享变量的修改对其他线程是可见的。当一个线程修改了共享变量的值，JMM会将这个修改刷新到主内存中，并让其他线程可以看到最新的值。</li>
+<li>有序性：JMM通过禁止特定类型的指令重排序，保证了程序执行的顺序一致性。即使在编译器或处理器的优化过程中，指令也不能被乱序执行，从而确保了多线程环境下的正确性。</li>
+<li>原子性：JMM保证基本数据类型（如int、long等）的读写操作是原子的。即一个线程对该变量的操作要么完全执行，要么完全不执行，不存在中间状态。</li>
+</ol>
+<p>JMM通过使用”happens-before”（先行发生）关系来建立多线程之间操作的顺序关系。如果某个操作A happens-before 某个操作B，那么线程执行操作A之前的所有操作都会在执行操作B时完成。</p>
+<ol>
+<li>happens-before关系：JMM中的happens-before关系是一种顺序保证，它规定了在多线程环境下，指令的执行顺序。如果一个操作happens-before另一个操作，那么前一个操作的结果对于后一个操作是可见的。happens-before关系可以由各种操作和同步机制（如volatile、锁、线程的启动和终止等）建立。</li>
+</ol>
+<p>作为开发者需要了解JMM的概念和规则，以确保正确地处理多线程并发访问共享数据的问题。这包括使用volatile关键字、synchronized关键字、Locks（锁）、Atomic类（原子类）等来实现线程间的协调与同步，以避免出现竞态条件、死锁等并发问题。同时，合理使用JMM提供的内存屏障指令（如volatile的写-读内存屏障）可以进一步优化并发性能。</p>
+<h3 id="3、synchronized-如何实现可重入锁"><a href="#3、synchronized-如何实现可重入锁" class="headerlink" title="3、synchronized 如何实现可重入锁"></a>3、synchronized 如何实现可重入锁</h3><p>synchronized关键字在Java中实现了可重入锁（也称为递归锁）。可重入锁允许线程多次获得同一个锁而不会导致死锁。</p>
+<p>当一个线程进入一个synchronized方法或代码块时，它会尝试获得该方法或代码块的锁。如果锁没有被其他线程持有，那么该线程将获得锁并继续执行。此时，JVM会记下锁的持有线程和持有计数器。</p>
+<p>如果同一个线程再次进入同一个synchronized方法或代码块，它会检查当前线程是否已经持有该锁。如果是，则允许线程继续执行，同时增加持有计数器（+1）。这个过程可以一直嵌套下去。</p>
+<p>当线程退出synchronized方法或代码块时，它会将持有计数器减1（-1）。只有当持有计数器减为0时，其他线程才有机会获得这个锁。</p>
+<p>这种设计实现了可重入锁的原理。通过持有计数器，线程可以多次获得同一个锁，而不会出现死锁的情况。同时，每个线程都需要在释放锁之前将持有计数器减1，确保锁的正常释放。</p>
+<p>需要注意的是，可重入锁是基于线程的，而不是基于方法或代码块的。也就是说，线程可以多次进入同一个synchronized方法或代码块，但不同的线程之间仍然需要竞争锁的获取。此外，可重入锁的机制只适用于同一个锁对象，不同的锁对象之间无法实现可重入性。</p>
+<p>以下是一个使用synchronized实现可重入锁的示例代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReentrantLockExample</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Object lock = <span class="keyword">new</span> Object();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        synchronizedMethod();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">synchronizedMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">synchronized</span> (lock) &#123;</span><br><span class="line">            System.out.println(<span class="string">"外层同步代码块"</span>);</span><br><span class="line">            synchronizedMethod2(); <span class="comment">// 调用内层同步方法</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">synchronizedMethod2</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">synchronized</span> (lock) &#123;</span><br><span class="line">            System.out.println(<span class="string">"内层同步代码块"</span>);</span><br><span class="line">            <span class="comment">// 执行其他操作...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">在上面的示例中，我们定义了一个静态对象lock作为互斥锁。synchronizedMethod方法是外层同步方法，它使用synchronized(lock)来获取锁。在synchronizedMethod方法中，我们调用了syncronizedMethod2方法作为内层同步方法。</span></span><br><span class="line"><span class="comment">当一个线程执行synchronizedMethod方法时，它会首先获得lock对象的锁并进入外层同步代码块。然后，它调用了syncronizedMethod2方法作为内层同步方法。由于是同一个锁对象，线程可以再次成功获取该锁，并进入内层同步代码块执行。</span></span><br><span class="line"><span class="comment">该代码示例展示了可重入锁的特性。无论是外层同步代码块还是内层同步代码块，线程都可以多次进入，并且退出时会按照持有计数器逐级减少。这种机制确保了可重入锁的功能。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4、请详细讲一下ReentrantLock实现原理"><a href="#4、请详细讲一下ReentrantLock实现原理" class="headerlink" title="4、请详细讲一下ReentrantLock实现原理"></a>4、请详细讲一下ReentrantLock实现原理</h3><p>ReentrantLock是Java中的一个可重入锁实现，它提供了与synchronized相似的功能，但具有更高的灵活性和可扩展性。下面是ReentrantLock实现原理的详细解释：</p>
+<ol>
+<li>内部锁机制： ReentrantLock内部使用一个同步器（Sync）来提供锁的功能。在Java 5之前，ReentrantLock使用的是自定义的同步器AbstractQueuedSynchronizer（AQS）。而在Java 5及之后的版本中，ReentrantLock改为使用更高效的Sync实现，即非公平锁NonfairSync或公平锁FairSync。</li>
+<li>非公平锁与公平锁：<ul>
+<li>非公平锁：指线程获取锁时不考虑其他等待线程的情况，直接尝试获取锁。这种方式可能导致后续等待时间较长的线程一直无法获得锁，从而产生饥饿现象，但是在大多数情况下能够获得更高的吞吐量。</li>
+<li>公平锁：指线程获取锁时会考虑其他等待线程的情况，遵循先来先服务的原则。这种方式可以防止某些线程一直等待锁而无法获取，但是由于需要更多的线程切换和调度开销，吞吐量通常较低。</li>
+</ul>
+</li>
+<li>实现原理： ReentrantLock的Sync同步器内部使用了一个state变量来表示锁状态，当state为0时表示未被锁定，大于0时表示已被某个线程获取并且持有锁。另外，每个线程都有一个记录当前持有锁次数的计数器。<ul>
+<li>获取锁（lock）：当一个线程调用lock()方法时，它会尝试对state进行CAS（比较交换）操作从而将其置为1。如果CAS成功，表示该线程成功获得了锁，并将持有计数器加1。如果CAS失败，则可能存在其他线程持有锁，这时当前线程会进入等待队列中。</li>
+<li>释放锁（unlock）：当一个线程调用unlock()方法时，它会将持有计数器减1。如果计数器变为0，说明当前线程已经完全释放了锁，并将state重置为0，表示锁已释放。此时，等待队列中的其他线程有机会竞争锁。</li>
+</ul>
+</li>
+<li>可重入性： ReentrantLock实现了可重入锁的特性，允许同一个线程多次获得同一个锁而不会导致死锁。这是通过持有计数器和线程标识符来实现的。当一个线程再次获取锁时，会检查当前的锁持有者是否为自己，如果是，则计数器加1，否则需要竞争锁。</li>
+</ol>
+<p>ReentrantLock提供了更多的功能和灵活性，例如可定时的、可中断的锁获取、公平锁与非公平锁的选择等。但相对于synchronized，使用ReentrantLock需要显式地手动获取和释放锁，并且需要在finally块中释放锁，以确保在任何情况下都能正确释放锁资源，防止死锁的发生。</p>
+<p>下面是一个使用ReentrantLock实现可重入锁的示例代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.locks.ReentrantLock;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">我们使用ReentrantLock实现了可重入锁。通过lock()方法获取锁，并在finally块中使用unlock()方法释放锁，以确保在任何情况下都能正确释放锁资源，防止死锁的发生。</span></span><br><span class="line"><span class="comment">在main方法中，我们首先获取锁，执行外部代码块，然后调用outerMethod方法，在outerMethod方法中再次获取锁，执行中间代码块，最后调用innerMethod方法，在innerMethod方法中第三次获取锁，执行内部代码块。</span></span><br><span class="line"><span class="comment">由于ReentrantLock是可重入锁，所以在这个示例中，我们同一个线程多次获取了同一个锁，但没有出现死锁的情况。这是因为ReentrantLock内部通过持有计数器和线程标识符来实现可重入性。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReentrantLockExample</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ReentrantLock lock = <span class="keyword">new</span> ReentrantLock();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            lock.lock(); <span class="comment">// 第一次获取锁</span></span><br><span class="line">            System.out.println(<span class="string">"执行外部代码块"</span>);</span><br><span class="line">            outerMethod();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock(); <span class="comment">// 释放锁</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">outerMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            lock.lock(); <span class="comment">// 第二次获取锁</span></span><br><span class="line">            System.out.println(<span class="string">"执行中间代码块"</span>);</span><br><span class="line">            innerMethod();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock(); <span class="comment">// 释放锁</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">innerMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            lock.lock(); <span class="comment">// 第三次获取锁</span></span><br><span class="line">            System.out.println(<span class="string">"执行内部代码块"</span>);</span><br><span class="line">            <span class="comment">// 执行业务逻辑</span></span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock(); <span class="comment">// 释放锁</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、AQS-阻塞队列有长度限制吗？"><a href="#5、AQS-阻塞队列有长度限制吗？" class="headerlink" title="5、AQS 阻塞队列有长度限制吗？"></a>5、AQS 阻塞队列有长度限制吗？</h3><p>在AQS（AbstractQueuedSynchronizer 抽象排队同步器）的阻塞队列中，是没有固定长度限制的。AQS本身并不提供阻塞队列的实现，但它是许多并发类的基础，如ReentrantLock、Semaphore、CountDownLatch等。</p>
+<p>对于具体的阻塞队列实现类（如ArrayBlockingQueue、LinkedBlockingQueue等），它们可能会限制队列的容量或长度，但这与AQS本身无关。这些实现类一般会提供一个构造方法来指定队列的容量限制。</p>
+<p>例如，ArrayBlockingQueue是一个基于数组的有界阻塞队列，其容量由构造方法中的参数指定。只能存储固定数量的元素，一旦队列满了，后续的插入操作将会被阻塞。而LinkedBlockingQueue则是一个基于链表的可选有界或无界阻塞队列，如果创建时没有指定容量，则默认为无界队列。</p>
+<p>在使用阻塞队列时，我们可以根据具体的需求选择适合的阻塞队列实现，有界队列可以帮助我们控制队列的长度，而无界队列则可以灵活地处理不确定数量的任务。不同的实现类会有不同的特点和适用场景，我们可以根据具体情况进行选择和使用。</p>
+<h3 id="6、ReentrantLock-支持公平锁吗，怎么实现的？"><a href="#6、ReentrantLock-支持公平锁吗，怎么实现的？" class="headerlink" title="6、ReentrantLock 支持公平锁吗，怎么实现的？"></a>6、ReentrantLock 支持公平锁吗，怎么实现的？</h3><p>是的，ReentrantLock支持公平锁。公平锁是指多个线程按照申请锁的顺序来获取锁的机制，即先到先得。</p>
+<p>在ReentrantLock中，可以通过构造方法来创建公平锁或非公平锁，默认情况下是非公平锁。要创建公平锁，可以将fair参数设置为true。</p>
+<p>示例代码如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.locks.ReentrantLock;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FairLockExample</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ReentrantLock lock = <span class="keyword">new</span> ReentrantLock(<span class="keyword">true</span>); <span class="comment">// 创建公平锁</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++) &#123;</span><br><span class="line">            Thread thread = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Worker(i));</span><br><span class="line">            thread.start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Worker</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Worker</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.id = id;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            System.out.println(<span class="string">"Worker "</span> + id + <span class="string">" is trying to acquire the lock."</span>);</span><br><span class="line">            lock.lock();</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                System.out.println(<span class="string">"Worker "</span> + id + <span class="string">" has acquired the lock."</span>);</span><br><span class="line">                <span class="comment">// 执行业务逻辑</span></span><br><span class="line">            &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">                System.out.println(<span class="string">"Worker "</span> + id + <span class="string">" is releasing the lock."</span>);</span><br><span class="line">                lock.unlock();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在上述示例中，我们使用ReentrantLock创建了一个公平锁，通过设置构造方法中的fair参数为true。然后创建了5个Worker线程，每个线程都会尝试获取锁并输出相应的信息。</p>
+<p>如果是公平锁，则Worker线程会按照先到先得的顺序依次获取到锁，输出的结果可能是：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Worker <span class="number">1</span> is trying to acquire the lock.</span><br><span class="line">Worker <span class="number">1</span> has acquired the lock.</span><br><span class="line">Worker <span class="number">1</span> is releasing the lock.</span><br><span class="line">Worker <span class="number">2</span> is trying to acquire the lock.</span><br><span class="line">Worker <span class="number">2</span> has acquired the lock.</span><br><span class="line">Worker <span class="number">2</span> is releasing the lock.</span><br><span class="line">Worker <span class="number">3</span> is trying to acquire the lock.</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>如果是非公平锁，则线程获取锁的顺序是不确定的。</p>
+<p>需要注意的是，实际运行中，公平锁可能会导致性能下降，因为需要维护一个有序队列来记录线程的申请顺序。因此，在选择公平锁还是非公平锁时，需要根据具体场景和需求进行权衡和选择。</p>
+<h3 id="7、请说一下公平锁和非公平锁的适用场景有哪些？"><a href="#7、请说一下公平锁和非公平锁的适用场景有哪些？" class="headerlink" title="7、请说一下公平锁和非公平锁的适用场景有哪些？"></a>7、请说一下公平锁和非公平锁的适用场景有哪些？</h3><p>公平锁和非公平锁都有各自适用的场景，如：</p>
+<ol>
+<li>公平锁适用场景：<ul>
+<li>当系统对线程的执行顺序有严格要求时，即按照线程申请锁的先后顺序进行处理。</li>
+<li>在高并发环境下，避免某些线程长时间被饿死（始终得不到锁），确保每个线程公平地获取资源。</li>
+<li>对于一些对锁竞争不是特别激烈的情况，可以使用公平锁提高代码的可读性和可维护性。</li>
+</ul>
+</li>
+<li>非公平锁适用场景：<ul>
+<li>当对性能要求较高且对线程的执行顺序没有强制要求时，可以使用非公平锁。</li>
+<li>在某些场景下，当一个线程频繁地申请锁并且持有锁的时间较长时，非公平锁可能会提供更好的吞吐量。</li>
+<li>当已经知道在特定场景下非公平锁可以提供更好的性能，并且确认由于应用特性或负载模式造成的可能优势时，可以选择非公平锁。</li>
+</ul>
+</li>
+</ol>
+<p>需要注意的是，非公平锁并不是不考虑线程的执行顺序，而是在锁可用时，会尝试直接获取锁，只有在锁不可用时才进入等待队列。而公平锁则会先检查是否有前面排队的线程，如果有则进入等待队列，保证了线程按照申请的先后顺序获得锁。</p>
+<p>在实际应用中，我们需要根据具体的业务场景和性能需求来选择合适的锁类型。如果对执行顺序有严格要求或者考虑公平性的问题，可以选择公平锁；如果追求更高的吞吐量或者确定非公平锁在特定场景下可以带来优势，可以选择非公平锁。</p>
+<h3 id="8、说一下你对方法区的理解"><a href="#8、说一下你对方法区的理解" class="headerlink" title="8、说一下你对方法区的理解"></a>8、说一下你对方法区的理解</h3><p>方法区（Method Area）是Java虚拟机（JVM）的一个重要组成部分，它是线程共享的内存区域之一。在Java 8及之前的版本中，方法区是虚拟机规范的一部分。从Java 8开始，方法区被移除，并由元空间（Metaspace）取代。</p>
+<p>方法区主要用于存储已被加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。它的生命周期与虚拟机的生命周期保持一致，即虚拟机启动时被创建，虚拟机关闭时被销毁。</p>
+<p>在方法区中，主要包含以下内容：</p>
+<ol>
+<li><strong>类信息</strong>：方法区保存了每个类的完整结构信息，包括类的字段、方法、父类、接口以及常量池等。</li>
+<li><strong>运行时常量池</strong>：方法区中的运行时常量池是每个类的常量池的运行时表示形式，包含了编译期生成的各种字面量和符号引用。</li>
+<li><strong>静态变量</strong>：方法区中存储了类的静态变量，它们在类加载时被创建，存在于整个生命周期中。</li>
+<li><strong>即时编译器编译后的代码</strong>：在方法区中，即时编译器将字节码编译为机器码，并将编译后的代码存储在方法区供后续使用。</li>
+</ol>
+<p>需要注意的是，在Java 8及之前的版本中，方法区的大小是通过-Xmx和-XX:MaxPermSize参数进行设置的。而在Java 8及以后的版本中，方法区由元空间（Metaspace）取代，并且元空间的大小默认不受限制，可根据需要动态分配。</p>
+<p>总结来说，方法区是用于存储类信息、常量、静态变量和即时编译器生成的代码等数据的内存区域。它在虚拟机启动时被创建，在虚拟机关闭时被销毁。</p>
+<p>补充：</p>
+<ol>
+<li>字面量（Literal）： 字面量是指在源代码中直接出现的常量值。在编译期间，Java编译器会将源代码中的字面量转换为对应的字节码表示。常见的字面量包括整数、浮点数、字符、字符串、布尔值等。例如，源代码中的”Hello World”字符串字面量会在编译时被转换为相应的字节码指令。</li>
+<li>符号引用（Symbol Reference）： 符号引用是指在Java源代码中使用的类、方法、字段等的符号名称。在编译期间，编译器会将这些符号引用转化为符号引用表来描述，并在链接阶段进一步解析为直接引用。符号引用包括类的全限定名、方法的签名、字段的名称等。例如，当源代码中使用到一个类或者方法时，编译器会将其表示为符号引用，待链接时再通过符号引用表找到对应的直接引用。</li>
+</ol>
+<h3 id="9、说一下Java对象的生命周期"><a href="#9、说一下Java对象的生命周期" class="headerlink" title="9、说一下Java对象的生命周期"></a>9、说一下Java对象的生命周期</h3><p>Java对象的生命周期可以分为以下几个阶段：</p>
+<ol>
+<li><strong>创建阶段</strong>（Creation）： 在创建阶段，通过关键字<code>new</code>或者其他实例化方式（如反射、对象池等），在堆内存中为对象分配内存空间，并调用对象的构造方法进行初始化。在这个阶段中，对象已经被创建，但还没有被完全初始化。</li>
+<li><strong>使用阶段</strong>（Usage）： 在使用阶段，对象被引用并用于程序的各种操作。此时，可以通过对象的引用调用其方法、访问其属性等。</li>
+<li><strong>不可达阶段</strong>（Unreachable）： 当对象不再被任何引用所指向时，进入不可达阶段。对象可能因为引用被置为null、超出了引用的作用域、或者引用被重新赋值而变得不可达。在此阶段，对象仍然存在于堆内存中，但无法通过任何途径访问。</li>
+<li><strong>垃圾收集阶段</strong>（Garbage Collection）： 一旦对象进入不可达阶段，Java虚拟机的垃圾收集器将扫描内存，检测并回收这些不可达的对象。垃圾收集过程会释放对象占用的内存空间，并可能执行一些清理操作，如执行finalize()方法、关闭文件句柄等。</li>
+<li><strong>回收阶段</strong>（Finalization）： 在垃圾收集阶段中，可能会对不可达对象执行finalize()方法。finalize()方法是对象的一个特殊方法，用于在对象被垃圾收集之前进行清理工作。但需要注意的是，finalize()方法的执行并不能保证实时性和可靠性。</li>
+<li><strong>内存回收阶段</strong>（Memory Reclaim）： 在垃圾收集完成后，空闲的内存将被回收，并可以供给未来的对象创建和分配使用。</li>
+</ol>
+<p>需要注意的是，Java的内存管理是自动的，开发人员无需显式地释放对象占用的内存，而是由垃圾收集器负责管理和回收不再使用的对象。对象的生命周期由Java虚拟机自动进行管理，开发人员主要关注对象的创建、使用和适时地释放引用。</p>
+<p>总结来说，Java对象的生命周期包括创建、使用、不可达、垃圾收集、回收等阶段。通过自动的垃圾收集机制，Java虚拟机负责管理对象的内存分配和回收，开发人员可以专注于对象的使用和逻辑处理。</p>
+<h3 id="10、说一下Spring-Bean的生命周期"><a href="#10、说一下Spring-Bean的生命周期" class="headerlink" title="10、说一下Spring Bean的生命周期"></a>10、说一下Spring Bean的生命周期</h3><h4 id="第一种理解："><a href="#第一种理解：" class="headerlink" title="第一种理解："></a>第一种理解：</h4><p><strong>Bean的生命周期概括起来有四个阶段：</strong></p>
+<p>​    <strong>实例化 -&gt; 属性赋值 -&gt; 初始化 -&gt; 销毁</strong></p>
+<p>1、实例化<br>实例化一个Bean，即new。<br>2、IOC依赖注入<br>按照Spring上下文对实例化的Bean进行配置。<br>3、setBeanName实现<br>如果这个Bean已经实现了BeanNameAware接口，就会调用它实现的setBeanName(String)方法，此处传递的是Spring配置文件中Bean的id值。<br>4、setBeanFactory实现<br>如果这个Bean实现了BeanFactoryAware接口，会调用它实现的setBeanFactory(BeanFactory)方法，传递的是Spring工厂自身。<br>5、setApplicationContext实现<br>如果这个Bean实现了ApplicationContextAware接口，会调用它实现的setApplicationContext(ApplicationContext)方法，传递的是Spring的上下文。<br>6、postProcessBeforeInitialization实现-初始化预处理<br>如果这个Bean实现了BeanPostProcessor接口，将会调用它实现的postProcessBeforeInitialization(Object obj,String s)方法。BeanPostProcessor被用作Bean内容修改，并且由于这个是在Bean初始化结束的时候调用的这个方法，也可以被用于内存或缓存技术。<br>7、init-method<br>如果这个bean在Spring配置文件中配置了init-method属性，会自动调用其配置的初始化方法。或则@Bean(initMethod=”…”)指定的方法<br>8、postProcessAfterInitialization<br>如果这个Bean实现了BeanPostProcessor接口，将会调用它实现的postProcessAfterInitialization(Object obj,String s)方法。<br>以上工作完成以后就可以应用这个Bean了。<br>9、Destory过期自动清理<br>当Bean不再需要时，如果这个Bean实现了DisposableBean这个接口，会调用其实现的.destory()方法。<br>10、destory-method<br>如果这个bean在Spring配置文件中配置了destory-method属性，会自动调用其配置的销毁方法。或者@Bean(destroyMethod=”…”)指定的方法</p>
+<p><img src="https://img-blog.csdnimg.cn/b2a76a505aea4bd78e6c41538db244bd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCY6aOOeWY=,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+<h4 id="第二种理解："><a href="#第二种理解：" class="headerlink" title="第二种理解："></a>第二种理解：</h4><p>一、Spring Bean的生命周期总共分为4个阶段</p>
+<blockquote>
+<p>一阶段：Bean的实例化和DI（dependency injection）</p>
+<p>二阶段：检查Spring Awareness</p>
+<p>三阶段：创建<a href="https://so.csdn.net/so/search?q=bean生命周期&spm=1001.2101.3001.7020" target="_blank" rel="noopener">bean生命周期</a>回调</p>
+<p>四阶段：销毁bean生命周期回调</p>
+</blockquote>
+<p>二、4个阶段<br>1、Bean的实例化和DI（dependency injection）<br>1.1  扫描XML文件、注释类（例：@Component）、配置类中bean的定义（@Configuration -&gt; @Bean）</p>
+<p>1.2  创建Bean实例</p>
+<p>1.3  注入Bean依赖项（调用setter或构造方法，为自动装配字段设置值）</p>
+<p>2、 检查Spring Awareness（以下只是几个例子）<br>2.1  如果Bean实现了BeanNameAware接口，则调用setBeanName(…)；</p>
+<p>2.2  如果Bean实现了BeanClassLoaderAware接口，则调用setBeanClassLoader(…)；</p>
+<p>2.3  如果Bean实现了ApplicationContextAware接口，则调用setApplicationContext(…)；</p>
+<p>Aware接口用于告知Spring容器某个Bean需要某些特殊的处理，从而让Spring容器在创建Bean的过程中对它进行处理。 </p>
+<p>ApplicationContextAware：让Bean实现这个接口可以让它获得一个ApplicationContext实例。</p>
+<p>BeanFactoryAware：让Bean实现这个接口可以让它获得一个BeanFactory实例。</p>
+<p>BeanNameAware：让Bean实现这个接口可以让它获得它自己在容器中的名字。</p>
+<p>ServletContextAware：让Bean实现这个接口可以让它获得一个ServletContext实例。</p>
+<p>ResourceLoaderAware：让Bean实现这个接口可以让它获得一个ResourceLoader实例。</p>
+<p> 3、创建Bean生命周期回调<br>3.1  @PostConstruct注释，注释回调的方法上，1、2阶段Bean创建完毕即调用；</p>
+<p>3.2  实现InitializingBean接口，调用afterPropertiesSet(…)，1、2阶段Bean创建完毕即调用；</p>
+<p>3.3  Bean定义中包含init-method（在XML中标签<bean>的属性）或@Bean(initMethod=”…”)指定的方法，1、2阶段Bean创建完毕即调用；</p>
+<p> 4、销毁bean生命周期回调<br>4.1  @PreDestroy注释，注释回调方法上，销毁Bean之前调用；</p>
+<p>4.2  实现DisposableBean接口，调用destroy(…)，销毁Bean之前调用；</p>
+<p>4.3  Bean定义中包含destroy-method（在XML中标签<bean>的属性）或@Bean(destroyMethod=”…”)指定的方法，销毁Bean之前调用；</p>
+<h3 id="11、对象何时被回收，哪些对象可以作为-GC-Roots-根节点？"><a href="#11、对象何时被回收，哪些对象可以作为-GC-Roots-根节点？" class="headerlink" title="11、对象何时被回收，哪些对象可以作为 GC Roots 根节点？"></a>11、对象何时被回收，哪些对象可以作为 GC Roots 根节点？</h3><p>当对象在Java中不再被引用时，它将成为垃圾收集（Garbage Collection）的候选对象。具体来说，以下情况下对象可能被回收：</p>
+<ol>
+<li>引用计数法：<ul>
+<li>如果使用引用计数法进行垃圾收集，当对象的引用计数变为0时，即没有任何活动引用指向该对象时，对象将被回收。</li>
+</ul>
+</li>
+<li>可达性分析法：<ul>
+<li>Java使用可达性分析法来判断对象是否可被回收。通过GC Roots作为起点，遍历对象引用链，如果对象不可达（无法从GC Roots到达），则认为该对象是不可达的，即可被回收。</li>
+</ul>
+</li>
+</ol>
+<p>GC Roots包括以下几种类型的对象：</p>
+<ul>
+<li>虚拟机栈（栈帧中的本地变量表）中引用的对象：活动线程的栈帧中保存了局部变量，如果局部变量引用了某个对象，那么该对象就被视为GC Roots。</li>
+<li>方法区中类静态属性引用的对象：所有被类的静态字段引用的对象都被视为GC Roots。</li>
+<li>方法区中常量引用的对象：常量池中的常量引用的对象也是GC Roots。</li>
+<li>本地方法栈中JNI（Java Native Interface）引用的对象：JNI是Java与其他本地语言进行交互的接口，在JNI代码中使用的对象也是GC Roots。</li>
+</ul>
+<p>除了以上GC Roots的对象，其他所有对象都可能被判定为不可达而被回收。</p>
+<p>需要注意的是，Java垃圾收集器并不保证会立即回收所有不可达对象，而是在合适的时机进行垃圾回收。具体的回收策略和时机是由垃圾收集器决定的。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/Appreciation/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/Appreciation/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<div style="text-align:center;color: #00BFFF;font-size:14px;">
+     -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+</div>
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">wordcloud</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Java面经</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://quanluo.github.io/2023/07/03/%E6%AF%8F%E6%97%A5Java%E9%9D%A2%E7%BB%8F%EF%BC%88Day1%EF%BC%89/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2023/07/01/%E6%B5%85%E8%B0%88-Spring-%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-Bean-%E7%9A%84%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E9%97%AE%E9%A2%98-%E8%BD%AC%E8%BD%BD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浅谈 Spring 如何解决 Bean 的循环依赖问题(转载)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: 200px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+  <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+  </style>
+  <div class="valine_comment"></div>
+<!--载入js，在<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"log":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"react":{"opacity":0.7,"opacityDefault":0.7,"opacityOnHover":0.2},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5,"motion":true}});</script></body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'qVOFRs7k88jJICcsBe0Cdabr-gzGzoHsz',
+      app_key: 'GyrSWO53F9s3q95vzNutRcNp',
+      placeholder: '老铁，唠两句，证明你来过？',
+      avatar:"monsterid"
+    });
+</script>
+
   
 
-    
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -383,9 +720,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
