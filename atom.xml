@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2023-07-04T13:19:15.535Z</updated>
+  <updated>2023-07-05T08:33:47.381Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每日Java面经（Day3）</title>
+    <link href="http://quanluo.github.io/2023/07/05/%E6%AF%8F%E6%97%A5Java%E9%9D%A2%E7%BB%8F%EF%BC%88Day3%EF%BC%89/"/>
+    <id>http://quanluo.github.io/2023/07/05/%E6%AF%8F%E6%97%A5Java%E9%9D%A2%E7%BB%8F%EF%BC%88Day3%EF%BC%89/</id>
+    <published>2023-07-05T06:43:14.000Z</published>
+    <updated>2023-07-05T08:33:47.381Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、了解哪些集合？"><a href="#1、了解哪些集合？" class="headerlink" title="1、了解哪些集合？"></a>1、了解哪些集合？</h3><ol><li><strong>List</strong>（列表）：List是有序的集合，可以包含重复元素。常见的List实现类有<strong>ArrayList</strong>（动态数组）、<strong>LinkedList</strong>（链表）和<strong>Vector</strong>（向量）等。</li><li><strong>Set</strong>（集合）：Set是不允许重复元素的集合，它没有顺序。常见的Set实现类有<strong>HashSet</strong>、<strong>TreeSet</strong>和<strong>LinkedHashSet</strong>等。</li><li><strong>Map</strong>（映射）：Map是一种键值对（Key-Value）的集合，每个键（Key）都是唯一的。常见的Map实现类有<strong>HashMap</strong>、<strong>TreeMap</strong>和<strong>LinkedHashMap</strong>等。</li><li>Queue（队列）：Queue是一种先进先出（FIFO）的集合，通常用于实现队列或任务调度等场景。常见的Queue实现类有<strong>LinkedList</strong>、<strong>PriorityQueue</strong>和<strong>ArrayDeque</strong>等。</li></ol><a id="more"></a><h3 id="2、HashMap-和-TreeMap-的区别？"><a href="#2、HashMap-和-TreeMap-的区别？" class="headerlink" title="2、HashMap 和 TreeMap 的区别？"></a>2、HashMap 和 TreeMap 的区别？</h3><p>HashMap和TreeMap是Java中两种常见的Map实现类，它们之间有以下几个主要区别：</p><ol><li>内部结构：HashMap使用哈希表（哈希桶数组 + 链表/红黑树），而TreeMap使用红黑树（平衡二叉搜索树）来存储键值对。</li><li>键的排序：HashMap中的键是无序的，没有特定的顺序。而TreeMap中的键是有序的，按照键的自然顺序或自定义比较器进行排序。因此，在TreeMap中迭代键值对时，其顺序是确定的。</li><li>性能：HashMap的插入、删除和查找操作的平均时间复杂度为O(1)，具有很高的性能。而TreeMap的插入、删除和查找操作的平均时间复杂度为O(logN)，其中N为元素的数量。</li><li>排序功能：由于TreeMap的键是有序的，因此它提供了一些与排序相关的方法，如firstKey()、lastKey()、higherKey()、lowerKey()等。这使得在需要按照键的顺序遍历或获取子映射时，TreeMap更加方便。</li><li>对象比较：HashMap使用equals()方法来判断键的相等性，而TreeMap使用compareTo()方法或自定义的比较器来判断键的顺序和相等性。因此，在使用自定义对象作为键时，需要确保对象正确实现了equals()和compareTo()方法，以便在HashMap和TreeMap中正常工作。</li></ol><p>总之，HashMap适用于大多数情况，它提供了较好的性能，但不保证键的顺序。而TreeMap适用于需要有序的键值对集合，它提供了排序功能，但相对于HashMap，性能稍低。选择使用哪种实现类取决于具体的需求和使用场景。</p><h3 id="3、HashMap-jdk8与jdk7区别？"><a href="#3、HashMap-jdk8与jdk7区别？" class="headerlink" title="3、HashMap jdk8与jdk7区别？"></a>3、HashMap jdk8与jdk7区别？</h3><p>JDK8中的HashMap相对JDK7进行了一些改进和优化，主要体现在以下几个方面：</p><ol><li>红黑树：在JDK8中，当链表长度超过阈值（默认为8）时，JDK8会将链表转换为红黑树。这样可以提高在链表较长时的查询和删除性能，使得HashMap在处理大量元素时具有更好的性能表现。</li><li>优化的哈希算法：JDK8对于计算哈希值的方法进行了优化，使得在正常情况下，哈希冲突的概率降低，从而提高HashMap的性能。</li><li>存储结构调整：JDK8中的HashMap在内部存储结构上进行了微调，包括对Node节点的存储方式做了改进，减少了内存消耗。</li><li>扩容优化：JDK8对HashMap的扩容机制进行了调整，采用了更加高效的方式。比如在进行扩容时，JDK8可以同时处理多个链表，从而减少了扩容过程中的迁移操作次数，提高了扩容的效率。</li><li>并发性优化：尽管HashMap仍然不是线程安全的，但在JDK8中，对于并发环境下的HashMap使用，提供了更好的性能和并发控制。JDK8的HashMap引入了新的方法<code>putIfAbsent()</code>和<code>remove(key, value)</code>，使用了CAS（Compare and Swap）机制来实现非阻塞的原子操作，以减少同步开销。</li></ol><p>总的来说，JDK8中的HashMap相对于JDK7进行了一些性能上的优化和改进。它在处理大量元素、哈希冲突较多的情况下表现更好，并且提供了更高效的扩容机制和非阻塞的原子操作，从而提升了HashMap的性能和并发安全性。</p><h3 id="4、HashMap为什么线程不安全？"><a href="#4、HashMap为什么线程不安全？" class="headerlink" title="4、HashMap为什么线程不安全？"></a>4、HashMap为什么线程不安全？</h3><p>HashMap在多线程环境下是不安全的，主要有以下原因：</p><ol><li>不同步操作：HashMap的实现不是线程安全的，它没有内部同步机制来保护并发访问。当多个线程同时操作HashMap时，可能导致数据结构被破坏，从而出现意想不到的结果。</li><li>破坏内部结构：HashMap的内部结构是由数组和链表（或红黑树）组成的。在并发修改的情况下，如果多个线程同时进行插入、删除或调整大小等操作，就会导致数据结构出现错误，例如链表断裂或环形链表等问题。</li><li>读写冲突：当一个线程正在对HashMap执行写操作（例如插入或删除元素），而另一个线程正在读取HashMap中的元素，就会产生读写冲突。这可能导致读取到不一致或无效的数据。</li><li>迭代异常：如果在迭代HashMap的过程中，其他线程对HashMap进行了修改，可能会导致ConcurrentModificationException异常或无限循环等问题。</li></ol><h3 id="5、JDK1-7中的-HashMap-使用头插法插入元素为什么会出现环形链表？"><a href="#5、JDK1-7中的-HashMap-使用头插法插入元素为什么会出现环形链表？" class="headerlink" title="5、JDK1.7中的 HashMap 使用头插法插入元素为什么会出现环形链表？"></a>5、JDK1.7中的 HashMap 使用头插法插入元素为什么会出现环形链表？</h3><p>在JDK1.7中的HashMap实现中，当发生哈希冲突（即两个或多个键映射到了同一个索引位置）时，HashMap采用的是头插法（也称为链表插入法）来处理冲突。头插法是指新插入的元素被放置在链表的头部。</p><p>然而，由于头插法的使用，在并发环境下，可能会导致环形链表的出现。这种情况发生在以下步骤中：</p><ol><li>在执行插入操作时，如果多个线程同时发生哈希冲突，它们可能会同时将自己的节点插入到链表的头部。</li><li>当两个线程同时插入到同一个桶（bucket）的头部时，它们都会修改桶的引用，使其指向自己的节点。</li><li>由于并发操作，这两个节点之间的先后顺序无法保证。因此，有可能一个节点插入后，另一个节点才能被插入，从而造成环形链表。</li></ol><p>当发生环形链表时，一些操作可能会导致无限循环，例如在遍历链表或者计算链表长度时。这会导致HashMap无法正常工作且性能下降。</p><p>为了解决这个问题，在JDK1.8及以后的版本中，HashMap采用了尾插法（也称为红黑树）来处理哈希冲突，从而避免了环形链表的产生。只有当链表长度超过一定阈值时，才会将链表转换为红黑树，进一步提高了HashMap在高并发情况下的性能和稳定性。</p><h3 id="6、哪种HashMap是线程安全的？"><a href="#6、哪种HashMap是线程安全的？" class="headerlink" title="6、哪种HashMap是线程安全的？"></a>6、哪种HashMap是线程安全的？</h3><p>在Java中，<code>java.util.concurrent</code>包提供了一个线程安全的版本的HashMap，即<code>ConcurrentHashMap</code>。<code>ConcurrentHashMap</code>是一种支持高并发操作的线程安全的哈希表实现。</p><p><code>ConcurrentHashMap</code>通过将整个存储空间分割为多个段（segments）来实现线程安全性。每个段相当于一个小的HashMap，拥有自己的锁。不同的线程可以同时访问不同的段，从而提高了并发性能。</p><p>相比于传统的HashMap，在高并发环境下，<code>ConcurrentHashMap</code>具有更好的性能和可伸缩性。多个线程可以同时读取和写入<code>ConcurrentHashMap</code>，而不会导致数据不一致或抛出异常。</p><p>需要注意的是，虽然<code>ConcurrentHashMap</code>是线程安全的，但是在某些情况下，仍然需要额外的同步措施来保证数据的原子性和一致性。例如，如果要进行原子的复合操作，比如<code>putIfAbsent()</code>、<code>compute()</code>等，仍然需要使用<code>put()</code>和<code>get()</code>等方法的组合，并在外部进行同步。</p><p>总结起来，如果需要在多线程环境下使用HashMap，并且保证线程安全性，推荐使用<code>ConcurrentHashMap</code>。它提供了更好的并发性能和线程安全性。</p><h3 id="7、ConcurrentHashMap-的1-7版本和1-8版本的实现原理？"><a href="#7、ConcurrentHashMap-的1-7版本和1-8版本的实现原理？" class="headerlink" title="7、ConcurrentHashMap 的1.7版本和1.8版本的实现原理？"></a>7、ConcurrentHashMap 的1.7版本和1.8版本的实现原理？</h3><ol><li>ConcurrentHashMap 1.7 版本的实现原理：<ul><li>1.7 版本的ConcurrentHashMap使用了分段锁（Segment）的机制。它将整个哈希表划分为多个段，每个段相当于一个小的HashMap。每个段都有自己的锁，不同的线程可以同时访问不同的段，从而提高并发性能。</li><li>在1.7版本中，每个Segment继承自ReentrantLock，使用独占锁来保护其内部的数据结构。这意味着在同一时间只能有一个线程进行写操作，但允许多个线程同时进行读操作。</li><li>每个Segment内部使用类似于HashMap的数据结构来存储键值对，每个键值对称为一个Entry。</li><li>通过控制对Segment加锁的粒度，1.7版本的ConcurrentHashMap在一定程度上减少了锁的竞争，提高了并发性能。</li></ul></li><li>ConcurrentHashMap 1.8 版本的实现原理：<ul><li>1.8 版本的ConcurrentHashMap摒弃了分段锁的方式，采用了更加先进的CAS(Compare and Swap)算法和synchronized关键字的组合来实现线程安全性。</li><li>在1.8版本中，ConcurrentHashMap使用了一种称为”红黑树”的数据结构来替代1.7版本中的链表。当一个桶（bucket）中的节点数量超过一定阈值时，该桶内的链表会转换成红黑树，以提高查找的效率。</li><li>1.8版本还引入了一种名为”扩容”的机制，它能够动态改变哈希表的大小以适应元素的增加。扩容时，ConcurrentHashMap会将每个桶中的元素进行重新哈希并重新分配到新的桶中，以保持负载均衡。</li><li>在1.8版本中，ConcurrentHashMap使用了更细粒度的锁控制，通过针对不同节点或树进行同步，减少了线程争用的程度，提高了并发性能。</li></ul></li></ol><p>综上所述，ConcurrentHashMap的1.7版本通过分段锁机制实现线程安全，而1.8版本则采用了CAS算法、红黑树和更细粒度的锁控制，进一步优化了性能和并发能力。</p><h3 id="补充：CAS-Compare-and-Swap-算法"><a href="#补充：CAS-Compare-and-Swap-算法" class="headerlink" title="补充：CAS(Compare and Swap)算法"></a>补充：CAS(Compare and Swap)算法</h3><p>CAS（Compare and Swap）算法是一种用于实现多线程并发操作的原子性操作。它通常用于解决多线程环境下的数据竞争问题，保证共享变量的原子性操作，避免竞态条件。</p><p>CAS 算法的基本思想是比较当前变量的值与期望的值是否相等，如果相等，则将变量的值更新为新的值；如果不相等，则说明其他线程已经修改了变量的值，当前线程需要重新尝试。</p><p>CAS 算法的执行过程如下：</p><ol><li>读取共享变量的当前值和期望的值。</li><li>比较当前值和期望值是否相等，如果相等，则执行步骤4；如果不相等，则执行步骤3。</li><li>其他线程已经修改了变量的值，当前线程需要重新读取最新的值，并重复步骤2。</li><li>将新的值设为共享变量的值。</li></ol><p>CAS 算法通过原子性地比较和交换操作来实现多线程间对共享变量的安全访问。由于 CAS 仅在操作变量时才会加锁，相比传统的锁机制，它减少了锁的使用，减少了线程间的竞争和线程上下文切换的开销，提高了并发性能。</p><p>然而，CAS 算法也存在一些问题，例如ABA问题和自旋等待。为了解决这些问题，Java 提供了 Atomic 包中的原子类，如 AtomicBoolean、AtomicInteger 等，它们封装了 CAS 算法，提供了更方便和可靠的原子操作。</p><p>总而言之，CAS（Compare and Swap）算法是一种基于比较和交换的原子操作，用于解决多线程环境下的数据竞争问题，保证共享变量的原子性操作。</p><h3 id="8、CAS机制在ConcurrentHashMap有哪些具体体现？"><a href="#8、CAS机制在ConcurrentHashMap有哪些具体体现？" class="headerlink" title="8、CAS机制在ConcurrentHashMap有哪些具体体现？"></a>8、CAS机制在ConcurrentHashMap有哪些具体体现？</h3><ol><li>put 方法：当需要插入或更新节点时，ConcurrentHashMap 使用 CAS 操作来保证并发安全。CAS 的原理是比较当前节点的值和期望的值是否相等，如果相等，则更新节点的值；如果不相等，则说明有其他线程已经修改了节点的值，当前线程需要重新尝试。</li><li>remove 方法：在删除节点时，也使用了 CAS 操作。首先，通过 CAS 将节点的值设置为特定的标记，表示该节点被删除。之后，通过 CAS 将节点从链表或红黑树中移除。</li><li>replace 方法：用于替换指定键对应的节点值。ConcurrentHashMap 使用 CAS 操作来找到该节点并进行替换。</li></ol><p>需要注意的是，并发情况下，可能存在多个线程竞争同一个节点，CAS 机制只能保证一个线程成功执行操作，对于其他线程，需要重新尝试。这样可以避免加锁带来的竞争和开销，提高并发性能。</p><p>总结起来，CAS 机制在 ConcurrentHashMap 中用于保证并发更新操作的原子性和一致性，例如插入、删除和替换节点等。同时，它通过比较节点的值来检测并发冲突，并确保只有一个线程能够成功地修改节点的值。</p><h3 id="9、ConcurrentHashMap为什么在1-7使用分段锁，1-8使用CAS-synchronized？"><a href="#9、ConcurrentHashMap为什么在1-7使用分段锁，1-8使用CAS-synchronized？" class="headerlink" title="9、ConcurrentHashMap为什么在1.7使用分段锁，1.8使用CAS + synchronized？"></a>9、ConcurrentHashMap为什么在1.7使用分段锁，1.8使用CAS + synchronized？</h3><p>在 Java 1.7 中，ConcurrentHashMap 使用了分段锁（Segmented Locking）的机制来实现并发安全。这是因为在早期版本中，Java 的并发包没有提供像 CAS（Compare and Swap）这样的原子操作支持，所以使用了分段锁来保证并发操作的线程安全性。</p><p>分段锁的思想是将 ConcurrentHashMap 的整个数据结构分割成多个独立的段（Segment），每个段维护一个独立的哈希表，而不是对整个表加锁。这样，不同的线程可以同时访问不同的段，从而提高并发性能。</p><p>每个段都有自己的锁，读操作可以并发进行，只有写操作需要获取对应段的锁。这样，在多线程环境下，读操作和写操作可以并行执行，提高了并发性能。</p><p>然而，分段锁机制也存在一些问题。例如，每个段都需要维护自己的锁，会占用较多的内存空间。另外，在高并发的情况下，多个线程同时进行写操作可能会导致锁竞争，性能瓶颈。</p><p>在 Java 1.8 中，ConcurrentHashMap 进行了重大改进。引入了 CAS 和 synchronized 结合的方式来实现并发安全。CAS 提供了原子性的操作，而 synchronized 关键字能够保证代码块的互斥性。</p><p>Java 1.8 中的 ConcurrentHashMap 使用了数组+链表+红黑树的结构来组织数据，同时利用 CAS 操作确保对元素的插入、修改和删除是线程安全的。当并发冲突较少时，使用 CAS 进行原子操作；当发生较大的并发冲突时，使用 synchronized 关键字来进行互斥访问，将链表转换为红黑树，提高查询的效率。</p><p>这种改进带来了更好的并发性能和内存利用率。CAS 和 synchronized 结合的方式在大部分情况下能够提供更好的性能，适应了更广泛的并发场景。</p><p>综上所述，ConcurrentHashMap 在 Java 1.7 使用分段锁是因为早期的版本没有提供 CAS（Compare and Swap）等原子操作支持；而在 Java 1.8 中使用 CAS + synchronized 的方式则是为了提高并发性能和内存利用率。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1、了解哪些集合？&quot;&gt;&lt;a href=&quot;#1、了解哪些集合？&quot; class=&quot;headerlink&quot; title=&quot;1、了解哪些集合？&quot;&gt;&lt;/a&gt;1、了解哪些集合？&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;List&lt;/strong&gt;（列表）：List是有序的集合，可以包含重复元素。常见的List实现类有&lt;strong&gt;ArrayList&lt;/strong&gt;（动态数组）、&lt;strong&gt;LinkedList&lt;/strong&gt;（链表）和&lt;strong&gt;Vector&lt;/strong&gt;（向量）等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Set&lt;/strong&gt;（集合）：Set是不允许重复元素的集合，它没有顺序。常见的Set实现类有&lt;strong&gt;HashSet&lt;/strong&gt;、&lt;strong&gt;TreeSet&lt;/strong&gt;和&lt;strong&gt;LinkedHashSet&lt;/strong&gt;等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Map&lt;/strong&gt;（映射）：Map是一种键值对（Key-Value）的集合，每个键（Key）都是唯一的。常见的Map实现类有&lt;strong&gt;HashMap&lt;/strong&gt;、&lt;strong&gt;TreeMap&lt;/strong&gt;和&lt;strong&gt;LinkedHashMap&lt;/strong&gt;等。&lt;/li&gt;
+&lt;li&gt;Queue（队列）：Queue是一种先进先出（FIFO）的集合，通常用于实现队列或任务调度等场景。常见的Queue实现类有&lt;strong&gt;LinkedList&lt;/strong&gt;、&lt;strong&gt;PriorityQueue&lt;/strong&gt;和&lt;strong&gt;ArrayDeque&lt;/strong&gt;等。&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Java面经" scheme="http://quanluo.github.io/tags/Java%E9%9D%A2%E7%BB%8F/"/>
+    
+      <category term="集合" scheme="http://quanluo.github.io/tags/%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>每日Java面经（Day2）</title>
@@ -519,30 +547,6 @@
     
     
       <category term="mac" scheme="http://quanluo.github.io/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>将十进制转换成短浮点数格式（IEEE745）并用十六进制表示（组成原理）</title>
-    <link href="http://quanluo.github.io/2020/11/30/%E5%B0%86%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%88%90%E7%9F%AD%E6%B5%AE%E7%82%B9%E6%95%B0%E6%A0%BC%E5%BC%8F%EF%BC%88IEEE745%EF%BC%89%E5%B9%B6%E7%94%A8%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%EF%BC%88%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%EF%BC%89/"/>
-    <id>http://quanluo.github.io/2020/11/30/%E5%B0%86%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%88%90%E7%9F%AD%E6%B5%AE%E7%82%B9%E6%95%B0%E6%A0%BC%E5%BC%8F%EF%BC%88IEEE745%EF%BC%89%E5%B9%B6%E7%94%A8%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%EF%BC%88%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%EF%BC%89/</id>
-    <published>2020-11-30T02:56:06.000Z</published>
-    <updated>2020-11-30T03:00:34.027Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://img-blog.csdnimg.cn/20201130105022993.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h3 id="IEEE-745-标准中有三种形式的浮点数，具体如下表："><a href="#IEEE-745-标准中有三种形式的浮点数，具体如下表：" class="headerlink" title="IEEE 745 标准中有三种形式的浮点数，具体如下表："></a>IEEE 745 标准中有三种形式的浮点数，具体如下表：</h3><a id="more"></a><p>类型  | 数符 |阶码 | 尾数数值 | 总位数 | 偏置值 |偏置值 |<br>|——– | ——— | —– | —- | —- | —- | —|<br> | | | | | |十六进制 | 十进制<br> | 短浮点数|1 |8 |23 |32 |7FH | 127<br> |长浮点数 |1 |11 |52 |64 |3FFH | 1023<br> |临时浮点数 |1 |15 |64 |80 |3FFFH | 16383</p><h3 id="列题-：将（100-25）十进制转换成短浮点数格式。"><a href="#列题-：将（100-25）十进制转换成短浮点数格式。" class="headerlink" title="列题 ：将（100.25）十进制转换成短浮点数格式。"></a>列题 ：将（100.25）十进制转换成短浮点数格式。</h3><ol><li><p>把十进制转换成二进制。<br> (100.25)十进制 = （1100100.01）二进制</p></li><li><p>规格化二进制<br> 1100100.01 = 1.10010001✖️2^6</p></li><li><p>计算出阶码的移码（偏置值 + 阶码真值） ==阶码真值就是上面2^k 中的k==<br> 127 + 6 = 1111111 + 110 = 10000101</p></li><li><p>以短浮点数格式存储该数<br>因为，<br>符号为 = 0      ==（正数为0，负数为1）==<br>阶码（E） = 10000101<br>尾数 = 1001 0001 0000 0000 0000 000   （==规格化二进制后小数点后面的数然后用零补齐23位数位==）<br>所以，短浮点数代码为：<br>0，1000 0101，1001 0001 0000 0000 0000 000</p><p>表示为十六进制的代码：</p><h3 id="42C88000H"><a href="#42C88000H" class="headerlink" title="42C88000H"></a>42C88000H</h3></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20201130105022993.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;IEEE-745-标准中有三种形式的浮点数，具体如下表：&quot;&gt;&lt;a href=&quot;#IEEE-745-标准中有三种形式的浮点数，具体如下表：&quot; class=&quot;headerlink&quot; title=&quot;IEEE 745 标准中有三种形式的浮点数，具体如下表：&quot;&gt;&lt;/a&gt;IEEE 745 标准中有三种形式的浮点数，具体如下表：&lt;/h3&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="组成原理" scheme="http://quanluo.github.io/tags/%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-    
-      <category term="IEEE745" scheme="http://quanluo.github.io/tags/IEEE745/"/>
     
   </entry>
   
