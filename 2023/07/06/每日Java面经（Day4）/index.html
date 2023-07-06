@@ -17,7 +17,7 @@
 <meta property="og:description" content="1、线程有哪些状态？在Java中，线程有以下几种状态：  新建（New）：当我们创建一个线程实例但尚未调用其start()方法时，线程处于新建状态。此时线程并不会执行任何代码。 运行（Runnable）：当调用线程实例的start()方法后，线程进入运行状态。在运行状态中，线程可以被CPU调度执行任务。 阻塞（Blocked）：当线程在等待某个特定条件（如获取锁或等待I&#x2F;O操作完成）时，它可能会进">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-06T07:48:27.000Z">
-<meta property="article:modified_time" content="2023-07-06T09:38:34.777Z">
+<meta property="article:modified_time" content="2023-07-06T09:57:58.291Z">
 <meta property="article:author" content="Quanluo">
 <meta property="article:tag" content="Java面经">
 <meta property="article:tag" content="JUC">
@@ -289,7 +289,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  🔤字数统计: </span>
-        <span class="post-count">4.8k字</span>
+        <span class="post-count">5.2k字</span>
       </span>
     </span>
 
@@ -298,7 +298,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  📖阅读时长≈ </span>
-        <span class="post-count">16分</span>
+        <span class="post-count">19分</span>
       </span>
     </span>
 </div>
@@ -409,6 +409,8 @@
 <p><strong>CallerRunsPolicy</strong> 让调用者运行任务</p>
 <p><strong>DiscardPolicy</strong> 放弃本次任务</p>
 <p><strong>DiscardOldestPolicy</strong> 放弃队列中最旧的任务，本任务取而代之，以便立即执行新到达的高优先级任务</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Predefined RejectedExecutionHandlers */</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * A handler for rejected tasks that runs the rejected task</span></span><br><span class="line"><span class="comment">   * directly in the calling thread of the &#123;<span class="doctag">@code</span> execute&#125; method,</span></span><br><span class="line"><span class="comment">   * unless the executor has been shut down, in which case the task</span></span><br><span class="line"><span class="comment">   * is discarded.</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">CallerRunsPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Creates a &#123;<span class="doctag">@code</span> CallerRunsPolicy&#125;.</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="title">CallerRunsPolicy</span><span class="params">()</span> </span>&#123; &#125;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Executes task r in the caller's thread, unless the executor</span></span><br><span class="line"><span class="comment">       * has been shut down, in which case the task is discarded.</span></span><br><span class="line"><span class="comment">       *</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> r the runnable task requested to be executed</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> e the executor attempting to execute this task</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</span><br><span class="line">          <span class="keyword">if</span> (!e.isShutdown()) &#123;</span><br><span class="line">              r.run();</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * A handler for rejected tasks that throws a</span></span><br><span class="line"><span class="comment">   * &#123;<span class="doctag">@code</span> RejectedExecutionException&#125;.</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">AbortPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Creates an &#123;<span class="doctag">@code</span> AbortPolicy&#125;.</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="title">AbortPolicy</span><span class="params">()</span> </span>&#123; &#125;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Always throws RejectedExecutionException.</span></span><br><span class="line"><span class="comment">       *</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> r the runnable task requested to be executed</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> e the executor attempting to execute this task</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@throws</span> RejectedExecutionException always</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</span><br><span class="line">          <span class="keyword">throw</span> <span class="keyword">new</span> RejectedExecutionException(<span class="string">"Task "</span> + r.toString() +</span><br><span class="line">                                               <span class="string">" rejected from "</span> +</span><br><span class="line">                                               e.toString());</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * A handler for rejected tasks that silently discards the</span></span><br><span class="line"><span class="comment">   * rejected task.</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">DiscardPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Creates a &#123;<span class="doctag">@code</span> DiscardPolicy&#125;.</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="title">DiscardPolicy</span><span class="params">()</span> </span>&#123; &#125;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Does nothing, which has the effect of discarding task r.</span></span><br><span class="line"><span class="comment">       *</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> r the runnable task requested to be executed</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> e the executor attempting to execute this task</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * A handler for rejected tasks that discards the oldest unhandled</span></span><br><span class="line"><span class="comment">   * request and then retries &#123;<span class="doctag">@code</span> execute&#125;, unless the executor</span></span><br><span class="line"><span class="comment">   * is shut down, in which case the task is discarded.</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">DiscardOldestPolicy</span> <span class="keyword">implements</span> <span class="title">RejectedExecutionHandler</span> </span>&#123;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Creates a &#123;<span class="doctag">@code</span> DiscardOldestPolicy&#125; for the given executor.</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="title">DiscardOldestPolicy</span><span class="params">()</span> </span>&#123; &#125;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Obtains and ignores the next task that the executor</span></span><br><span class="line"><span class="comment">       * would otherwise execute, if one is immediately available,</span></span><br><span class="line"><span class="comment">       * and then retries execution of task r, unless the executor</span></span><br><span class="line"><span class="comment">       * is shut down, in which case task r is instead discarded.</span></span><br><span class="line"><span class="comment">       *</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> r the runnable task requested to be executed</span></span><br><span class="line"><span class="comment">       * <span class="doctag">@param</span> e the executor attempting to execute this task</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rejectedExecution</span><span class="params">(Runnable r, ThreadPoolExecutor e)</span> </span>&#123;</span><br><span class="line">          <span class="keyword">if</span> (!e.isShutdown()) &#123;</span><br><span class="line">              e.getQueue().poll();</span><br><span class="line">              e.execute(r);</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -769,14 +771,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Mailto</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">chrome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -793,7 +787,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">list</a>
+                <a href="javascript:void(0)" class="js-tag color2">Mailto</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">chrome</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -802,6 +800,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">list</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">进度条</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">wordcloud</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -817,19 +827,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">wordcloud</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">进度条</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">file方法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">!s!r</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -837,7 +835,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">format</a>
+                <a href="javascript:void(0)" class="js-tag color5">!s!r</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -845,7 +843,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">pyinstaller</a>
+                <a href="javascript:void(0)" class="js-tag color2">format</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -857,15 +855,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">pyinstaller</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">依赖包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">dict</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">依赖包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -885,15 +887,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">sshkeys</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">scrapy</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jupyter notebook</a>
+                <a href="javascript:void(0)" class="js-tag color3">sshkeys</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -909,11 +907,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Bean的生命周期</a>
+                <a href="javascript:void(0)" class="js-tag color2">jupyter notebook</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -926,6 +920,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">JDK1.8</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Bean的生命周期</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -950,10 +952,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">helloworld</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">数据可视化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -985,11 +983,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">循环依赖</a>
+                <a href="javascript:void(0)" class="js-tag color1">数据可视化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1001,11 +995,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">循环依赖</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Selenium</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">WebDriver</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1017,15 +1023,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ip代理池</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Feign</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1038,10 +1044,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">力扣</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Feign</a>
               </li>
             
             <div class="clearfix"></div>
